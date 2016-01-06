@@ -1,0 +1,35 @@
+<?php
+
+abstract class Controller {
+
+    private function file_path()
+    {
+        $tplDir= Router::getController();
+        $tplName = Router::getAction();
+        $templateFile=VIEW_DIR.$tplDir.DS.$tplName.'.phtml';
+        if(!file_exists($templateFile)){
+            throw new Exception("{$templateFile} not found", 404);
+        }
+        return $templateFile;
+
+    }
+    protected  function render(array $args=array())
+    {
+        extract($args);
+        ob_start();
+        require $this->file_path(); //$templateFile;
+        $content = ob_get_clean();
+
+        ob_start();
+        require VIEW_DIR. 'layout.phtml';
+        return ob_get_clean();
+
+    }
+    public function redirect($url)
+    {
+        header("Location: $url");
+        die;
+
+    }
+
+}
