@@ -6,7 +6,13 @@ try{
  $content = Router::get_content_by_uri($_SERVER['REQUEST_URI']);
 }catch (Exception $e){
 
-    $content = Router::get_content_by_uri('index/error', $e);
+    $content = Router::get_content_by_uri('error_404',$e);
+   // if($e->getCode()== 403){
+     //   $content = Controller::redirect('error_403');
+   // }
+    //else{
+      //  $content = Controller::redirect('error_404');
+   // }
 }
 echo $content;
 
@@ -14,8 +20,8 @@ echo '<pre>';
 print_r('Action: '.Router::getAction().PHP_EOL);
 print_r('Controller: '.Router::getController().PHP_EOL);
 print_r('Lang: '.Router::getLanguage().PHP_EOL);
-print_r('Prefix: '.Router::getMethodPrefix().PHP_EOL);
-print_r('Rout: '.Router::getRout().PHP_EOL);
+print_r('URL: ' .Router::getUri().PHP_EOL);
+print_r('ID: ' .Router::getId() .PHP_EOL);
 echo 'Params: ';
 print_r(Router::getParams());
 echo '</pre>';

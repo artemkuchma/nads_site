@@ -5,9 +5,89 @@ class Router {
     private static $controller;
     private static $action;
     private static $params = array();
-    private static $rout;
-    private static $method_prefix;
     private static $language;
+    private static $id;
+
+
+
+    private static function url_to_array ($uri)
+    {
+        self::$uri = urldecode(trim($uri, '/'));
+        $uri_parts = explode('?', self::$uri);
+
+        $first_part = $uri_parts[0];
+
+        $uri_array = explode('/', $first_part);
+        $uri_elements = array();
+        // Удаляет все специальные символы и кирилицу из элементов массива (заменяет на "_"), чтоб срабатывало исключение
+        foreach($uri_array as $val){
+            $uri_element = preg_replace ("/[^a-zA-Z0-9]/","_",$val);
+            $uri_elements[] = $uri_element;
+        }
+        return $uri_elements;
+    }
+
+   /**
+    * private static function lang_by_url($uri)
+    {
+        $lang = self::$language = Config::get('default_language');
+
+        $uri_elements = self::url_to_array($uri);
+
+        if(count($uri_elements)){
+            if(strtolower(current($uri_elements)!= 'admin')){
+                if(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
+                    $lang = self::$language = strtolower(current($uri_elements));
+
+                }
+            }
+        }
+        return $lang;
+    }
+    **/
+
+    private static function find_alias($url)
+    {
+        require LIB_DIR .'alias.php';
+      //  print_r($url_patterns);
+        foreach($url_patterns as $k => $v){
+            $regex = $v['pattern'];
+            //echo $regex;
+            if(preg_match('@^' . $regex . '$@', $url, $match)){
+               // echo "OK";
+                $url_parts = explode('/', $match[0]);
+                //print_r($url_parts);
+                //echo $val['elements_before_alias'];
+                for($i=1;$i<= $v['elements_before_alias']; $i++ ){
+                    array_shift($url_parts);
+                }
+               // print_r($url_parts);
+                $url = implode('/', $url_parts);
+                $action = $v['action'];
+                //echo $urll;
+            }
+        }
+        if($url){
+        $url_alias_ = 'url_alias_'.self::getLanguage();
+        // print_r($$url_alias_) ;
+        $result = '';
+        foreach($$url_alias_ as $key => $val){
+            if($key == $url){
+                self::$controller = $val['controller'];
+                self::$action = isset($action)? $action : $val['action'];
+                self::$id = $val['id'];
+                $result = 'found';
+            }
+
+        }
+        if($result != 'found'){
+
+        throw new Exception('Page'.$url. 'not found', 404);
+        }
+        }
+
+        //echo $url;
+    }
 
     public static function getAction()
     {
@@ -24,11 +104,6 @@ class Router {
         return self::$params;
     }
 
-    public static function getRout()
-    {
-        return self::$rout;
-    }
-
     public static function getUri()
     {
         return self::$uri;
@@ -39,43 +114,39 @@ class Router {
         return self::$language;
     }
 
-    public static function getMethodPrefix()
+    public static function getId()
     {
-        return self::$method_prefix;
+        return self::$id;
     }
 
     public static function parse($uri)
     {
-        self::$uri = urldecode(trim($uri, '/'));
         self::$action = Config::get('default_action');
         self::$controller = Config::get('default_controller');
         self::$language = Config::get('default_language');
-        self::$rout = Config::get('default_rout');
-        $routes = Config::get('routs');
-        self::$method_prefix = isset($routes[self::$rout])? $routes[self::$rout]:'';
+        self::$id = Config::get('default_id');
 
-        $uri_parts = explode('?', self::$uri);
-
-        $first_part = $uri_parts[0];
-
-        $uri_array = explode('/', $first_part);
-        $uri_elements = array();
-        // Удаляет все специальные символы и кирилицу из элементов массива (заменяет на "_"), чтоб срабатывало исключение
-        foreach($uri_array as $val){
-            $uri_element = preg_replace ("/[^a-zA-Z0-9]/","_",$val);
-            $uri_elements[] = $uri_element;
-        }
+        $uri_elements = self::url_to_array($uri);
 
         if(count($uri_elements)){
-            if(in_array(strtolower(current($uri_elements)),array_keys($routes))){
-                self::$rout = strtolower(current($uri_elements));
-                self::$method_prefix = isset($routes[self::$rout])? $routes[self::$rout] : '';
+            if(strtolower(current($uri_elements)!= 'admin')){
+                if(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
+                    self::$language = strtolower(current($uri_elements));
+                    array_shift($uri_elements);
+                }
+            }
+            else {
                 array_shift($uri_elements);
             }
-            elseif(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
-                self::$language = strtolower(current($uri_elements));
-                array_shift($uri_elements);
-            }
+            $url = implode('/', $uri_elements);
+            self::find_alias($url);
+
+
+
+
+
+
+/**
             if(current($uri_elements)){
                 self::$controller = ucfirst(strtolower(current($uri_elements)));
                 array_shift($uri_elements);
@@ -88,6 +159,7 @@ class Router {
                 self::$params = $uri_elements;
 
             }
+ **/
         }
     }
 
@@ -105,13 +177,6 @@ class Router {
         }
         $content = $_controller_object -> $_action($request, $e);
         return $content;
-    }
-
-    public static function alias_to_url($alias)
-    {
-        
-        $url = '';
-        return $url;
     }
 
 

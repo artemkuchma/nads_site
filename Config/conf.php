@@ -10,16 +10,17 @@ define('VIEW_DIR', ROOT . 'View' . DS);
 define('WEBROOT_DIR', ROOT . 'Webroot' . DS);
 
 Config::set('site_name', 'Антидопинговый центр');
-Config::set('languages', array('en', 'ukr'));
-Config::set('routs', array(
-    'default'=>'',
-    'admin'=>'admin_'
-));
+Config::set('languages', array('en', 'uk'));
+//Config::set('routs', array(
+  //  'default'=>'',
+   // 'admin'=>'admin_'
+//));
 
 Config::set('default_rout', 'default');
-Config::set('default_language', 'ukr');
+Config::set('default_language', 'uk');
 Config::set('default_controller', 'Index');
 Config::set('default_action', 'index');
+Config::set('default_id', '1');
 
 // DB Connect
 
