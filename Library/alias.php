@@ -3,25 +3,29 @@
 $url_patterns = array(
 
     'edit_page'=>array(
-        'pattern' => 'edit/.*',
+        'pattern_uk' => 'redaguvati/.*',
+        'pattern_en' => 'edit/.*',
         'action' => 'edit',
         'elements_before_alias' => 1
     ),
 
     'edd_to_cart' => array(
-        'pattern' => 'cart/add/.*',
+        'pattern_uk' => 'koshik/dodatu/.*',
+        'pattern_en' => 'cart/add/.*',
         'action' => 'addToCart',
         'elements_before_alias' => 2
     ),
 
     'show_cart' => array(
-        'pattern' => 'cart/.*',
+        'pattern_uk' => 'koshik/.*',
+        'pattern_en' => 'cart/.*',
         'action' => 'showCart',
         'elements_before_alias' => 1
     ),
 
     'remove_from_cart' => array(
-        'pattern' => 'cart/remove/.*',
+        'pattern_uk' => 'koshik/vudalutu/.*',
+        'pattern_en' => 'cart/remove/.*',
         'action' => 'removeFromCart',
         'elements_before_alias' => 2
     )
@@ -48,13 +52,19 @@ $url_alias_uk = array(
         'id' => 1
     ),
 
-    'error_404' => array(
+    'pomilka_404' => array(
         'controller' => 'Index',
         'action' => 'index',
         'id' => 5
     ),
 
-    'test' => array(
+    'pomilka_403' => array(
+        'controller' => 'Index',
+        'action' => 'index',
+        'id' => 7
+    ),
+
+    'test_uk' => array(
     'controller' => 'Index',
     'action' => 'test',
     'id' => 6
@@ -73,8 +83,18 @@ $url_alias_en = array(
         'controller' => 'Index',
         'action' => 'index',
         'id' => 5
-    )
+    ),
 
+    'test' => array(
+        'controller' => 'Index',
+        'action' => 'test',
+        'id' => 6
+    ),
 
+    'error_403' => array(
+        'controller' => 'Index',
+        'action' => 'index',
+        'id' => 7
+    ),
 
 );

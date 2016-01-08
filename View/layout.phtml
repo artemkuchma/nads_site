@@ -11,6 +11,14 @@
 <a href="index.php?rout=book/index&id=4">Books</a>
 <hr/>
 
+
+<?php if(Router::getLanguage() == 'uk'):?>
+<a href="<?= Lang::url_translation('en')?>">EN</a>
+<?php elseif(Router::getLanguage() == 'en'): ?>
+<a href="<?= Lang::url_translation('uk')?>">UK</a>
+<?php endif; ?>
+<hr/>
+
 <?=$content?>
 
 </body>

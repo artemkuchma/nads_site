@@ -7,6 +7,7 @@ class Router {
     private static $params = array();
     private static $language;
     private static $id;
+    private static $rout;
 
 
 
@@ -51,7 +52,7 @@ class Router {
         require LIB_DIR .'alias.php';
       //  print_r($url_patterns);
         foreach($url_patterns as $k => $v){
-            $regex = $v['pattern'];
+            $regex = $v['pattern_'.self::getLanguage()];
             //echo $regex;
             if(preg_match('@^' . $regex . '$@', $url, $match)){
                // echo "OK";
@@ -63,13 +64,19 @@ class Router {
                 }
                // print_r($url_parts);
                 $url = implode('/', $url_parts);
-                $action = $v['action'];
-                if($action){
-                self::$action = $action;
+
+                if(isset($v['action'])){
+                    $action = $v['action'];
+                    self::$action = $action;
                 }
-                $controller = $v['controller'];
-                if($controller){
+
+                if(isset($v['controller'])){
+                    $controller = $v['controller'];
                     self::$controller = $controller;
+                }
+                $rout = $k;
+                if($rout){
+                    self::$rout = $rout;
                 }
                 //echo $urll;
             }
@@ -96,6 +103,12 @@ class Router {
 
         //echo $url;
     }
+
+    public static function getRout()
+    {
+        return self::$rout;
+    }
+
 
     public static function getAction()
     {
@@ -185,6 +198,13 @@ class Router {
         }
         $content = $_controller_object -> $_action($request, $e);
         return $content;
+    }
+
+    public static function get_alis_by_id($id)
+    {
+        require LIB_DIR .'alias.php';
+
+       
     }
 
 
