@@ -21,12 +21,16 @@ class IndexController extends Controller {
         return $this->render($args);
     }
 
-    public function errorAction(Request $request, Exception $e)
+    public static  function errorAction(Exception $e)
     {
+        //добавить запись всех этих данных в лог файл
         $args = array(
-            'message'=> 'test-m  ',//$e->getMessage(),
+            'message'=> $e->getMessage(),
+            'cod' => $e->getCode(),
+            'file' => $e->getFile(),
+            'line' => $e->getLine(),
         );
-        return $this->render($args);
+       // return $this->render($args);
     }
 
 

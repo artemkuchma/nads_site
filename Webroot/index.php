@@ -5,8 +5,10 @@ require_once '../Library/init.php';
 try{
  $content = Router::get_content_by_uri($_SERVER['REQUEST_URI']);
 }catch (Exception $e){
+    $content = Router::get_content_by_uri('error_404');
+    IndexController::errorAction($e);
 
-    $content = Router::get_content_by_uri('error_404',$e);
+    // $content = Router::get_content_by_uri('error_404', $e);
    // if($e->getCode()== 403){
      //   $content = Controller::redirect('error_403');
    // }

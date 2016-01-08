@@ -25,7 +25,18 @@ $url_patterns = array(
         'action' => 'removeFromCart',
         'elements_before_alias' => 2
     )
+    /**
+     * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут
+     * контроллеры и экшены из массивов с алиасами.
+     */
+/**
+    'error_log' => array(
+        'pattern' => 'error_log',
+        'action' => 'error',
+        'elements_before_alias' => 1
 
+    )
+**/
 );
 
 
@@ -41,7 +52,13 @@ $url_alias_uk = array(
         'controller' => 'Index',
         'action' => 'index',
         'id' => 5
-    )
+    ),
+
+    'test' => array(
+    'controller' => 'Index',
+    'action' => 'test',
+    'id' => 6
+)
 );
 
 $url_alias_en = array(

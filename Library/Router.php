@@ -64,16 +64,24 @@ class Router {
                // print_r($url_parts);
                 $url = implode('/', $url_parts);
                 $action = $v['action'];
+                if($action){
+                self::$action = $action;
+                }
+                $controller = $v['controller'];
+                if($controller){
+                    self::$controller = $controller;
+                }
                 //echo $urll;
             }
         }
+
         if($url){
         $url_alias_ = 'url_alias_'.self::getLanguage();
         // print_r($$url_alias_) ;
         $result = '';
         foreach($$url_alias_ as $key => $val){
             if($key == $url){
-                self::$controller = $val['controller'];
+                self::$controller = isset($controller)? $controller : $val['controller'];
                 self::$action = isset($action)? $action : $val['action'];
                 self::$id = $val['id'];
                 $result = 'found';
@@ -82,7 +90,7 @@ class Router {
         }
         if($result != 'found'){
 
-        throw new Exception('Page'.$url. 'not found', 404);
+        throw new Exception('Page ('.$_SERVER['REQUEST_URI']. ') not found', 404);
         }
         }
 
