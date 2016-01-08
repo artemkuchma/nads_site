@@ -30,6 +30,7 @@ class IndexController extends Controller {
             'file' => $e->getFile(),
             'line' => $e->getLine(),
         );
+
        // return $this->render($args);
     }
 

@@ -18,6 +18,7 @@ class Lang
     public static function url_translation($lang)
     {
         $url_arr = array();
+        // скрывает язык установленный по умолчанию
         if ($lang != Config::get('default_language')) {
             $url_arr[] = $lang;
         }
@@ -28,12 +29,13 @@ class Lang
             $url_arr[] = $rout_part;
         }
 
-        $url_alias = 'url_alias_' . $lang;
-        foreach ($$url_alias as $k => $val) {
-            if ($val['id'] == Router::getId()) {
-                $url_arr[] = $k;
-            }
+    //    if(isset($url_alias[Router::getId()]['alias_' . $lang])){
+      //      throw new Exception ( 'Translation the page with ID = '.Router::getId().' is not exist', 204);
+       // }
+        if(isset($url_alias[Router::getId()]['alias_' . $lang])){
+            $url_arr[] = $url_alias[Router::getId()]['alias_' . $lang];
         }
+
         $url_translation = '/' . implode('/', $url_arr);
         self::$url_translation = $url_translation;
         return $url_translation;

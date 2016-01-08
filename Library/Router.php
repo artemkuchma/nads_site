@@ -1,6 +1,7 @@
 <?php
 
-class Router {
+class Router
+{
     private static $uri;
     private static $controller;
     private static $action;
@@ -10,8 +11,7 @@ class Router {
     private static $rout;
 
 
-
-    private static function url_to_array ($uri)
+    private static function url_to_array($uri)
     {
         self::$uri = urldecode(trim($uri, '/'));
         $uri_parts = explode('?', self::$uri);
@@ -21,84 +21,85 @@ class Router {
         $uri_array = explode('/', $first_part);
         $uri_elements = array();
         // Удаляет все специальные символы и кирилицу из элементов массива (заменяет на "_"), чтоб срабатывало исключение
-        foreach($uri_array as $val){
-            $uri_element = preg_replace ("/[^a-zA-Z0-9]/","_",$val);
+        foreach ($uri_array as $val) {
+            $uri_element = preg_replace("/[^a-zA-Z0-9]/", "_", $val);
             $uri_elements[] = $uri_element;
         }
         return $uri_elements;
     }
 
-   /**
-    * private static function lang_by_url($uri)
+    /**
+     * private static function lang_by_url($uri)
     {
-        $lang = self::$language = Config::get('default_language');
+    $lang = self::$language = Config::get('default_language');
 
-        $uri_elements = self::url_to_array($uri);
+    $uri_elements = self::url_to_array($uri);
 
-        if(count($uri_elements)){
-            if(strtolower(current($uri_elements)!= 'admin')){
-                if(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
-                    $lang = self::$language = strtolower(current($uri_elements));
+    if(count($uri_elements)){
+    if(strtolower(current($uri_elements)!= 'admin')){
+    if(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
+    $lang = self::$language = strtolower(current($uri_elements));
 
-                }
-            }
-        }
-        return $lang;
     }
-    **/
+    }
+    }
+    return $lang;
+    }
+     **/
 
     private static function find_alias($url)
     {
-        require LIB_DIR .'alias.php';
-      //  print_r($url_patterns);
-        foreach($url_patterns as $k => $v){
-            $regex = $v['pattern_'.self::getLanguage()];
+        require LIB_DIR . 'alias.php';
+        //  print_r($url_patterns);
+        foreach ($url_patterns as $k => $v) {
+            $regex = $v['pattern_' . self::getLanguage()];
             //echo $regex;
-            if(preg_match('@^' . $regex . '$@', $url, $match)){
-               // echo "OK";
+            if (preg_match('@^' . $regex . '$@', $url, $match)) {
+                // echo "OK";
                 $url_parts = explode('/', $match[0]);
                 //print_r($url_parts);
                 //echo $val['elements_before_alias'];
-                for($i=1;$i<= $v['elements_before_alias']; $i++ ){
+                for ($i = 1; $i <= $v['elements_before_alias']; $i++) {
                     array_shift($url_parts);
                 }
-               // print_r($url_parts);
+                // print_r($url_parts);
                 $url = implode('/', $url_parts);
 
-                if(isset($v['action'])){
+                if (isset($v['action'])) {
                     $action = $v['action'];
                     self::$action = $action;
                 }
 
-                if(isset($v['controller'])){
+                if (isset($v['controller'])) {
                     $controller = $v['controller'];
                     self::$controller = $controller;
                 }
                 $rout = $k;
-                if($rout){
+                if ($rout) {
                     self::$rout = $rout;
                 }
                 //echo $urll;
             }
         }
 
-        if($url){
-        $url_alias_ = 'url_alias_'.self::getLanguage();
-        // print_r($$url_alias_) ;
-        $result = '';
-        foreach($$url_alias_ as $key => $val){
-            if($key == $url){
-                self::$controller = isset($controller)? $controller : $val['controller'];
-                self::$action = isset($action)? $action : $val['action'];
-                self::$id = $val['id'];
-                $result = 'found';
+        if ($url) {
+            // $url_alias_ = 'url_alias_'.self::getLanguage();
+            // print_r($$url_alias_) ;
+            $result = '';
+            foreach ($url_alias as $key => $val) {
+                if (isset($val['alias_' . self::getLanguage()])) {
+                    if ($val['alias_' . self::getLanguage()] == $url) {
+                        self::$controller = isset($controller) ? $controller : $val['controller'];
+                        self::$action = isset($action) ? $action : $val['action'];
+                        self::$id = $key;
+                        $result = 'found';
+                    }
+                }
             }
+            if ($result != 'found') {
 
-        }
-        if($result != 'found'){
-
-        throw new Exception('Page ('.$_SERVER['REQUEST_URI']. ') not found', 404);
-        }
+                throw new Exception('Page (' . $_SERVER['REQUEST_URI'] . ') not found', 404);
+            }
         }
 
         //echo $url;
@@ -149,62 +150,57 @@ class Router {
 
         $uri_elements = self::url_to_array($uri);
 
-        if(count($uri_elements)){
-            if(strtolower(current($uri_elements)!= 'admin')){
-                if(in_array(strtolower(current($uri_elements)),Config::get('languages'))){
+        if (count($uri_elements)) {
+            if (strtolower(current($uri_elements) != 'admin')) {
+                if (in_array(strtolower(current($uri_elements)), Config::get('languages'))) {
                     self::$language = strtolower(current($uri_elements));
                     array_shift($uri_elements);
                 }
-            }
-            else {
+            } else {
                 array_shift($uri_elements);
             }
             $url = implode('/', $uri_elements);
             self::find_alias($url);
 
 
-
-
-
-
-/**
+            /**
             if(current($uri_elements)){
-                self::$controller = ucfirst(strtolower(current($uri_elements)));
-                array_shift($uri_elements);
+            self::$controller = ucfirst(strtolower(current($uri_elements)));
+            array_shift($uri_elements);
             }
             if(current($uri_elements)){
-                self::$action = strtolower(current($uri_elements));
-                array_shift($uri_elements);
+            self::$action = strtolower(current($uri_elements));
+            array_shift($uri_elements);
             }
             if(current($uri_elements)){
-                self::$params = $uri_elements;
+            self::$params = $uri_elements;
 
             }
- **/
+             **/
         }
     }
 
-    public static function get_content_by_uri($uri, Exception $e=null)
+    public static function get_content_by_uri($uri)
     {
         self::parse($uri);
         $request = new Request();
-        $_controller = self::getController().'Controller';
-        $_action = self::getAction().'Action';
+        $_controller = self::getController() . 'Controller';
+        $_action = self::getAction() . 'Action';
 
         $_controller_object = new $_controller;
 
-        if(!method_exists($_controller_object, $_action)){
+        if (!method_exists($_controller_object, $_action)) {
             throw new Exception("{$_action} not found", 404);
         }
-        $content = $_controller_object -> $_action($request, $e);
+        $content = $_controller_object->$_action($request);
         return $content;
     }
 
-    public static function get_alis_by_id($id)
+    public static function get_alis_by_id($id, $languages)
     {
-        require LIB_DIR .'alias.php';
+        require LIB_DIR . 'alias.php';
 
-       
+        return $url_alias[$id]['alias_' . $languages];
     }
 
 

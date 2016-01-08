@@ -2,7 +2,7 @@
 
 $url_patterns = array(
 
-    'edit_page'=>array(
+    'edit_page' => array(
         'pattern_uk' => 'redaguvati/.*',
         'pattern_en' => 'edit/.*',
         'action' => 'edit',
@@ -33,68 +33,46 @@ $url_patterns = array(
      * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут
      * контроллеры и экшены из массивов с алиасами.
      */
-/**
+    /**
     'error_log' => array(
-        'pattern' => 'error_log',
-        'action' => 'error',
-        'elements_before_alias' => 1
+    'pattern' => 'error_log',
+    'action' => 'error',
+    'elements_before_alias' => 1
 
     )
-**/
+     **/
 );
 
 
-$url_alias_uk = array(
 
-    'stranitsa_1' => array(
+
+$url_alias = array(
+
+    1 => array(
         'controller' => 'Index',
         'action' => 'index',
-        'id' => 1
+        'alias_uk' => 'stranitsa_1',
+        'alias_en' => 'page_1'
     ),
 
-    'pomilka_404' => array(
+    5 => array(
         'controller' => 'Index',
         'action' => 'index',
-        'id' => 5
+        'alias_uk' => 'pomilka_404',
+        'alias_en' => 'error_404'
     ),
 
-    'pomilka_403' => array(
+    7 => array(
         'controller' => 'Index',
         'action' => 'index',
-        'id' => 7
+        'alias_uk' => 'pomilka_403',
+        'alias_en' => 'error_403'
     ),
 
-    'test_uk' => array(
-    'controller' => 'Index',
-    'action' => 'test',
-    'id' => 6
-)
-);
-
-$url_alias_en = array(
-
-    'page_1' => array(
-        'controller' => 'Index',
-        'action' => 'index',
-        'id' => 1
-    ),
-
-    'error_404' => array(
-        'controller' => 'Index',
-        'action' => 'index',
-        'id' => 5
-    ),
-
-    'test' => array(
+    6 => array(
         'controller' => 'Index',
         'action' => 'test',
-        'id' => 6
-    ),
-
-    'error_403' => array(
-        'controller' => 'Index',
-        'action' => 'index',
-        'id' => 7
-    ),
-
+        'alias_uk' => 'test_uk',
+        //'alias_en' => 'test_en'
+    )
 );
