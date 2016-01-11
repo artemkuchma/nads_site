@@ -183,6 +183,7 @@ class Router
     public static function get_content_by_uri($uri)
     {
         self::parse($uri);
+        Lang::load_static_translation();
         $request = new Request();
         $_controller = self::getController() . 'Controller';
         $_action = self::getAction() . 'Action';

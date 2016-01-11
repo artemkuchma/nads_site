@@ -73,6 +73,14 @@ $url_alias = array(
         'controller' => 'Index',
         'action' => 'test',
         'alias_uk' => 'test_uk',
-        //'alias_en' => 'test_en'
-    )
+        'alias_en' => 'test_en'
+    ),
+
+
+    9 => array(
+        'controller' => 'Index',
+        'action' => 'index',
+        'alias_uk' => 'pomilka_500',
+        'alias_en' => 'error_500'
+    ),
 );

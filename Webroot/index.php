@@ -1,24 +1,22 @@
 <?php
 require_once '../Library/init.php';
 
-//RouterClass::parse($_SERVER['REQUEST_URI']);
-
 try{
     $content = Router::get_content_by_uri($_SERVER['REQUEST_URI']);
+}catch (PDOException $e){
+    IndexController::errorAction($e);
+//$content = $e->getMessage();
+    $lang = Router::getLanguage();
+    $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_500'), $lang));
+
 }catch (Exception $e){
      IndexController::errorAction($e);
-    //$content = $e->getMessage();
     $lang = Router::getLanguage();
-    //$content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(5, $lang));
-   // $content = Router::get_content_by_uri('en/error_404');
     if($e->getCode()== 403){
-        $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(7, $lang));
-    }
-    elseif($e->getCode()== 204){
-        $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(7, $lang));
+        $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_403'), $lang));
     }
     else{
-    $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(5, $lang));
+    $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_404'), $lang));
     }
 }
 echo $content;

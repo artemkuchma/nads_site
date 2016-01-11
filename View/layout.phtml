@@ -13,10 +13,12 @@
 
 
 <?php if(Router::getLanguage() == 'uk'):?>
-<a href="<?= Lang::url_translation('en')?>">EN</a>
+<a href="<?= Lang::url_translation('en', Config::get('default_id_error_204')) ?>">EN</a>
 <?php elseif(Router::getLanguage() == 'en'): ?>
-<a href="<?= Lang::url_translation('uk')?>">UK</a>
+<a href="<?= Lang::url_translation('uk', Config::get('default_id_error_204')) ?>">UK</a>
 <?php endif; ?>
+<hr/>
+<p>Статический текст: <?= __t('testovii_tekst')?></p>
 <hr/>
 <?= Router::getId()?>
 <?=$content?>

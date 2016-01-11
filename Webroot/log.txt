@@ -1,0 +1,49 @@
+
+l, d-M-y H:i:s T
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+l, d-M-y H:i:s T
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+l, d-M-y H:i:s T
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+2016-01-11 23:58:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+2016-01-12 00:06:22
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+2016-01-12 00:06:28
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+2016-01-12 00:07:05
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+
+2016-01-12 00:07:05
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+101
+

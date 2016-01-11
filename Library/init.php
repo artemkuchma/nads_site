@@ -21,5 +21,9 @@ function __autoload($className)
     } else {
         throw new Exception ("{$file} not found", 404);
     }
+}
 
+function __t($key)
+{
+ return Lang::getStaticTranslation($key);
 }
