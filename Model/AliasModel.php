@@ -5,7 +5,7 @@ class AliasModel {
     public function getAliasDate()
     {
         $dbc = Connect::getConnection();
-        $sql = "SELECT type_name FROM  type_of_materyal";
+        $sql = "SELECT type_name FROM  type_of_materyals";
         $placeholders = array();
         $date = $dbc->getDate($sql, $placeholders);
         $date_t = array(

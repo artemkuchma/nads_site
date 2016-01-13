@@ -25,6 +25,7 @@ class Lang
             $url_arr[] = $lang;
         }
         require LIB_DIR . 'alias.php';
+        require LIB_DIR . 'patterns.php';
         if (Router::getRout()) {
             $rout_pattern = $url_patterns[Router::getRout()]['pattern_' . $lang];
             $rout_part = str_replace('/.*', '', $rout_pattern);

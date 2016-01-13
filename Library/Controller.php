@@ -54,8 +54,10 @@ abstract class Controller {
     }
         $date .= ');';
 
-        self::rewrite_file(LIB_DIR.'aliass.php','w', $date);
+        self::rewrite_file(LIB_DIR.'alias.php','w', $date);
     }
+
+
 
 
 

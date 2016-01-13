@@ -10,6 +10,10 @@
 <a href="index.php?rout=index/contact&id=3">Contacts</a>
 <a href="index.php?rout=book/index&id=4">Books</a>
 <hr/>
+<?php //$menu = new MenuController();
+      //$menu->mainMenuAction();
+?>
+<hr/>
 
 
 <?php if(Router::getLanguage() == 'uk'):?>
@@ -20,7 +24,8 @@
 <hr/>
 <p>Статический текст: <?= __t('testovii_tekst')?></p>
 <hr/>
-<?= Router::getId()?>
+<?= Router::getId()?></br>
+<?= Router::getUri()?>
 <?=$content?>
 
 </body>

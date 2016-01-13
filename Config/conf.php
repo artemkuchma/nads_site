@@ -21,10 +21,10 @@ Config::set('default_language', 'uk');
 Config::set('default_controller', 'Index');
 Config::set('default_action', 'index');
 Config::set('default_id', '1');
-Config::set('default_id_error_404', 5);
-Config::set('default_id_error_403', 7);
-Config::set('default_id_error_204', 8);
-Config::set('default_id_error_500', 9);
+Config::set('default_id_error_404', 13);
+Config::set('default_id_error_403', 14);
+Config::set('default_id_error_204', 15);
+Config::set('default_id_error_500', 16);
 
 // DB Connect
 

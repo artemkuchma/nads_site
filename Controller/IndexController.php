@@ -3,20 +3,24 @@
 
 class IndexController extends Controller {
 
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-      //  $indexModel = new IndexModel();
-      //  $data = $indexModel->getBook($request->get('id'));
-      //  $args = $data[0];
+       // $testModel = new MenuModel();
+       // $testModel->getMainMenu(Router::getLanguage());
+        $testC = new MenuController();
+        $testC->mainMenuAction();
 
-        $args = array(
-            'text'=>'Страница индекс индекс'
-        );
+        //$this->rewrite_file_alias();
+        $indexModel = new IndexModel();
+        $data = $indexModel->getPage(Router::getId(), Router::getLanguage());
+        $args = $data[0];
+
+
         return $this->render($args);
     }
     public function testAction (Request $request)
     {
-        $this->rewrite_file_alias();
+
         $args = array(
             'text'=>'Еще одна тестовая страница'
         );

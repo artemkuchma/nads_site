@@ -50,7 +50,8 @@ class Router
     private static function find_alias($url)
     {
         require LIB_DIR . 'alias.php';
-        //  print_r($url_patterns);
+        require LIB_DIR . 'patterns.php';
+
         foreach ($url_patterns as $k => $v) {
             $regex = $v['pattern_' . self::getLanguage()];
             //echo $regex;

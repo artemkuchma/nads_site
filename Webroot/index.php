@@ -2,7 +2,8 @@
 require_once '../Library/init.php';
 
 try{
-    $content = Router::get_content_by_uri($_SERVER['REQUEST_URI']);
+    $request = new Request();
+    $content = Router::get_content_by_uri($request->server('REQUEST_URI'));
 }catch (PDOException $e){
     IndexController::errorAction($e);
 //$content = $e->getMessage();
