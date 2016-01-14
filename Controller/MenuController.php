@@ -3,6 +3,12 @@
 
 class MenuController extends Controller
 {
+    private static $main_menu_array;
+
+    public static function getMainMenuArray()
+    {
+        return self::$main_menu_array;
+    }
 
     public function mainMenuAction()
     {
@@ -43,7 +49,8 @@ class MenuController extends Controller
                 }
             }
         }
-        $args['menu_arr'] = $lev[$max_level - 1];
+        $args = $lev[$max_level - 1];
+       //  self::$main_menu_array = $args;
 
 /**
         $l_1 = array();
@@ -82,13 +89,10 @@ class MenuController extends Controller
        // print_r(self::getMenuLevelAction($d));
         echo'</pre>';
         echo'<pre>';
-        //print_r($args);
+      // print_r($args);
         echo'</pre>';
 
-
-
-
-         return $this->render($args);
+        return $this->render_main_menu($args);//render($args);
 
     }
 
@@ -115,6 +119,25 @@ class MenuController extends Controller
 
             return $i;
         }
+    }
+
+    public static function menu_recurs($array = array(),$main_teg_open,$main_teg_close,$teg_open, $teg_close){
+        echo $main_teg_open;
+        $lang ='';
+        if(Router::getLanguage()!=Config::get('default_language')){
+            $lang = Router::getLanguage().'/';
+        }
+        foreach($array as $k=>$v){
+
+
+           // Router::getLanguage()!=Config::get('default_language')? Router::getLanguage():'' ;
+            echo $teg_open.'<a href="/'.$lang.$v['alias_main_menu'].'">'.$v['name'].'</a>'.$teg_close;
+            if(isset($v['child']) ){
+                self::menu_recurs($v['child'],$main_teg_open,$main_teg_close,$teg_open, $teg_close);
+
+            }
+        }
+        echo $main_teg_close;
     }
 
 

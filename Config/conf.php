@@ -20,7 +20,7 @@ Config::set('default_rout', 'default');
 Config::set('default_language', 'uk');
 Config::set('default_controller', 'Index');
 Config::set('default_action', 'index');
-Config::set('default_id', '1');
+Config::set('default_id', 7);
 Config::set('default_id_error_404', 13);
 Config::set('default_id_error_403', 14);
 Config::set('default_id_error_204', 15);

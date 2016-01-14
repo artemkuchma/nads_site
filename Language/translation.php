@@ -12,5 +12,9 @@ return array(
     'ukr' => array(
         'en' => 'Ukrainian',
         'uk' => 'Украiнська'
+    ),
+    'revers_lang' => array(
+        'en' => 'UK',
+        'uk' => 'EN'
     )
 );

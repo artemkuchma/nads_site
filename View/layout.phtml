@@ -5,22 +5,13 @@
     <title><?=Config::get('site_name') ?></title>
 </head>
 <body>
-<a href="/index/index?id=1">Home</a>
-<a href="/index/test?id=2">About</a>
-<a href="index.php?rout=index/contact&id=3">Contacts</a>
-<a href="index.php?rout=book/index&id=4">Books</a>
+<?= $main_menu?>
 <hr/>
-<?php //$menu = new MenuController();
-      //$menu->mainMenuAction();
-?>
+<pre>
+<?php //print_r(BreadCrumbs::getBreadcrumbs()); ?>
+</pre>
 <hr/>
-
-
-<?php if(Router::getLanguage() == 'uk'):?>
-<a href="<?= Lang::url_translation('en', Config::get('default_id_error_204')) ?>">EN</a>
-<?php elseif(Router::getLanguage() == 'en'): ?>
-<a href="<?= Lang::url_translation('uk', Config::get('default_id_error_204')) ?>">UK</a>
-<?php endif; ?>
+<?= $lang_icon; ?>
 <hr/>
 <p>Статический текст: <?= __t('testovii_tekst')?></p>
 <hr/>

@@ -17,7 +17,7 @@ class Lang
         return self::$url_translation;
     }
 
-    public static function url_translation($lang, $id_default_page = 1)
+    public static function url_translation($lang, $id_default_page)
     {
         $url_arr = array();
         // скрывает язык установленный по умолчанию
@@ -38,7 +38,7 @@ class Lang
         }
         $url_translation = '/' . implode('/', $url_arr);
         self::$url_translation = $url_translation;
-        return $url_translation;
+        return Controller::render_lang_icon($url_translation);//$url_translation;
     }
 
     public static function load_static_translation()

@@ -1,1637 +1,822 @@
 
-l, d-M-y H:i:s T
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-l, d-M-y H:i:s T
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-l, d-M-y H:i:s T
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-11 23:58:09
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 00:06:22
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 00:06:28
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 00:07:05
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 00:07:05
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:30
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:31
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:51
-404
-Page (/en/page_en) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:52
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:52
-404
-Page (/en/page_) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:52
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:46:55
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:47:37
-42S02
-SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_nadc.type_of_materyal' doesn't exist
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Connect.php
-35
-
-2016-01-12 10:47:37
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 10:49:40
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-101
-
-2016-01-12 11:00:06
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 11:00:43
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 11:00:50
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:04:24
-404
-Page (/antidopingovi_pravila) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:04:25
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:08:30
-404
-Page (/antidopingovi_pravila) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:08:30
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:09:31
-404
-Page (/antidopingovi_pravila) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:09:32
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:12:44
-404
-Page (/antidopingovi_pravila) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:12:44
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:15:57
-404
-Page (/antidopingovi_pravila) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:15:57
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:22:12
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:22:12
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:22:19
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:22:19
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:23:44
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:23:45
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:28:15
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:28:15
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:28:45
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:28:45
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:29:16
-404
-Page (/vitaemo_na_saiti_nads) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:29:16
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:31:46
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:32:56
-404
-Page (/en/donec_eu_mi%20_lobortis) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:32:57
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:35:25
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:35:27
-404
-Page (/en/donec_eu_mi%20_lobortis) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:35:27
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:30
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:32
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:36
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:48
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:49
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:50
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:51
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:52
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:53
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:54
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:56
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:58
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:36:59
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:00
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:03
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:31
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:34
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:37
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:39
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:41
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:42
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:43
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:44
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:46
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:53
-404
-Page (/donec_lacinia) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:37:53
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:38:00
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:38:21
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:38:55
-42S22
-SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.statu' in 'field list'
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Connect.php
-35
-
-2016-01-12 12:38:55
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:07
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:10
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
 
-2016-01-12 12:41:12
+2016-01-14 20:40:44
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 12:41:13
+2016-01-14 20:40:46
 404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:16
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:17
-404
-Page (/en/index.php?rout=index/contact&id=3) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:17
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:19
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:21
-404
-Page (/index/index?id=1) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:21
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:26
-404
-Page (/index/test?id=2) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:26
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:28
-404
-Page (/index/index.php?rout=index/contact&id=3) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:28
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:30
-404
-Page (/index/index.php?rout=book/index&id=4) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:30
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:31
-404
-Page (/favicon.ico) not found
+Page (/about) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 12:41:32
+2016-01-14 20:40:46
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 12:41:33
+2016-01-14 20:40:49
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 12:41:34
+2016-01-14 20:41:27
 404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:35
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:35
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:36
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:37
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:37
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 12:41:39
-404
-Page (/index/index?id=1) not found
+Page (/about) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 12:41:39
+2016-01-14 20:41:27
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:15:52
+2016-01-14 20:41:39
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:15:55
+2016-01-14 20:41:42
 404
-Page (/favicon.ico) not found
+Page (/about) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:15:56
+2016-01-14 20:41:42
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:15:56
+2016-01-14 20:41:44
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:27:56
+2016-01-14 20:41:50
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 13:51:40
-404
-Page (/en/index.php?rout=book/index&id=4) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:51:41
+2016-01-14 20:41:52
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 13:51:43
-404
-Page (/en/index.php?rout=index/contact&id=3) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:51:43
+2016-01-14 20:42:47
 404
-Page (/favicon.ico) not found
+Page (/about) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:51:44
+2016-01-14 20:42:47
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 13:51:45
+2016-01-14 20:42:49
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 14:30:34
-404
-Page (/en/test_en) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:30:34
+2016-01-14 20:42:55
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 14:30:42
-404
-Page (/en/test_en) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:30:42
+2016-01-14 20:42:56
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 14:30:57
-404
-Page (/en/home) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:30:58
+2016-01-14 20:42:58
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 14:32:13
-404
-Page (/en/home) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:13
+2016-01-14 20:42:59
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:18
+2016-01-14 20:43:06
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:25
+2016-01-14 20:43:09
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:39
+2016-01-14 20:43:10
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:42
+2016-01-14 20:43:10
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:45
+2016-01-14 20:43:12
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:32:46
+2016-01-14 20:43:17
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:41:32
+2016-01-14 20:43:23
 404
-Page (/favicon.ico) not found
+Page (/about) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:41:38
+2016-01-14 20:43:23
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:41:59
+2016-01-14 20:43:28
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:42:06
+2016-01-14 20:43:42
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:42:07
+2016-01-14 20:43:44
 404
 Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 14:42:17
-404
-Page (/en/articles/article_1) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:42:17
+2016-01-14 21:02:45
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:42:58
+2016-01-14 21:03:53
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:43:03
+2016-01-14 21:03:58
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:43:05
+2016-01-14 21:04:03
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:43:10
+2016-01-14 21:04:05
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:43:14
+2016-01-14 21:04:08
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 14:43:16
+2016-01-14 21:04:11
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 18:31:12
+2016-01-14 21:04:13
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 18:45:52
+2016-01-14 21:04:14
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 18:46:07
+2016-01-14 21:04:15
 404
 id = 7 ,is not exist
 C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
 13
 
-2016-01-12 18:46:07
+2016-01-14 21:04:15
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 18:46:13
+2016-01-14 21:04:16
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 18:54:27
+2016-01-14 21:04:17
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 20:00:32
+2016-01-14 21:04:18
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 20:43:10
+2016-01-14 21:04:19
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 22:08:41
+2016-01-14 21:04:20
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-12 22:08:53
+2016-01-14 21:04:22
 404
-id = 7 ,is not exist
-C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
-13
-
-2016-01-12 22:08:53
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:09:02
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:09:04
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:09:19
-404
-id = 7 ,is not exist
-C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
-13
-
-2016-01-12 22:09:20
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:10:51
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:10:54
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:15:23
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:15:38
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:15:48
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:15:53
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:50:27
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:52:41
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:53:50
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:54:27
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:55:15
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 22:56:05
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 23:59:36
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-12 23:59:58
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:03:12
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:10:51
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:12:02
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:21:02
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:21:20
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:22:26
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:23:15
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:26:24
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 00:26:29
-404
-Page (/favicon.ico) not found
-C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
-102
-
-2016-01-13 10:30:05
-404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:30:47
+2016-01-14 21:04:23
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:33:16
+2016-01-14 21:04:25
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:35:20
+2016-01-14 21:04:27
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:35:59
+2016-01-14 21:04:28
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:37:38
+2016-01-14 21:04:33
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:39:46
+2016-01-14 21:04:34
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:45:45
+2016-01-14 22:19:49
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:48:12
+2016-01-14 22:19:53
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:49:28
+2016-01-14 22:19:54
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:52:20
+2016-01-14 22:22:15
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 10:55:51
+2016-01-14 22:22:24
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 11:31:47
+2016-01-14 22:22:26
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 11:33:53
+2016-01-14 22:22:28
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 11:43:14
+2016-01-14 22:22:30
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:04:36
+2016-01-14 22:22:31
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:06:47
+2016-01-14 22:22:33
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:07:35
+2016-01-14 22:22:35
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:09:11
+2016-01-14 22:30:41
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:35:12
+2016-01-14 22:34:11
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 12:51:28
+2016-01-14 22:34:21
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 13:44:37
+2016-01-14 22:34:23
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 13:49:00
+2016-01-14 22:34:24
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:02:46
+2016-01-14 22:34:25
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:04:59
+2016-01-14 22:34:26
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:06:19
+2016-01-14 22:34:27
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:07:26
+2016-01-14 22:34:28
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:08:57
+2016-01-14 22:34:29
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:19:28
+2016-01-14 22:34:29
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:19:44
+2016-01-14 22:34:31
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:21:21
+2016-01-14 22:34:32
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:26:05
+2016-01-14 22:34:33
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:26:47
+2016-01-14 22:34:34
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:27:36
+2016-01-14 22:34:35
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:29:56
+2016-01-14 22:34:37
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:31:06
+2016-01-14 22:34:55
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:32:36
+2016-01-14 22:35:00
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:33:54
+2016-01-14 22:35:01
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:34:14
+2016-01-14 22:35:02
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:35:07
+2016-01-14 22:35:03
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:35:32
+2016-01-14 22:35:04
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:35:58
+2016-01-14 22:35:05
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:38:46
+2016-01-14 22:35:07
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:39:48
+2016-01-14 22:35:08
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:45:17
+2016-01-14 22:35:11
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:45:50
+2016-01-14 22:35:16
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:50:33
+2016-01-14 22:35:17
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:51:01
+2016-01-14 22:35:18
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:51:20
+2016-01-14 22:35:22
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:52:32
+2016-01-14 22:35:24
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:53:18
+2016-01-14 22:35:24
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:55:07
+2016-01-14 22:35:25
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 14:55:14
+2016-01-14 22:35:25
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:01:59
+2016-01-14 22:35:27
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:49:41
+2016-01-14 22:35:28
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:50:28
+2016-01-14 22:35:30
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:54:16
+2016-01-14 22:35:30
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:54:37
+2016-01-14 22:35:31
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 17:57:07
+2016-01-14 22:35:32
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 18:00:32
+2016-01-14 22:37:49
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 18:23:10
+2016-01-14 22:37:53
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 18:25:38
+2016-01-14 22:37:54
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:52:31
+2016-01-14 22:37:55
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:52:58
+2016-01-14 22:37:56
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:54:33
+2016-01-14 22:37:58
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:55:22
+2016-01-14 22:37:59
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:56:04
+2016-01-14 22:38:00
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:56:37
+2016-01-14 22:38:01
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:57:56
+2016-01-14 22:38:02
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:58:29
+2016-01-14 22:38:02
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 21:58:55
+2016-01-14 23:03:08
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:00:41
+2016-01-14 23:04:44
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:01:09
+2016-01-14 23:04:49
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:06:12
+2016-01-14 23:04:53
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:07:39
+2016-01-14 23:04:54
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:45:31
+2016-01-14 23:04:55
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:47:28
+2016-01-14 23:04:56
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 22:49:04
+2016-01-14 23:04:57
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:06:09
+2016-01-14 23:04:59
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:09:33
+2016-01-14 23:05:00
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:19:13
+2016-01-14 23:05:02
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:36:07
+2016-01-14 23:05:04
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:03
+2016-01-14 23:05:07
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:12
+2016-01-14 23:05:08
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:16
+2016-01-14 23:05:10
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:17
+2016-01-14 23:05:10
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:18
+2016-01-14 23:05:12
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:19
+2016-01-14 23:05:13
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-13 23:52:22
+2016-01-14 23:05:14
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-14 00:03:10
+2016-01-14 23:05:16
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
-2016-01-14 00:05:18
+2016-01-14 23:05:19
 404
 Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php

@@ -5,10 +5,7 @@ class IndexController extends Controller {
 
     public function indexAction()
     {
-       // $testModel = new MenuModel();
-       // $testModel->getMainMenu(Router::getLanguage());
-        $testC = new MenuController();
-        $testC->mainMenuAction();
+      // BreadCrumbs::getBreadcrumbs();
 
         //$this->rewrite_file_alias();
         $indexModel = new IndexModel();
