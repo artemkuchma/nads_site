@@ -822,3 +822,1047 @@ Page (/favicon.ico) not found
 C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 102
 
+2016-01-14 23:23:31
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:25:10
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:25:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:39
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:50
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:53
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:55
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:58
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:33:59
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:03
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:13
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:14
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:16
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:40
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:34:46
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:35:06
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+102
+
+2016-01-14 23:42:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-14 23:42:32
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-14 23:42:37
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:06:11
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:07:47
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:07:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:07:55
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:19:55
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:20:27
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:44:55
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:45:25
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:46:58
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:13
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:18
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:25
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:29
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:35
+404
+Page (/statti/stattia_1/statti) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:47:48
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:29
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:35
+404
+Page (/stattia_1) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:48
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:49:49
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:50:02
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:50:08
+404
+Page (/stattia_2) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:50:08
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 00:50:21
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:19:15
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:21:22
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:22:18
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:22:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:30:53
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:32:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:34:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:34:33
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:43:51
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:43:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:42
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:46
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:48
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:49
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:50
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:51
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:52
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:53
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:48:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:07
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:09
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:11
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 10:49:17
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:32:38
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:33:26
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:34:14
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:34:44
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:43:02
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:43:37
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:46:05
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:46:57
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:51:05
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:51:46
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:52:43
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:54:13
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:54:33
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 11:58:26
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:00:10
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:00:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:01:23
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:01:47
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:02:06
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:03:23
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:04:42
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:04:51
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:05:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:16:13
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:20:20
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:22:41
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:28:00
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:35:40
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:41:27
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:45:19
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:46:22
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:46:42
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 12:49:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:01:00
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:02:08
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:02:43
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:09:58
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:10:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:14:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:17:46
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:23:17
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:24:05
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:24:21
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:24:59
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:25:59
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:26:13
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:27:19
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:29:50
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:30:06
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:33:02
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:33:22
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:35:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:36:52
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:37:56
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:38:14
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 13:59:48
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:00:42
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:08
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:15
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:16
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:17
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:18
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:39:19
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:44:47
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:24
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:46
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:49
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:52
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:54
+404
+id = 7 ,is not exist
+C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
+13
+
+2016-01-15 14:45:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:57
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:45:59
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:02
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:04
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:06
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:08
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:10
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:11
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:14
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:15
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:17
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:19
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:20
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:22
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:23
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:46:25
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:49:50
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:49:51
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:49:54
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:49:57
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:49:59
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:50:00
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:50:01
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:50:02
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:50:03
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:53:29
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 14:59:35
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 15:00:10
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+
+2016-01-15 15:00:12
+404
+Page (/favicon.ico) not found
+C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+104
+

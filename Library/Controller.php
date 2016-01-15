@@ -34,6 +34,9 @@ abstract class Controller
         }
         $lang_icon = Lang::url_translation($lang, Config::get('default_id_error_204'));
 
+        $bread_crumbs = BreadCrumbs::getBreadcrumbs();
+
+
         ob_start();
         require VIEW_DIR . 'layout.phtml';
         return ob_get_clean();
@@ -54,6 +57,18 @@ abstract class Controller
         require VIEW_DIR . 'langIcon.phtml';
 
         return ob_get_clean();
+    }
+
+    public static function render_bread_crumbs(array $args = array())
+    {
+        if (count($args)) {
+            ob_start();
+            require VIEW_DIR . 'breadCrumbs.phtml';
+            $bc = ob_get_clean();
+        } else {
+            $bc = '';
+        }
+        return $bc;
     }
 
 

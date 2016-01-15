@@ -32,8 +32,8 @@ $url_alias = array(
       11 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles/article_2',
-            'alias_uk' => 'statti/stattia_2',
+            'alias_en' => 'articles/article_1/article_2',
+            'alias_uk' => 'statti/stattia_1/stattia_2',
       ),
 
       13 => array(

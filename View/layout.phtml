@@ -6,13 +6,13 @@
 </head>
 <body>
 <?= $main_menu?>
-<hr/>
-<pre>
-<?php //print_r(BreadCrumbs::getBreadcrumbs()); ?>
-</pre>
+
 <hr/>
 <?= $lang_icon; ?>
 <hr/>
+<?= $bread_crumbs; ?>
+<hr/>
+
 <p>Статический текст: <?= __t('testovii_tekst')?></p>
 <hr/>
 <?= Router::getId()?></br>

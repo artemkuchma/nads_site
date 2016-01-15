@@ -25,6 +25,7 @@ Config::set('default_id_error_404', 13);
 Config::set('default_id_error_403', 14);
 Config::set('default_id_error_204', 15);
 Config::set('default_id_error_500', 16);
+Config::set('bread_crumbs_last_element_view', 'yes');//текущий элемент в бредкрамбсов - показывать -'yes', не показывать - 'no'
 
 // DB Connect
 

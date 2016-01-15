@@ -3,6 +3,7 @@
 class Router
 {
     private static $uri;
+    private static $url_array;
     private static $controller;
     private static $action;
     private static $params = array();
@@ -25,6 +26,7 @@ class Router
             $uri_element = preg_replace("/[^a-zA-Z0-9]/", "_", $val);
             $uri_elements[] = $uri_element;
         }
+        self::$url_array = $uri_elements;
         return $uri_elements;
     }
 
@@ -141,6 +143,13 @@ class Router
     {
         return self::$id;
     }
+
+    public static function getUrlArray()
+    {
+        return self::$url_array;
+    }
+
+
 
     public static function parse($uri)
     {
