@@ -4,6 +4,13 @@
 class MenuController extends Controller
 {
     private static $main_menu_array;
+    private static $admin_menu_array;
+
+    public static function getAdminMenuArray()
+    {
+        return self::$admin_menu_array;
+    }
+
 
     public static function getMainMenuArray()
     {
@@ -14,6 +21,27 @@ class MenuController extends Controller
     {
         $menuModel = new MenuModel();
         $date = $menuModel->getMainMenu(Router::getLanguage());
+        $args = self::menuArray($date);
+        self::$main_menu_array = $args;
+
+        if (Session::hasUser('admin')) {
+            $menuModel = new MenuModel();
+            $date = $menuModel->getAdminMenu();
+            $args_admin = self::menuArray($date);
+            foreach ($args_admin as $k => $v) {
+                if ($v['alias_menu'] == 'admin') {
+                    unset($v['child']);
+                    $args[$k] = $v;
+                }
+            }
+
+        }
+
+        return $this->render_main_menu($args);
+    }
+
+    public function menuArray($date)
+    {
 
         //заменил ключи массива date на id страниц (id страниц из массивов не удалял)
         $d = array();
@@ -50,49 +78,48 @@ class MenuController extends Controller
             }
         }
         $args = $lev[$max_level - 1];
-         self::$main_menu_array = $args;
 
-/**
+
+        /**
         $l_1 = array();
         foreach ($d as $k => $v) {
-            if ($v['level'] == 1) {
-                $l_1[$k] = $v;
-            }
+        if ($v['level'] == 1) {
+        $l_1[$k] = $v;
+        }
         }
         $l_2 = array();
         foreach ($d as $k => $v) {
-            if ($v['level'] == 2) {
-                $l_2[$k] = $v;
-            }
+        if ($v['level'] == 2) {
+        $l_2[$k] = $v;
+        }
         }
         $l_3 = array();
         foreach ($d as $k => $v) {
-            if ($v['level'] == 3) {
-                $l_3[$k] = $v;
-            }
+        if ($v['level'] == 3) {
+        $l_3[$k] = $v;
+        }
         }
 
         foreach ($l_3 as $k => $v) {
-            if (isset($l_2[$v['id_parent_page']])) {
-                $l_2[$v['id_parent_page']]['child'][$k] = $v;
-            }
+        if (isset($l_2[$v['id_parent_page']])) {
+        $l_2[$v['id_parent_page']]['child'][$k] = $v;
+        }
         }
         foreach ($l_2 as $k => $v) {
-            if (isset($l_1[$v['id_parent_page']])) {
-                $l_1[$v['id_parent_page']]['child'][$k] = $v;
-            }
+        if (isset($l_1[$v['id_parent_page']])) {
+        $l_1[$v['id_parent_page']]['child'][$k] = $v;
         }
-
-**/
+        }
+         **/
 
         echo'<pre>';
-       // print_r(self::getMenuLevelAction($d));
+        // print_r(self::getMenuLevelAction($d));
         echo'</pre>';
         echo'<pre>';
-      // print_r($args);
+        // print_r($args);
         echo'</pre>';
 
-        return $this->render_main_menu($args);//render($args);
+        return $args; //$this->render_main_menu($args);//render($args);
 
     }
 
@@ -121,20 +148,39 @@ class MenuController extends Controller
         }
     }
 
-    public static function menu_recurs($array = array(),$main_teg_open,$main_teg_close,$teg_open, $teg_close){
+    public static function menu_recurs($array = array(), $main_teg_open, $main_teg_close, $teg_open, $teg_close)
+    {
         echo $main_teg_open;
-        $lang ='';
-        if(Router::getLanguage()!=Config::get('default_language')){
-            $lang = Router::getLanguage().'/';
+        $lang = '';
+        if (Router::getLanguage() != Config::get('default_language')) {
+            $lang = Router::getLanguage() . '/';
         }
-        foreach($array as $v){
-            echo $teg_open.'<a href="/'.$lang.$v['alias_main_menu'].'">'.$v['name'].'</a>'.$teg_close;
-            if(isset($v['child']) ){
-                self::menu_recurs($v['child'],$main_teg_open,$main_teg_close,$teg_open, $teg_close);
+        foreach ($array as $v) {
+            echo $teg_open . '<a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a>' . $teg_close;
+            if (isset($v['child'])) {
+                self::menu_recurs($v['child'], $main_teg_open, $main_teg_close, $teg_open, $teg_close);
 
             }
         }
         echo $main_teg_close;
+    }
+
+    public function adminMenuAction()
+    {
+        $menuModel = new MenuModel();
+        $date = $menuModel->getAdminMenu();
+        $args = self::menuArray($date);
+        $args[0] = array(
+            'id_page' => '',
+            'id_parent_page' => 0,
+            'status' => 1,
+            'name' => 'Вернуться на сайт',
+            'alias_menu' => '',
+            'level' => 1
+        );
+        self::$admin_menu_array = $args;
+        return $this->render_admin_menu($args);
+
     }
 
 

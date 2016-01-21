@@ -26,6 +26,9 @@ abstract class Controller
         $menu = new MenuController();
         $main_menu = $menu->mainMenuAction();
 
+        $login_logout = new SecurityController();
+        $login_logout_block = $login_logout->logAction();
+
 
         if (Router::getLanguage() == 'uk') {
             $lang = 'en';
@@ -50,6 +53,29 @@ abstract class Controller
 
         return ob_get_clean();
     }
+    protected function render_admin_menu(array $args = array())
+    {
+        ob_start();
+        require VIEW_DIR . 'Menu/adminMenu.phtml';
+
+        return ob_get_clean();
+    }
+
+    protected function render_admin(array $args = array())
+    {
+        extract($args);
+
+        ob_start();
+        require $this->file_path(); //$templateFile;
+        $content = ob_get_clean();
+
+        $menu = new MenuController();
+        $admin_menu = $menu->adminMenuAction();
+
+        ob_start();
+        require VIEW_DIR . 'adminLayout.phtml';
+        return ob_get_clean();
+    }
 
     public static function render_lang_icon($url_translation)
     {
@@ -69,6 +95,15 @@ abstract class Controller
             $bc = '';
         }
         return $bc;
+    }
+
+    public static function render_login_logout (array $args = array())
+    {
+        extract($args);
+        ob_start();
+        require VIEW_DIR . 'Security/log.phtml';
+        return ob_get_clean();
+
     }
 
 

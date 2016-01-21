@@ -1,5 +1,6 @@
 <?php
 require_once '../Library/init.php';
+Session::start();
 
 try{
     $request = new Request();

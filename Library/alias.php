@@ -70,4 +70,53 @@ $url_alias = array(
             'alias_en' => 'first_news',
             'alias_uk' => 'pervaya_novost',
       ),
+
+      17 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin',
+            'alias_uk' => 'admin',
+      ),
+
+      18 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/nastroiki_saita',
+            'alias_uk' => 'admin/nastroiki_saita',
+      ),
+
+      19 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/materiali',
+            'alias_uk' => 'admin/materiali',
+      ),
+
+      20 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/basic_pages',
+            'alias_uk' => 'admin/basic_pages',
+      ),
+
+      21 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/news',
+            'alias_uk' => 'admin/news',
+      ),
+
+      22 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/zurnal_oshibok',
+            'alias_uk' => 'admin/zurnal_oshibok',
+      ),
+
+      23 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/magazin',
+            'alias_uk' => 'admin/magazin',
+      ),
 );

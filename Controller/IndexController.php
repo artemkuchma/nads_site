@@ -5,7 +5,7 @@ class IndexController extends Controller {
 
     public function indexAction()
     {
-      // BreadCrumbs::getBreadcrumbs();
+
 
         //$this->rewrite_file_alias();
         $indexModel = new IndexModel();

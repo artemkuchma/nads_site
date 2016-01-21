@@ -7,9 +7,9 @@ class BreadCrumbs
     private function recursBreadCrumbsArray($menu_array, $val, $new_array)
     {
         foreach ($menu_array as $v) {
-            $alias = $v['alias_main_menu'];
+            $alias = $v['alias_menu'];
             if (Router::getLanguage() != Config::get('default_language')) {
-                $alias = Router::getLanguage() . '/' . $v['alias_main_menu'];
+                $alias = Router::getLanguage() . '/' . $v['alias_menu'];
             }
             if ($alias == $val) {
                 $new_array[] = array(

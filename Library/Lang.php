@@ -9,7 +9,7 @@ class Lang
     {
         $lang = Router::getLanguage();
         //print_r(self::$static_translation);
-        return isset(self::$static_translation[strtolower($key)][$lang])? self::$static_translation[strtolower($key)][$lang]:self::$static_translation[strtolower($key)][Config::get('default_language')];
+        return isset(self::$static_translation[strtolower($key)][$lang]) ? self::$static_translation[strtolower($key)][$lang] : self::$static_translation[strtolower($key)][Config::get('default_language')];
     }
 
     public static function getUrlTranslation()
@@ -28,8 +28,16 @@ class Lang
         require LIB_DIR . 'patterns.php';
         if (Router::getRout()) {
             $rout_pattern = $url_patterns[Router::getRout()]['pattern_' . $lang];
-            $rout_part = str_replace('/.*', '', $rout_pattern);
-            $url_arr[] = $rout_part;
+            if (strpos($rout_pattern, '/.*')) {
+                $rout_part = str_replace('/.*', '', $rout_pattern);
+                $url_arr[] = $rout_part;
+            }else{
+                $url_arr[] = $rout_pattern;
+                $url_translation = '/' . implode('/', $url_arr);
+                self::$url_translation = $url_translation;
+                return Controller::render_lang_icon($url_translation);
+
+            }
         }
         if (isset($url_alias[Router::getId()]['alias_' . $lang])) {
             $url_arr[] = $url_alias[Router::getId()]['alias_' . $lang];
@@ -38,18 +46,17 @@ class Lang
         }
         $url_translation = '/' . implode('/', $url_arr);
         self::$url_translation = $url_translation;
-        return Controller::render_lang_icon($url_translation);//$url_translation;
+        return Controller::render_lang_icon($url_translation); //$url_translation;
     }
 
     public static function load_static_translation()
     {
-        $path_static_translation = LANG_DIR. 'translation.php';
-        if($path_static_translation){
-           // include($path_static_translation);
+        $path_static_translation = LANG_DIR . 'translation.php';
+        if ($path_static_translation) {
+            // include($path_static_translation);
             self::$static_translation = include($path_static_translation);
-        }
-        else {
-            throw new Exception('Lang file not found: '.$path_static_translation );
+        } else {
+            throw new Exception('Lang file not found: ' . $path_static_translation);
         }
 
     }

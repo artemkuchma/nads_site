@@ -27,7 +27,31 @@ $url_patterns = array(
         'pattern_en' => 'cart/remove/.*',
         'action' => 'removeFromCart',
         'elements_before_alias' => 2
-    )
+    ),
+
+    'register' => array(
+        'pattern_uk' => 'registrachiya',
+        'pattern_en' => 'register',
+        'controller' => 'security',
+        'action' => 'register',
+        'elements_before_alias' => 1
+    ),
+
+    'login' => array(
+        'pattern_uk' => 'uviiti',
+        'pattern_en' => 'login',
+        'controller' => 'security',
+        'action' => 'login',
+        'elements_before_alias' => 1
+    ),
+    'logout' => array(
+        'pattern_uk' => 'vuhid',
+        'pattern_en' => 'logout',
+        'controller' => 'security',
+        'action' => 'logout',
+        'elements_before_alias' => 1
+    ),
+
     /**
      * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут
      * контроллеры и экшены из массивов с алиасами.

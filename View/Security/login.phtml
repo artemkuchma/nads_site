@@ -1,0 +1,6 @@
+<b><?= Session::getFlash(); ?></b>
+<form method="post">
+   <?= __t('username')?>: <input type="text" name="username" value="<?= $login->getUsername(); ?>"/> <br/><br/>
+    <?= __t('password')?>: <input type="password" name="password"/> <br/><br/>
+    <input type="submit" value="<?= __t('submit') ?>"/>
+</form>

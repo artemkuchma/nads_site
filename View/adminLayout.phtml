@@ -5,19 +5,12 @@
     <title><?=Config::get('site_name') ?></title>
 </head>
 <body>
-<?= $main_menu?>
 
 <hr/>
-<?= $lang_icon; ?>
-<hr/>
-<?= $bread_crumbs; ?>
+<?= $admin_menu ?>
 
 <hr/>
-<?= $login_logout_block; ?>
-<hr/>
 
-<p>Статический текст: <?= __t('testovii_tekst')?></p>
-<hr/>
 <?= Router::getId()?></br>
 <?= Router::getUri()?>
 <?=$content?>

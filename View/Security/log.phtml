@@ -1,0 +1,15 @@
+
+<p>
+    <a href="<?= $url_register?>"><?= __t('register') ?></a>
+</p>
+<p>
+    <?php
+    if(Session::has('user')): ?>
+        <a href="<?= $url_logout?>"><?= __t('logout') ?>  <?=Session::get('user')['user']; ?>
+        </a>
+    <?php else: ?>
+        <a href="<?= $url_login?>"><?= __t('login') ?></a>
+    <?php endif ?>
+
+
+</p>

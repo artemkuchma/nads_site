@@ -161,14 +161,14 @@ class Router
         $uri_elements = self::url_to_array($uri);
 
         if (count($uri_elements)) {
-            if (strtolower(current($uri_elements) != 'admin')) {
+            //if (strtolower(current($uri_elements) != 'admiin')) {
                 if (in_array(strtolower(current($uri_elements)), Config::get('languages'))) {
                     self::$language = strtolower(current($uri_elements));
                     array_shift($uri_elements);
                 }
-            } else {
-                array_shift($uri_elements);
-            }
+            //}else {
+              //  array_shift($uri_elements);
+            //}
             $url = implode('/', $uri_elements);
             self::find_alias($url);
 

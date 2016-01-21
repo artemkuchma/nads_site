@@ -1,0 +1,13 @@
+<h1><?= __t('register_new_user') ?></h1>
+
+<b><?= Session::getFlash(); ?></b>
+
+<br/>
+<form method="post">
+    <?= __t('username') ?>: <input type="text" name="username" value="<?=$registerForm->getUsername(); ?>"/> <br/><br/>
+    Email: <input type="email" name="email" value="<?=$registerForm->getEmail(); ?>"/> <br/><br/>
+    <p><?= __t('password_must_contain') ?></p>
+    <?= __t('password') ?>: <input type="password" name="password"/> <br/><br/>
+   <?= __t('confirm_password') ?>: <input type="password" name="passwordConfirm"/> <br/><br/>
+    <input type="submit" value="<?= __t('submit') ?>"/>
+</form>
