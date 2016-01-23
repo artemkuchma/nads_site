@@ -1,0 +1,30 @@
+<h1><?= $data_admin['name'] ?></h1>
+
+<table border="1">
+    <tr>
+
+        <td>Ключ</td>
+        <td>Украинский</td>
+        <td>Изменить укр.</td>
+        <td>Английский</td>
+        <td>Изменить англ.</td>
+    </tr>
+    <?php foreach($data_translation as $k => $v): ?>
+        <tr>
+
+            <td><?= $k ?></td>
+            <td><?= $v['en']?></td>
+            <td></td>
+            <td><?= $v['uk']?></td>
+            <td></td>
+        </tr>
+    <?php endforeach ?>
+</table>
+<p></p>
+<?php foreach ($data_pagination as $button) :
+    if ($button->isActive) : ?>
+        <a href = '/<?= $data_url ?>?page=<?=$button->page?>'><?=$button->text?></a>
+    <?php else : ?>
+        <span style="color:#555555"><?=$button->text?></span>
+    <?php endif;
+endforeach; ?>

@@ -5,9 +5,7 @@ class IndexController extends Controller {
 
     public function indexAction()
     {
-
-
-        //$this->rewrite_file_alias();
+        $this->rewrite_file_alias();
         $indexModel = new IndexModel();
         $data = $indexModel->getPage(Router::getId(), Router::getLanguage());
         $args = $data[0];
@@ -27,14 +25,17 @@ class IndexController extends Controller {
     public static  function errorAction(Exception $e)
     {
         $date = date('Y-m-d H:i:s') .PHP_EOL;
-        $date .= $e->getCode().PHP_EOL;
-        $date .= $e->getMessage().PHP_EOL;
-        $date .= $e->getFile().PHP_EOL;
-        $date .= $e->getLine().PHP_EOL;
-        $date .= ''.PHP_EOL;
+        $date .= '/./ '.$e->getCode().PHP_EOL;
+        $date .= '/./ '.$e->getMessage().PHP_EOL;
+        $date .= '/./ '.$e->getFile().PHP_EOL;
+        $date .= '/./ '.$e->getLine().PHP_EOL;
+        $date .= '///';
+
 
        self::rewrite_file(WEBROOT_DIR.'log.txt','a', $date);
     }
+
+
 
 
 }

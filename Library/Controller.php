@@ -12,8 +12,15 @@ abstract class Controller
             throw new Exception("{$templateFile} not found", 404);
         }
         return $templateFile;
-
     }
+/**
+    private function clipboard($path)
+    {
+        ob_start();
+        require $path;
+        return ob_get_clean();
+    }
+ * */
 
     protected function render(array $args = array())
     {
@@ -43,6 +50,8 @@ abstract class Controller
         ob_start();
         require VIEW_DIR . 'layout.phtml';
         return ob_get_clean();
+
+
 
     }
 
@@ -136,6 +145,16 @@ abstract class Controller
         $date .= ');';
 
         self::rewrite_file(LIB_DIR . 'alias.php', 'w', $date);
+    }
+
+    public function getPagination($itemsCount, $itemsPerPage, $currentPage)
+    {
+        if($currentPage<0){
+            throw new Exception('Bad request' , 400);
+        }
+        $pagination = new Pagination($currentPage, $itemsCount, $itemsPerPage);
+        $pagination_arr = $pagination->buttons;
+        return $pagination_arr;
     }
 
 

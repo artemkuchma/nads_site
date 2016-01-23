@@ -1,19 +1,65 @@
 <?php
 
 
-class IndexModel {
+class IndexModel
+{
     public function getPage($id, $lang)
     {
         $dbc = Connect::getConnection();
         $sql = "SELECT p.id, p.status, bp_{$lang}.title, bp_{$lang}.text FROM pages p JOIN basic_page bp JOIN basic_page_{$lang} bp_{$lang}
         WHERE p.id = :id AND p.id = bp.id_page AND  bp.id = bp_{$lang}.id_basic_page";
-        $placeholders = array('id'=> $id);
+        $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);
-        if(!$date || $date[0]['status'] == 0){
+        if (!$date || $date[0]['status'] == 0) {
             throw new Exception("id = $id ,is not exist", 404);
         }
         return $date;
 
+    }
+
+    public function getTotalList()
+    {
+        $dbc = Connect::getConnection();
+        $sql = "SELECT type_name FROM  type_of_materyals";
+        $placeholders = array();
+        $date = $dbc->getDate($sql, $placeholders);
+
+        foreach ($date as $v) {
+            if ($v['type_name'] != 'Admin') {
+                $sql_arr[] = "SELECT tom.type_name AS type_materials, p.id, p.status, {$v['type_name']}_en.alias AS alias_en, {$v['type_name']}_en.title AS title_en, {$v['type_name']}_uk.alias AS alias_uk, {$v['type_name']}_uk.title AS title_uk FROM type_of_materyals tom JOIN
+pages p JOIN `{$v['type_name']}` JOIN `{$v['type_name']}_en` JOIN `{$v['type_name']}_uk` ON (tom.id = p.id_mat_type AND p.id = {$v['type_name']}.id_page AND {$v['type_name']}.id =
+{$v['type_name']}_en.id_{$v['type_name']}) AND (tom.id = p.id_mat_type AND p.id = {$v['type_name']}.id_page AND {$v['type_name']}.id = {$v['type_name']}_uk.id_{$v['type_name']} )";
+            }
+        }
+        $sql = implode(' UNION ALL ', $sql_arr);
+        $placeholders = array();
+        $date = $dbc->getDate($sql, $placeholders);
+        return $date;
+    }
+
+    public function getCount($material_type = 'all')
+    {
+        $dbc = Connect::getConnection();
+        $sql = "SELECT type_name FROM  type_of_materyals";
+        $placeholders = array();
+        $date = $dbc->getDate($sql, $placeholders);
+        if ($material_type == 'all') {
+            foreach ($date as $v) {
+                if ($v['type_name'] != 'Admin') {
+                    $sql_arr[] = "SELECT count(*) AS itemsCount FROM {$v['type_name']}";
+                }
+            }
+            $sql = implode(' UNION ALL ', $sql_arr);
+        } else {
+            $sql = "SELECT count(*) AS itemsCount FROM $material_type";
+        }
+        $placeholders = array();
+        $date = $dbc->getDate($sql, $placeholders);
+        $date_sum = 0;
+        foreach ($date as $v) {
+            $date_sum += $v['itemsCount'];
+        }
+        return $date_sum;
     }
 
 }

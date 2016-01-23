@@ -87,7 +87,7 @@ $url_alias = array(
 
       19 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'totalList',
             'alias_en' => 'admin/materiali',
             'alias_uk' => 'admin/materiali',
       ),
@@ -108,7 +108,7 @@ $url_alias = array(
 
       22 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'logList',
             'alias_en' => 'admin/zurnal_oshibok',
             'alias_uk' => 'admin/zurnal_oshibok',
       ),
@@ -118,5 +118,33 @@ $url_alias = array(
             'action' => 'index',
             'alias_en' => 'admin/magazin',
             'alias_uk' => 'admin/magazin',
+      ),
+
+      24 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/add_basic_page',
+            'alias_uk' => 'admin/add_basic_page',
+      ),
+
+      25 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/add_new',
+            'alias_uk' => 'admin/add_new',
+      ),
+
+      26 => array(
+            'controller' => 'Admin',
+            'action' => 'cleanLogFile',
+            'alias_en' => 'admin/zurnal_oshibok/clean',
+            'alias_uk' => 'admin/zurnal_oshibok/clean',
+      ),
+
+      27 => array(
+            'controller' => 'Admin',
+            'action' => 'listStaticTranslation',
+            'alias_en' => 'admin/translations_static_text',
+            'alias_uk' => 'admin/translations_static_text',
       ),
 );

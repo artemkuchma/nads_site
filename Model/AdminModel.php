@@ -15,4 +15,18 @@ class AdminModel {
         return $date;
     }
 
+    public function getLogPage()
+    {
+        if(file_exists(WEBROOT_DIR.'log.txt')){
+        $data = file_get_contents(WEBROOT_DIR.'log.txt');
+            return $data;
+    }
+        return null;
+    }
+
+    public function getStaticTranslation()
+    {
+       return include(LANG_DIR.'translation.php');
+    }
+
 }

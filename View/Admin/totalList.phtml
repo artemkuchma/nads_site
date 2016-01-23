@@ -1,0 +1,54 @@
+<h1> <?= $data_admin['name'] ?></h1>
+
+<form  method="get">
+    <label for="totallist">Элементов на странице:</label>
+    <select name="materials_per_page" id="totallist">
+        <option selected value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="10000">All</option>
+    </select>
+    <input type="hidden" name="page" value="1"/>
+    <input type="submit" value="Применить"/>
+</form>
+
+
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>Тип материала</td>
+        <td>Опубликовано/</br>Не опубликовано</td>
+        <td>Укр.</br> материал</td>
+        <td>Редактировать</br> укр</td>
+        <td>Удалить</br> укр</td>
+        <td>Добавить</br> перевод</td>
+        <td>Англ.</br> материал</td>
+        <td>Редактировать</br> англ</td>
+        <td>Удалить </br>англ</td>
+    </tr>
+<?php  foreach($data_materials as $k => $v): ?>
+        <tr>
+            <td><?= $v['id'] ?></td>
+            <td><?= $v['type_materials'] ?></td>
+            <td><?= $v['status'] ?></td>
+            <td><?= $v['title_uk'] ?></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><?= $v['title_en'] ?></td>
+            <td></td>
+            <td></td>
+        </tr>
+<?php endforeach ?>
+</table>
+<p></p>
+<?php foreach ($data_pagination as $button) :
+    if ($button->isActive) : ?>
+        <a href = '/<?= $data_url ?>?materials_per_page=<?=Config::get('materials_per_page') ?>&page=<?=$button->page?>'><?=$button->text?></a>
+    <?php else : ?>
+        <span style="color:#555555"><?=$button->text?></span>
+    <?php endif;
+endforeach; ?>

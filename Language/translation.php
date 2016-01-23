@@ -89,4 +89,20 @@ return array(
         'en' => 'Register new user',
         'uk' => 'Реєстрація нового користувача'
     ),
+    'yes' => array(
+        'en' => 'Yes',
+        'uk' => 'Да'
+    ),
+    'no' => array(
+        'en' => 'No',
+        'uk' => 'Нет'
+    ),
+    'previous' => array(
+        'en' => 'Previous',
+        'uk' => 'Попередня'
+    ),
+    'next' => array(
+        'en' => 'Next',
+        'uk' => 'Наступна'
+    ),
 );

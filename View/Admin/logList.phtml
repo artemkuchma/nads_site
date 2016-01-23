@@ -1,0 +1,49 @@
+<h1><?= $data_admin['name'] ?></h1>
+
+<form  method="get">
+    <label for="loglist">Элементов на странице:</label>
+    <select name="log_per_page" id="loglist">
+        <option value="5">5</option>
+        <option selected value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="10000">All</option>
+    </select>
+    <input type="hidden" name="page" value="1"/>
+    <input type="submit" value="Применить"/>
+</form>
+
+<table border="1">
+    <tr>
+        <td>№</td>
+        <td>Дата</td>
+        <td>Код ошибки</td>
+        <td>Сообщение</td>
+        <td>Файл</td>
+        <td>Строка</td>
+    </tr>
+    <?php if($data_log):
+    foreach ($data_log as $k => $v): ?>
+        <tr>
+            <td><?= $k+1 ?></td>
+            <td><?= $v['0']?></td>
+            <td><?= $v['1']?></td>
+            <td><?= $v['2']?></td>
+            <td><?= $v['3']?></td>
+            <td><?= $v['4']?></td>
+        </tr>
+    <?php endforeach;
+    endif ?>
+</table>
+<p></p>
+<?php if($data_log):
+foreach ($data_pagination as $button) :
+    if ($button->isActive) : ?>
+        <a href='/<?= $data_url ?>?log_per_page=<?=Config::get('log_per_page') ?>&page=<?= $button->page ?>'><?=$button->text?></a>
+    <?php else : ?>
+        <span style="color:#555555"><?=$button->text?></span>
+    <?php endif;
+endforeach;
+    endif ?>
