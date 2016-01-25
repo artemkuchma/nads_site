@@ -13,14 +13,14 @@ abstract class Controller
         }
         return $templateFile;
     }
-/**
-    private function clipboard($path)
+
+    public static  function render_simple($path,$params1 = null,$params2 = null,$params3 = null,$params4 = null)
     {
         ob_start();
         require $path;
         return ob_get_clean();
     }
- * */
+
 
     protected function render(array $args = array())
     {
@@ -81,6 +81,7 @@ abstract class Controller
         $menu = new MenuController();
         $admin_menu = $menu->adminMenuAction();
 
+
         ob_start();
         require VIEW_DIR . 'adminLayout.phtml';
         return ob_get_clean();
@@ -112,7 +113,6 @@ abstract class Controller
         ob_start();
         require VIEW_DIR . 'Security/log.phtml';
         return ob_get_clean();
-
     }
 
 
@@ -134,6 +134,7 @@ abstract class Controller
     public static function rewrite_file_alias()
     {
         $aliasModel = new AliasModel();
+      //  Debugger::PrintR($aliasModel->getAliasDate());
         $date = '<?php' . PHP_EOL . '$url_alias = array(' . PHP_EOL;
         foreach ($aliasModel->getAliasDate() as $k => $v) {
             $date .= '' . PHP_EOL . '      ' . $k . ' => array(' . PHP_EOL;
@@ -155,6 +156,21 @@ abstract class Controller
         $pagination = new Pagination($currentPage, $itemsCount, $itemsPerPage);
         $pagination_arr = $pagination->buttons;
         return $pagination_arr;
+    }
+
+    public static function recurs_render_menu_in_form($array)
+    {
+
+        foreach($array as $k => $v){
+            $t ='';
+            for($i=1; $i<=$v['level']; $i++){
+            $t .='+';
+        }
+           echo '<option value = "'.$v['alias_menu'].'!'.$k. '" >'.$t.' '.$v['name'].'</option>';
+            if(isset($v['child'])){
+                self::recurs_render_menu_in_form($v['child']);
+            }
+        }
     }
 
 

@@ -62,4 +62,7 @@ pages p JOIN `{$v['type_name']}` JOIN `{$v['type_name']}_en` JOIN `{$v['type_nam
         return $date_sum;
     }
 
+
+
+
 }

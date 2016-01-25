@@ -4,6 +4,7 @@
 class AdminController extends Controller
 {
 
+
     public function indexAction()
     {
 
@@ -45,8 +46,17 @@ class AdminController extends Controller
             $currentPage = $request->get('page') ? (int)$request->get('page') : 1;
             $data_pagination = self::getPagination($items_count, $items_per_page, $currentPage);
 
-            $data_materials_page = array_chunk($data_materials, $items_per_page);
-            $data_materials_page = $data_materials_page[$currentPage - 1];
+
+            if ($items_count) {
+                $data_materials_page = array_chunk($data_materials, $items_per_page, true);
+                if (isset($data_materials_page[$currentPage - 1])) {
+                    $data_materials_page = $data_materials_page[$currentPage - 1];
+                }else{
+                    throw new Exception('Page ('.Router::getUri() .') not found', 404);
+                }
+            } else {
+                $data_materials_page = null;
+            }
 
             $data_url = explode('?', Router::getUri());
 
@@ -56,7 +66,7 @@ class AdminController extends Controller
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0]
             );
-            // Debugger::PrintR($args);
+
             return $this->render_admin($args);
         } else {
             throw new Exception('Access is forbidden', 403);
@@ -102,7 +112,7 @@ class AdminController extends Controller
 
             $args = array(
                 'data_admin' => $data_admin[0],
-                'data_log' => $data_log_page,
+                'data_materials' => $data_log_page,
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0]
             );
@@ -141,24 +151,82 @@ class AdminController extends Controller
             $currentPage = $request->get('page') ? (int)$request->get('page') : 1;
             $data_pagination = self::getPagination($items_count, $items_per_page, $currentPage);
 
-            $data_translation_page = array_chunk($data_translation, $items_per_page, true);
-            $data_translation_page = $data_translation_page[$currentPage - 1];
+            if ($items_count) {
+                $data_translation_page = array_chunk($data_translation, $items_per_page, true);
+                if (isset($data_translation_page[$currentPage - 1])) {
+                    $data_translation_page = $data_translation_page[$currentPage - 1];
+                }else{
+                    throw new Exception('Page ('.Router::getUri() .') not found', 404);
+                }
+            } else {
+                $data_translation_page = null;
+            }
 
             $data_url = explode('?', Router::getUri());
 
             $args = array(
                 'data_admin' => $data_admin[0],
-                'data_translation' => $data_translation_page,
+                'data_materials' => $data_translation_page,
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0]
             );
             return $this->render_admin($args);
 
-            //Debugger::PrintR($data);
-
-
         } else {
             throw new Exception('Access is forbidden', 403);
+
+        }
+
+    }
+
+    public function addBasicPageAction()
+    {
+        if (Session::hasUser('admin')) {
+            $adminModel = new AdminModel();
+            $data_admin = $adminModel->getAdminPage(Router::getId());
+
+           $request = new Request();
+            $addModel = new addModel($request);
+
+            $menuModel = new MenuModel();
+            $data = $menuModel->getMainMenu('uk');
+            $menuController = new MenuController();
+            $main_menu_array = $menuController->menuArray($data);
+
+           // Debugger::PrintR($main_menu_array);
+            if($request->isPost()){
+                if($addModel->isValid()){
+                    if($addModel->inMenu()){
+                        if($addModel->isMenuName()){
+
+                            $addModel->addBasicPage($addModel->getTitle(), $addModel->getMenuData(), $addModel->getPublication(),$addModel->getText());
+
+                        }else{
+                            //формируем алиас по пункту меню и соотв. название пункта меню не по заголовку
+                        }
+
+                    }else{
+                        //запрос на вставку без вставки в меню - пункт без меню
+                    }
+
+                }else{
+                    Session::setFlash('Поле "Заголовок" обязательно для заполнения');
+                }
+            }
+            $this->rewrite_file_alias();
+
+
+
+
+
+
+            $args = array(
+                'data_admin' => $data_admin[0],
+                'addModel' => $addModel,
+                'data_menu' => $main_menu_array
+            );
+
+            return $this->render_admin($args);
 
         }
 

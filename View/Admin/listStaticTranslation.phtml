@@ -1,5 +1,7 @@
 <h1><?= $data_admin['name'] ?></h1>
 
+<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','translation_per_page'); ?>
+
 <table border="1">
     <tr>
 
@@ -9,7 +11,7 @@
         <td>Английский</td>
         <td>Изменить англ.</td>
     </tr>
-    <?php foreach($data_translation as $k => $v): ?>
+    <?php foreach($data_materials as $k => $v): ?>
         <tr>
 
             <td><?= $k ?></td>
@@ -20,11 +22,4 @@
         </tr>
     <?php endforeach ?>
 </table>
-<p></p>
-<?php foreach ($data_pagination as $button) :
-    if ($button->isActive) : ?>
-        <a href = '/<?= $data_url ?>?page=<?=$button->page?>'><?=$button->text?></a>
-    <?php else : ?>
-        <span style="color:#555555"><?=$button->text?></span>
-    <?php endif;
-endforeach; ?>
+<?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml',$data_pagination,$data_url,$data_materials, 'translation_per_page'); ?>

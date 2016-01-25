@@ -323,4 +323,2334 @@
 /./ Page (/favicon.ico) not found
 /./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 /./ 104
+///2016-01-23 23:03:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:04:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:04:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:04:27
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:04:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:04:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:13:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:13:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:13:53
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:13:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:14:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:14:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-23 23:14:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:15:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:15:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:17:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:19:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:20:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:22:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:22:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:22:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:22:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:26:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:28:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:30:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:31:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:35:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:35:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:36:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:36:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:36:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:46:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:46:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:46:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:55:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:55:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:58:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 18:59:41
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:01:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:03:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:04:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:09:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:09:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:09:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:09:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:09:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:20:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:21:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:22:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:22:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:24:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:24:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:34:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:34:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:37:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:39:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:39:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:39:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:39:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:39:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:40:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:41:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:41:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:41:37
+/./ 404
+/./ Page (admin/materiali?log_per_page=10&page=2) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Controller\AdminController.php
+/./ 54
+///2016-01-24 19:41:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:41:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:42:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:42:08
+/./ 404
+/./ Page (admin/materiali?log_per_page=10&page=2) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Controller\AdminController.php
+/./ 54
+///2016-01-24 19:42:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:42:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:53:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:53:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:53:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:53:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:57:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:57:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:58:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 19:59:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:04:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:08:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:08:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:11:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:12:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:24
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:32
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:15:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:11
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:13
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:15
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:16
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:16:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:18
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:22
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:23
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:23
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:24
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:24
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_register%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E3%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:25
+/./ 404
+/./ Page (/en/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20variable:%20url_logout%20in%20%3Cb%3EC:/xampp/htdocs/php_academy/test6.ua/www/View/Security/log.phtml%3C/b%3E%20on%20line%20%3Cb%3E8%3C/b%3E%3Cbr%20/%3E) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:24:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:25:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:25:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:25:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:05
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:41
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:26:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:36:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:38:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:38:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:40:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:40:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:40:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:41:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:42:27
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:43:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:47:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:47:59
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:48:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:48:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:48:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:48:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:52:53
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:53:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:53:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:53:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:53:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:53:53
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:54:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-24 20:54:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:02:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:02:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:03:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:04:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:04:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:07:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:08:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:08:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:08:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:08:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:11:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:12:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 10:12:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 12:12:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 12:17:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 12:27:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:01:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:03:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:06:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:07:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:07:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:11:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:12:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:14:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:16:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:18:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:23:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:40:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:41:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:48:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:48:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:49:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:49:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:54:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 13:59:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:00:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:02:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:06:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:07:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:10:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:11:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:11:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:12:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:13:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:14:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:16:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:17:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:18:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:18:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:20:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:20:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:21:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:22:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 14:23:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:04:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:05:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:15:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:15:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:18:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:18:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:19:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:23:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:34:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:36:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 15:39:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:49:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:49:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:50:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:51:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:51:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 16:52:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:08:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:08:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:09:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:09:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:09:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:09:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:09:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:45:27
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 17:46:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:16:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:36:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:37:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:38:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:38:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:51:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:52:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:52:34
+/./ HY000
+/./ SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Connect.php
+/./ 35
+///2016-01-25 18:52:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:53:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:53:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:54:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:54:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:55:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:55:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:56:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:56:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:56:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:56:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:57:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 18:57:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:00:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:00:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:01:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:01:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:23:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:23:32
+/./ 42000
+/./ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''uk' (`id_page`,`title`, `text`, `alias`) VALUES ('10', 'Тестовая стр' at line 1
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 103
+///2016-01-25 19:23:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:23:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:23:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:24:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:24:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:27:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:27:46
+/./ 42S22
+/./ SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_page' in 'field list'
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 104
+///2016-01-25 19:27:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:27:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:27:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:28:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:28:05
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:29:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:29:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:57:20
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 19:57:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:08:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:08:21
+/./ 403
+/./ Access is forbidden
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Controller\AdminController.php
+/./ 18
+///2016-01-25 20:08:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:08:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:09:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:09:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:09:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:10:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:15:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:15:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:35:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:36:27
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:43:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 20:44:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:16:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:16:53
+/./ HY000
+/./ SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Connect.php
+/./ 35
+///2016-01-25 22:16:53
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:17:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:17:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:17:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:21:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:21:43
+/./ HY000
+/./ SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Connect.php
+/./ 35
+///2016-01-25 22:21:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:21:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:21:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:21:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:23:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:24:37
+/./ HY093
+/./ SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 95
+///2016-01-25 22:24:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:25:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:25:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:25:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:28:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:29:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:33:41
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:36:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:37:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:45:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:46:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:46:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:46:32
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:46:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:48:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:48:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:48:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:24
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:49:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:50:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:55:02
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:55:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 22:55:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:02:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:03:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:04:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:04:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:04:56
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:04:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:09
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:46
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:05:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:12
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:19
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:31
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:06:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:07:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:07:03
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:07:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:15:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:16:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:38:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:38:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:38:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:41:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:41:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:41:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:42:39
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:42:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:42:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:43:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:45:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:45:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:45:41
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:45:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:46:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:46:12
+/./ 404
+/./ Page (/test) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:46:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:46:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:48:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:48:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:48:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:49:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:49:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:49:40
+/./ 404
+/./ id = 59 ,is not exist
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
+/./ 14
+///2016-01-25 23:49:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:49:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:49:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:10
+/./ 404
+/./ id = 59 ,is not exist
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
+/./ 14
+///2016-01-25 23:50:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:33
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-25 23:50:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:27:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:27:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:28:34
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:28:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:28:53
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:28:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:29:13
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:29:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:29:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:29:46
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:29:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:30:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:30:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:30:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:31:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:31:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:34:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:35:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:35:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:35:08
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:35:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:42:43
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:42:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 104
+///2016-01-26 00:43:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:43:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:43:59
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:12
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:16
+/./ 404
+/./ Page (/statti/stattia_1/eshche_odna_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:25
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:37
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:44:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:47:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:47:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:47:50
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:47:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:16
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:35
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:42
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:48:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 00:50:20
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
+///2016-01-26 00:50:26
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
+///2016-01-26 00:50:26
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
+///2016-01-26 00:50:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
+///2016-01-26 00:50:47
+/./ 404
+/./ Page (/statti/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
+///2016-01-26 00:50:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 106
 ///

@@ -64,6 +64,20 @@ $url_alias = array(
             'alias_uk' => 'pomilka_500',
       ),
 
+      59 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'test',
+      ),
+
+      60 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test-7',
+      ),
+
       12 => array(
             'controller' => 'News',
             'action' => 'index',
@@ -122,7 +136,7 @@ $url_alias = array(
 
       24 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'addBasicPage',
             'alias_en' => 'admin/add_basic_page',
             'alias_uk' => 'admin/add_basic_page',
       ),

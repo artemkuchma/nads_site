@@ -29,4 +29,5 @@ class AdminModel {
        return include(LANG_DIR.'translation.php');
     }
 
+
 }

@@ -1,0 +1,37 @@
+<h1><?= $data_admin['name'] ?></h1>
+
+<p><?php
+    $request = new Request();
+    $addModel = new addModel($request);
+    echo 'title: '. $addModel->getTitle() . '</br>';
+    echo 'menu_data: '.$addModel->getMenuData(). '</br>';
+    echo 'menu_name: '.$addModel->getMenuName(). '</br>';
+    echo 'without_menu: '.$addModel->getWithoutMenu(). '</br>';
+    ?></p>
+
+<p><b><?= Session::getFlash() ?></b></p>
+
+<form method="post">
+    <label for="title_add_form_bp">Заголовок: </label>
+    <input type="text" required name="title" id="title_add_form_bp" value="<?= $addModel->getTitle(); ?>"/> <br/><br/>
+    <label for="text_add_form_bp">Текст страници: </label>
+     <textarea name="text" id="text_add_form_bp" cols="30" rows="10"><?=$addModel->getText(); ?></textarea><br/><br/>
+
+    <p>Если поставить галочку - без меню - документ не будет доступен в главном меню</p></br>
+    <label for="without_menu_add_form_bp">Без меню</label>
+     <input type="checkbox" id="without_menu_add_form_bp" name="without_menu"/> <br/><br/>
+
+    <p>Если указать название пункта меню, адрес (псевдоним) документа будет сформирован на основе этого названия
+        Если оставить поле пустым адрес (псевдоним) документа, а также название пункта меню будут сформированы на основе
+        заголовка</p></br>
+    <label for="menu_name_add_form_bp">Название пункта меню: </label>
+    <input type="text" id="menu_name_add_form_bp" name="menu_name" value="<?= $addModel->getMenuName(); ?>"/> <br/><br/>
+    <label for="menuselect_add_form_bp">Родительский пункт меню: </label>
+    <select name="menu" id="menuselect_add_form_bp">
+        <option value="">Главное меню</option>
+        <?php Controller::recurs_render_menu_in_form($data_menu) ?>
+    </select><br/><br/>
+    <label for="publication_add_form_bp">Опубликованно: </label>
+    <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>
+    <input type="submit" value="Сохранить"/>
+</form>

@@ -1,10 +1,10 @@
-<?php
-$url = $_SERVER['REQUEST_URI'];
-$url = explode('&', $url);
-foreach ($pagination as $button) :
-    if ($button->isActive) :?>
-        <a href='<?=$url[0]?>&<?=$url[1]?>&page=<?= $button->page ?>'><?=$button->text ?></a>
-    <?php else : ?>
-        <span style="color: #555555"><?=$button->text ?></span>
-    <?php endif;
-endforeach; ?>
+<p></p>
+<?php if($params3):
+    foreach ($params1 as $button) :
+        if ($button->isActive) : ?>
+            <a href='/<?= $params2 ?>?<?= $params4 ?>=<?=Config::get($params4) ?>&page=<?= $button->page ?>'><?=$button->text?></a>
+        <?php else : ?>
+            <span style="color:#555555"><?=$button->text?></span>
+        <?php endif;
+    endforeach;
+endif ?>

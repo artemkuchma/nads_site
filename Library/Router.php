@@ -99,6 +99,7 @@ class Router
                     }
                 }
             }
+
             if ($result != 'found') {
 
                 throw new Exception('Page (' . $_SERVER['REQUEST_URI'] . ') not found', 404);
