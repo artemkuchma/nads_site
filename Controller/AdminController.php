@@ -197,16 +197,15 @@ class AdminController extends Controller
             if($request->isPost()){
                 if($addModel->isValid()){
                     if($addModel->inMenu()){
-                        if($addModel->isMenuName()){
 
-                            $addModel->addBasicPage($addModel->getTitle(), $addModel->getMenuData(), $addModel->getPublication(),$addModel->getText());
 
-                        }else{
-                            //формируем алиас по пункту меню и соотв. название пункта меню не по заголовку
-                        }
+                            $addModel->addBasicPage();//($addModel->getTitle(), $addModel->getMenuData(), $addModel->getPublication(),$addModel->getText());
+
+
 
                     }else{
-                        //запрос на вставку без вставки в меню - пункт без меню
+                        $with_without_menu = 1;
+                        $addModel->addBasicPage($with_without_menu);
                     }
 
                 }else{
@@ -228,6 +227,8 @@ class AdminController extends Controller
 
             return $this->render_admin($args);
 
+        }else{
+            throw new Exception('Access  denied', 403);
         }
 
     }

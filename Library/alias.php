@@ -64,18 +64,39 @@ $url_alias = array(
             'alias_uk' => 'pomilka_500',
       ),
 
-      59 => array(
+      85 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'test',
+            'alias_uk' => 'statti/test',
       ),
 
-      60 => array(
+      88 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test-7',
+            'alias_uk' => 'statti/po',
+      ),
+
+      89 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/g',
+      ),
+
+      90 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/stattia_1/eshche_test_stranyca',
+      ),
+
+      91 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/ek',
       ),
 
       12 => array(

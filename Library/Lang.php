@@ -39,7 +39,7 @@ class Lang
 
             }
         }
-        if (isset($url_alias[Router::getId()]['alias_' . $lang])) {
+        if ($url_alias[Router::getId()]['alias_' . $lang]) {
             $url_arr[] = $url_alias[Router::getId()]['alias_' . $lang];
         } else {
             $url_arr[] = Router::get_alis_by_id($id_default_page, $lang);

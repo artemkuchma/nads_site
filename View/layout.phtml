@@ -19,9 +19,17 @@
 <hr/>
 
 <p>Статический текст: <?= __t('testovii_tekst')?></p>
+
 <hr/>
-<?= Router::getId()?></br>
-<?= Router::getUri()?>
+<?='id: '. Router::getId()?></br>
+<?='Url: '. Router::getUri()?></br>
+<?= 'action: '.Router::getAction()?></br>
+<?='controller: '. Router::getController()?></br>
+<?='lang: '. Router::getLanguage()?></br>
+<?='rout: '. Router::getRout()?></br>
+<?php'url_arr: '. Debugger::PrintR(Router::getUrlArray());  ?></br>
+
+
 <?=$content?>
 
 </body>

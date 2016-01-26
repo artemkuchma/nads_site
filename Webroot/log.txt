@@ -2653,4 +2653,959 @@
 /./ Page (/favicon.ico) not found
 /./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
 /./ 106
+///2016-01-26 15:59:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 16:00:03
+/./ 404
+/./ Page (/statti/testovaya_stranica) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 16:00:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 105
+///2016-01-26 17:38:13
+/./ 404
+/./ id = 60 ,is not exist
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\IndexModel.php
+/./ 14
+///2016-01-26 17:38:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:38:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:38:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:38:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:39:05
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:39:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:40:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:40:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:40:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:41:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:41:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:41:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:41:42
+/./ 404
+/./ Page (/statti/stattia_1/test-7) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:41:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:43:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:43:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:47:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:47:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:48:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:48:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:48:27
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 17:48:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:15:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:15:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:16:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:16:39
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:16:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:17:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:17:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:17:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:21:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:21:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:22:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:22:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:29:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:29:05
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:29:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:29:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:29:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:35:05
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:35:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:35:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:37:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:37:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:41:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:41:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:42:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:45:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:55:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:55:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:56:04
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:59:18
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:59:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:59:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 18:59:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:05:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:06:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:06:17
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:06:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:06:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:06:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:07:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:08:32
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:09:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:11:21
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:12:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:12:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:12:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:22:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:22:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:23:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:23:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:38:49
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:38:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:38:59
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:39:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:39:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 19:39:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:07:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:07:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:08:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:08:23
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:08:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:26:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:26:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:27:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 20:28:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:27:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:27:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:27:56
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 132
+///2016-01-26 21:27:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:29:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:29:22
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:29:33
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:29:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:44:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:44:31
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 134
+///2016-01-26 21:44:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:47:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:47:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:47:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:49:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:50:12
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:36
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 134
+///2016-01-26 21:52:36
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:45
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 21:52:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:00:53
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:01:09
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 134
+///2016-01-26 22:01:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:01:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:01:16
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:01:20
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:06:59
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:07:18
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 134
+///2016-01-26 22:07:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:08:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:08:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:08:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:12:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:12:56
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 133
+///2016-01-26 22:12:56
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:13:08
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:13:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:13:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:13:19
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:16:28
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:16:42
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 133
+///2016-01-26 22:16:42
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:17:01
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:17:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:17:07
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:21:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:22:14
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 133
+///2016-01-26 22:22:14
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:24:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:24:54
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:24:58
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:09
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:13
+/./ 404
+/./ Page (/statti/test) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:41
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:51
+/./ 404
+/./ Page (/statti/test) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:39:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:40:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:40:57
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:41:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:03
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:06
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:29
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:43:30
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:44:02
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 133
+///2016-01-26 22:44:02
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:45:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:45:43
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:45:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:50:31
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:50:46
+/./ 23000
+/./ SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_nadc`.`main_menu`, CONSTRAINT `main_menu_ibfk_1` FOREIGN KEY (`id_page`) REFERENCES `pages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Model\addModel.php
+/./ 133
+///2016-01-26 22:50:46
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:55:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:55:50
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:56:10
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:56:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:56:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:56:55
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:57:37
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:57:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:58:11
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:59:38
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:59:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:59:44
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:59:47
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 22:59:51
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:09:13
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:09:15
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:09:40
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:09:48
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:09:52
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:11:24
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:11:25
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
+///2016-01-26 23:12:00
+/./ 404
+/./ Page (/favicon.ico) not found
+/./ C:\xampp\htdocs\php_academy\test6.ua\www\Library\Router.php
+/./ 107
 ///

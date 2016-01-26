@@ -27,6 +27,7 @@ class Router
             $uri_elements[] = $uri_element;
         }
         self::$url_array = $uri_elements;
+        //Debugger::PrintR($uri_elements);
         return $uri_elements;
     }
 
@@ -88,6 +89,7 @@ class Router
         if ($url) {
             // $url_alias_ = 'url_alias_'.self::getLanguage();
             // print_r($$url_alias_) ;
+           // Debugger::PrintR($url_alias);
             $result = '';
             foreach ($url_alias as $key => $val) {
                 if (isset($val['alias_' . self::getLanguage()])) {

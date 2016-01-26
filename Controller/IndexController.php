@@ -5,7 +5,7 @@ class IndexController extends Controller {
 
     public function indexAction()
     {
-        //$this->rewrite_file_alias();
+        $this->rewrite_file_alias();
         $indexModel = new IndexModel();
         $data = $indexModel->getPage(Router::getId(), Router::getLanguage());
         $args = $data[0];
