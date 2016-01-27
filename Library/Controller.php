@@ -121,8 +121,9 @@ abstract class Controller
         header("Location: $url");
         die;
         // exit;
-
     }
+
+
 
     public static function rewrite_file($file_path, $mode, $date)
     {

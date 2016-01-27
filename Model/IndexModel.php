@@ -17,24 +17,32 @@ class IndexModel
 
     }
 
-    public function getTotalList()
+    public function getType_of_Materials()
     {
         $dbc = Connect::getConnection();
         $sql = "SELECT type_name FROM  type_of_materyals";
         $placeholders = array();
-        $date = $dbc->getDate($sql, $placeholders);
+        $data = $dbc->getDate($sql, $placeholders);
+        return $data;
 
-        foreach ($date as $v) {
+    }
+
+    public function getTotalList()
+    {
+        $data = $this->getType_of_Materials();
+
+        foreach ($data as $v) {
             if ($v['type_name'] != 'Admin') {
                 $sql_arr[] = "SELECT tom.type_name AS type_materials, p.id, p.status, {$v['type_name']}_en.alias AS alias_en, {$v['type_name']}_en.title AS title_en, {$v['type_name']}_uk.alias AS alias_uk, {$v['type_name']}_uk.title AS title_uk FROM type_of_materyals tom JOIN
 pages p JOIN `{$v['type_name']}` JOIN `{$v['type_name']}_en` JOIN `{$v['type_name']}_uk` ON (tom.id = p.id_mat_type AND p.id = {$v['type_name']}.id_page AND {$v['type_name']}.id =
 {$v['type_name']}_en.id_{$v['type_name']}) AND (tom.id = p.id_mat_type AND p.id = {$v['type_name']}.id_page AND {$v['type_name']}.id = {$v['type_name']}_uk.id_{$v['type_name']} )";
             }
         }
+        $dbc = Connect::getConnection();
         $sql = implode(' UNION ALL ', $sql_arr);
         $placeholders = array();
-        $date = $dbc->getDate($sql, $placeholders);
-        return $date;
+        $data = $dbc->getDate($sql, $placeholders);
+        return $data;
     }
 
     public function getCount($material_type = 'all')

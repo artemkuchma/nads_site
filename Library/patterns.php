@@ -51,6 +51,13 @@ $url_patterns = array(
         'action' => 'logout',
         'elements_before_alias' => 1
     ),
+    'delete' => array(
+        'pattern_uk' => 'admin/delete/.*',
+        'pattern_en' => 'admin/delete/.*',
+        'controller' => 'admin',
+        'action' => 'delete',
+        'elements_before_alias' => 2
+    ),
 
     /**
      * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут

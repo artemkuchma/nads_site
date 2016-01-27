@@ -6,14 +6,14 @@ class addModel
 
     private $title;
     private $text;
-   // private $new_alias;
-    //private $translit;
-    //private $id_parent;
+    private $new_alias;
+    private $translit;
+    private $id_parent;
     private $menu_name;
     private $menu_data;
     private $without_menu;
     private $publication;
-    //private $title_or_menu_name;
+    private $title_or_menu_name;
 
     public function __construct(Request $request)
     {
@@ -23,11 +23,11 @@ class addModel
         $this->menu_data = $request->post('menu');
         $this->without_menu = $request->post('without_menu');
         $this->publication = $request->post('publication');
-       // $this ->title_or_menu_name = $this->menu_name ? $this->menu_name : $this->title;
-       // $alias_data = $this->createAlias($this->title_or_menu_name, $this->menu_data);
-       // $this->new_alias = $alias_data['new_alias'];
-       // $this->translit = $alias_data['translit'];
-       // $this->id_parent = $alias_data['id_parent'];
+        $this->title_or_menu_name = $this->menu_name ? $this->menu_name : $this->title;
+        $alias_data = $this->createAlias($this->title_or_menu_name, $this->menu_data);
+        $this->new_alias = $alias_data['new_alias'];
+        $this->translit = $alias_data['translit'];
+        $this->id_parent = $alias_data['id_parent'];
 
 
     }
@@ -72,27 +72,24 @@ class addModel
         );
         return $alias_data;
     }
-/**
+
     public function isAliasExist()
     {
-        $new_alias = $this->
         $dbc = Connect::getConnection();
-        $sql = 'SELECT * FROM users WHERE username = :username';
-        //$date = $dbc->getPDO()->query($sql);
-        //$d = $date->fetch(PDO::FETCH_ASSOC);
         $placeholders = array(
-            'username'=> $this->username);
+            'new_alias' => $this->new_alias
+        );
+        $lang = Config::get('default_language');
+        $sql = "SELECT * FROM `basic_page_{$lang}` WHERE alias= :new_alias";
         $date = $dbc->getDate($sql, $placeholders);
 
-        return empty($date)? true : false;
+        return empty($date) ? true : false;
     }
-**/
 
-    public function addBasicPage($with_without_menu = null) //($title, $menu_data, $publication, $text = null, $menu_name = null)
+
+    public function addBasicPage($with_without_menu = null)
     {
-        $title_or_menu_name = $this->menu_name ? $this->menu_name : $this->title;
 
-        $alias_data = $this->createAlias($title_or_menu_name, $this->menu_data);
         $publish = $this->publication ? 1 : 0;
 
         $placeholders = array(
@@ -118,18 +115,15 @@ class addModel
         $sth->execute($placeholders);
 
 
-
         if (!isset($with_without_menu)) {
 
             $placeholders = array(
                 'id_new_page' => $id_new_page,
-                'id_parent' => $alias_data['id_parent']//$this->id_parent //
+                'id_parent' => $this->id_parent
             );
             $sql = "INSERT INTO `main_menu`(`id_page`, `id_parent_page`, `status`) VALUES (:id_new_page,:id_parent,1)";
             $sth = $dbc->getPDO()->prepare($sql);
             $sth->execute($placeholders);
-
-
 
 
             $sql = "SELECT MAX(id) AS max_id FROM main_menu";
@@ -139,8 +133,8 @@ class addModel
 
             $placeholders = array(
                 'id_new_menu' => $id_new_menu,
-                'title' =>$title_or_menu_name, //$this->title_or_menu_name,
-                'alias' => $alias_data['new_alias']//$this->new_alias//
+                'title' => $this->title_or_menu_name,
+                'alias' => $this->new_alias
             );
             $lang = Config::get('default_language');
 
@@ -154,14 +148,13 @@ class addModel
         $date = $dbc->getDate($sql, $placeholders);
         $id_new_page = $date[0]['max_id'];
 
-        
 
         $placeholders = array(
             'id_new_page' => $id_new_page,
 
             'title' => $this->title,
             'text' => $this->text,
-            'alias' =>$alias_data['new_alias']// $this->new_alias//
+            'alias' => $this->new_alias
         );
         $lang = Config::get('default_language');
 
@@ -180,8 +173,6 @@ class addModel
             }
         }
 
-
-        //$date = $dbc->getDate($sql, $placeholders);
 
     }
 
@@ -239,7 +230,6 @@ class addModel
     {
         return $this->translit;
     }
-
 
 
 }

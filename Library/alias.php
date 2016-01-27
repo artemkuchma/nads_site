@@ -64,39 +64,11 @@ $url_alias = array(
             'alias_uk' => 'pomilka_500',
       ),
 
-      85 => array(
+      101 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test',
-      ),
-
-      88 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/po',
-      ),
-
-      89 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/g',
-      ),
-
-      90 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/stattia_1/eshche_test_stranyca',
-      ),
-
-      91 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/ek',
+            'alias_uk' => 'statti/testovaya_stranyca/test/kraynyaya_stranyca',
       ),
 
       12 => array(
@@ -118,13 +90,6 @@ $url_alias = array(
             'action' => 'index',
             'alias_en' => 'admin/nastroiki_saita',
             'alias_uk' => 'admin/nastroiki_saita',
-      ),
-
-      19 => array(
-            'controller' => 'Admin',
-            'action' => 'totalList',
-            'alias_en' => 'admin/materiali',
-            'alias_uk' => 'admin/materiali',
       ),
 
       20 => array(
@@ -181,5 +146,12 @@ $url_alias = array(
             'action' => 'listStaticTranslation',
             'alias_en' => 'admin/translations_static_text',
             'alias_uk' => 'admin/translations_static_text',
+      ),
+
+      94 => array(
+            'controller' => 'Admin',
+            'action' => 'totalList',
+            'alias_en' => 'admin/materials',
+            'alias_uk' => 'admin/materials',
       ),
 );

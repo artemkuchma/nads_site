@@ -2,6 +2,12 @@
 
 <?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','materials_per_page'); ?>
 
+<?php foreach($type_of_materials as $v):
+    if($v != 'admin'):?>
+        <a  href="/admin/add_<?= $v ?>">Добавить <?= $v ?></a>
+<?php endif ?>
+<?php endforeach ?>
+
 
 <table border="1">
     <tr>
@@ -10,11 +16,11 @@
         <td>Опубликовано/</br>Не опубликовано</td>
         <td>Укр.</br> материал</td>
         <td>Редактировать</br> укр</td>
-        <td>Удалить</br> укр</td>
+
         <td>Добавить</br> перевод</td>
         <td>Англ.</br> материал</td>
         <td>Редактировать</br> англ</td>
-        <td>Удалить </br>англ</td>
+        <td>Удалить </br>материал</td>
     </tr>
 <?php  foreach($data_materials as $k => $v): ?>
         <tr>
@@ -24,10 +30,9 @@
             <td><?= $v['title_uk'] ?></td>
             <td></td>
             <td></td>
-            <td></td>
             <td><?= $v['title_en'] ?></td>
             <td></td>
-            <td></td>
+            <td><a href="/admin/delete/<?= $v['alias_uk'] ?>">Удалить материал</a></td>
         </tr>
 <?php endforeach ?>
 </table>
