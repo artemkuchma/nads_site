@@ -1,7 +1,7 @@
 <?php
 
 
-class addModel
+class addEditModel
 {
 
     private $title;
@@ -73,14 +73,28 @@ class addModel
         return $alias_data;
     }
 
-    public function isAliasExist()
+    public function isAliasExist($id = null)
     {
         $dbc = Connect::getConnection();
         $placeholders = array(
             'new_alias' => $this->new_alias
         );
         $lang = Config::get('default_language');
-        $sql = "SELECT * FROM `basic_page_{$lang}` WHERE alias= :new_alias";
+        if (!$id) {
+            $placeholders = array(
+                'new_alias' => $this->new_alias
+            );
+
+            $sql = "SELECT * FROM `basic_page_{$lang}` WHERE alias= :new_alias";
+        }else{
+            $placeholders = array(
+                'new_alias' => $this->new_alias,
+                'id' => $id
+            );
+            $sql ="SELECT * FROM `basic_page_uk` WHERE alias= :new_alias AND  id_basic_page !=
+             (SELECT bp_uk.id_basic_page FROM basic_page_uk bp_uk JOIN basic_page bp
+             ON bp.id_page = :id AND bp.id = bp_uk.id_basic_page)";
+        }
         $date = $dbc->getDate($sql, $placeholders);
 
         return empty($date) ? true : false;
@@ -151,7 +165,6 @@ class addModel
 
         $placeholders = array(
             'id_new_page' => $id_new_page,
-
             'title' => $this->title,
             'text' => $this->text,
             'alias' => $this->new_alias
@@ -174,6 +187,113 @@ class addModel
         }
 
 
+    }
+
+    public function editBasicPage($id)
+    {
+        $lang = Router::getLanguage();
+        $placeholders = array(
+            'id' => $id
+        );
+        $dbc = Connect::getConnection();
+        $sql = "SELECT bp_{$lang}.id_basic_page AS id FROM  basic_page_{$lang} bp_{$lang} JOIN basic_page bp ON bp.id = bp_{$lang}.id_basic_page
+        AND bp.id_page = :id";
+        $date = $dbc->getDate($sql, $placeholders);
+        $id_basic_page = $date[0]['id'];
+
+
+        $placeholders = array(
+            'title' => $this->title,
+            'text' => $this->text,
+            'alias' => $this->new_alias,
+            'id_basic_page'=> $id_basic_page
+        );
+        $sql = "UPDATE `basic_page_{$lang}` SET `title`= :title,`text`= :text,`alias`= :alias WHERE id_basic_page = :id_basic_page ";
+
+        $sth = $dbc->getPDO()->prepare($sql);
+        $sth->execute($placeholders);
+
+        $publish = $this->publication ? 1 : 0;
+        $placeholders = array(
+            'id' => $id,
+            'publish' => $publish
+        );
+        $sql ="UPDATE `pages` SET `status`= :publish WHERE id = :id";
+        $sth = $dbc->getPDO()->prepare($sql);
+        $sth->execute($placeholders);
+
+        $this->edit_menu($id);
+
+
+    }
+
+    private function recurs_update_menu($dbc, $data,$placeholders)
+    {
+        $lang = Router::getLanguage();
+
+        if (count($data)) {
+            foreach ($data as $v) {
+                $id_t = $v['id_page'];
+
+                $sql = "SELECT `alias_menu` FROM main_menu_{$lang} WHERE id_main_menu =
+                (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = {$id_t}) )";
+                $data = $dbc->getDate($sql, $placeholders);
+                $parent_alias = $data[0]['alias_menu'];
+
+                $sql = "SELECT mm_{$lang}.alias_menu FROM main_menu_{$lang} mm_{$lang} JOIN main_menu mm ON mm_{$lang}.id_main_menu = mm.id AND mm.id_page = {$id_t}";
+                $data = $dbc->getDate($sql, $placeholders);
+                $old_alias = $data[0]['alias_menu'];
+                $alias_arr = explode('/', $old_alias);
+                $last_element = array_pop($alias_arr);
+                $alias_arr = array($parent_alias, $last_element);
+                $new_alias =implode('/',$alias_arr);
+        echo $new_alias;
+
+
+
+                $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = {$id_t}";
+                $data = $dbc->getDate($sql, $placeholders);
+                Debugger::PrintR($data);
+                echo $id_t.PHP_EOL;
+                echo $lang;
+                $placeholders = array();
+
+                $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.alias_menu = ".'"'.$new_alias.'"'."
+                WHERE  mm_{$lang}.id_main_menu = mm.id AND mm.id_page = {$id_t}";
+                $sth = $dbc->getPDO()->prepare($sql);
+                $sth->execute($placeholders);
+
+                $this->recurs_update_menu($dbc,$data,$placeholders);
+            }
+        }
+
+    }
+
+    private function edit_menu($id_page)
+    {
+        $placeholders = array(
+            'id' => $id_page
+        );
+        $dbc = Connect::getConnection();
+        $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = :id";
+        $data = $dbc->getDate($sql, $placeholders);
+        // Debugger::PrintR($date);
+
+        $lang = Router::getLanguage();
+        $placeholders = array(
+            'id' => $id_page,
+            'title' => $this->title_or_menu_name,
+            'alias' => $this->new_alias,
+        );
+
+        $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.name = :title, mm_{$lang}.alias_menu = :alias
+         WHERE mm_{$lang}.id_main_menu = mm.id AND mm.id_page = :id";
+        $sth = $dbc->getPDO()->prepare($sql);
+        $sth->execute($placeholders);
+
+        $placeholders = array();
+
+        $this->recurs_update_menu($dbc, $data,$placeholders);
     }
 
     public function getAlias()

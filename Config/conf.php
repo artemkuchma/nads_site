@@ -27,6 +27,7 @@ Config::set('default_id_error_404', 13);
 Config::set('default_id_error_403', 14);
 Config::set('default_id_error_204', 15);
 Config::set('default_id_error_500', 16);
+Config::set('not_publish', 136);
 Config::set('bread_crumbs_last_element_view', 'yes');//текущий элемент в бредкрамбсов - показывать -'yes', не показывать - 'no'
 Config::set('materials_per_page',$request->get('materials_per_page') ? $request->get('materials_per_page'):10 );
 Config::set('translation_per_page',$request->get('translation_per_page') ? $request->get('translation_per_page'):10 );

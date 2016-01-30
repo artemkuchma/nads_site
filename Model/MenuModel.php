@@ -22,5 +22,19 @@ mm_{$lang}.id_main_menu";
         return $date;
 
     }
+    public function getMenuDatePage($id_page)
+    {
+        $lang = Router::getLanguage();
+        $dbc = Connect::getConnection();
+        $placeholders = array(
+            'id_page'=>$id_page
+        );
+        $sql = "SELECT mm.id as id_menu_item, mm.id_parent_page, mm_{$lang}.name AS name_menu_item, mm_{$lang}.alias_menu, mm.status
+         FROM main_menu mm JOIN main_menu_{$lang} mm_{$lang} ON mm.id_page = :id_page AND mm.id = mm_{$lang}.id_main_menu";
+        $date = $dbc->getDate($sql, $placeholders);
+        return $date;
+
+
+    }
 
 }

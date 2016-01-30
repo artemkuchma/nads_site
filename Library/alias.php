@@ -64,11 +64,60 @@ $url_alias = array(
             'alias_uk' => 'pomilka_500',
       ),
 
-      101 => array(
+      136 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'unpublished_page',
+            'alias_uk' => 'storinka_ne_opublikovana',
+      ),
+
+      157 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/testovaya_stranyca/test/kraynyaya_stranyca',
+            'alias_uk' => 'statti/test1111',
+      ),
+
+      158 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2',
+      ),
+
+      159 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2/test3',
+      ),
+
+      160 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2/test3/test4',
+      ),
+
+      161 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2/test3/test5',
+      ),
+
+      162 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2/test3/test4/test6',
+      ),
+
+      163 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/test1/test2/test3/test7',
       ),
 
       12 => array(

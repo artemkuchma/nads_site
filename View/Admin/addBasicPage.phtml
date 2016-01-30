@@ -1,13 +1,6 @@
 <h1><?= $data_admin['name'] ?></h1>
 
-<p><?php
-    $request = new Request();
-    $addModel = new addModel($request);
-    echo 'title: '. $addModel->getTitle() . '</br>';
-    echo 'menu_data: '.$addModel->getMenuData(). '</br>';
-    echo 'menu_name: '.$addModel->getMenuName(). '</br>';
-    echo 'without_menu: '.$addModel->getWithoutMenu(). '</br>';
-    ?></p>
+
 
 <p><b><?= Session::getFlash() ?></b></p>
 
@@ -33,5 +26,6 @@
     </select><br/><br/>
     <label for="publication_add_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>
+    <input type="hidden" name="redirect" value="/admin/materials">
     <input type="submit" value="Сохранить"/>
 </form>

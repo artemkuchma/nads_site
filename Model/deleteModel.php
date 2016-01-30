@@ -1,7 +1,8 @@
 <?php
 
 
-class deleteModel {
+class deleteModel
+{
 
     private $id;
 
@@ -11,22 +12,45 @@ class deleteModel {
 
     }
 
-    private function change_id_parents($set_value_parents_id)
+    private function recurs_delete($dbc, $data,$placeholders)
+    {
+        if (count($data)) {
+            foreach ($data as $v) {
+                $id_t = $v['id_page'];
+
+                $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = {$id_t}";
+                $data = $dbc->getDate($sql, $placeholders);
+
+                $sql = "DELETE FROM `main_menu` WHERE id_page = {$id_t}";
+                $sth = $dbc->getPDO()->prepare($sql);
+                $sth->execute($placeholders);
+
+                $this->recurs_delete($dbc,$data,$placeholders);
+            }
+        }
+
+    }
+
+    private function delete_from_menu()
     {
         $placeholders = array(
             'id' => $this->id,
-            'set_value_parents_id'=> $set_value_parents_id
         );
         $dbc = Connect::getConnection();
-        $sql = "UPDATE `main_menu` SET `id_parent_page`=:set_value_parents_id WHERE id_parent_page = :id";
+        $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = :id";
+        $data = $dbc->getDate($sql, $placeholders);
+        // Debugger::PrintR($date);
+
+        $sql = "DELETE FROM `main_menu` WHERE id_page = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
+        $this->recurs_delete($dbc, $data,$placeholders);
     }
 
     public function delete()
     {
-        $this->change_id_parents(0);
+        $this->delete_from_menu();
 
         $placeholders = array(
             'id' => $this->id,
@@ -35,7 +59,6 @@ class deleteModel {
         $sql = "DELETE FROM `pages` WHERE id = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
-
     }
 
 }

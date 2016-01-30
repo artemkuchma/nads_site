@@ -159,17 +159,20 @@ abstract class Controller
         return $pagination_arr;
     }
 
-    public static function recurs_render_menu_in_form($array)
+    public static function recurs_render_menu_in_form($array, $data_menu_item)
     {
 
         foreach($array as $k => $v){
             $t ='';
             for($i=1; $i<=$v['level']; $i++){
             $t .='+';
-        }
-           echo '<option value = "'.$v['alias_menu'].'!'.$k. '" >'.$t.' '.$v['name'].'</option>';
+        }  $selected = '';
+            if($k == $data_menu_item[0]['id_parent_page']){
+                $selected = 'selected';
+            }
+           echo '<option '.$selected.' value = "'.$v['alias_menu'].'!'.$k. '" >'.$t.' '.$v['name'].'</option>';
             if(isset($v['child'])){
-                self::recurs_render_menu_in_form($v['child']);
+                self::recurs_render_menu_in_form($v['child'],$data_menu_item);
             }
         }
     }

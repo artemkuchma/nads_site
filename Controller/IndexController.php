@@ -8,6 +8,14 @@ class IndexController extends Controller {
         //$this->rewrite_file_alias();
         $indexModel = new IndexModel();
         $data = $indexModel->getPage(Router::getId(), Router::getLanguage());
+        if (!$data) {
+            throw new Exception(" Page is not exist", 404);
+
+        }
+        elseif($data[0]['status'] == 0){
+
+            throw new Exception(" Page not publish", 2);
+        }
         $args = $data[0];
 
 

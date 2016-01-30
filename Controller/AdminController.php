@@ -4,7 +4,6 @@
 class AdminController extends Controller
 {
 
-
     public function indexAction()
     {
 
@@ -187,11 +186,12 @@ class AdminController extends Controller
     public function addBasicPageAction()
     {
         if (Session::hasUser('admin')) {
+
             $adminModel = new AdminModel();
             $data_admin = $adminModel->getAdminPage(Router::getId());
 
             $request = new Request();
-            $addModel = new addModel($request);
+            $addModel = new AddEditModel($request);
 
             $menuModel = new MenuModel();
             $data = $menuModel->getMainMenu('uk');
@@ -217,12 +217,12 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
-
             $args = array(
                 'data_admin' => $data_admin[0],
                 'addModel' => $addModel,
                 'data_menu' => $main_menu_array
             );
+
 
             return $this->render_admin($args);
 
@@ -230,55 +230,71 @@ class AdminController extends Controller
             throw new Exception('Access  denied', 403);
         }
     }
-/**
-    private function find_id_in_menu($id, $menu_array)
-    {
-                if (isset($menu_array[$id])) {
-                  return   $t[]= $menu_array[$id];
-                }
-                else  {
-                    foreach($menu_array as $v){
-                        if(isset($v['child'])){
-                         return   $this->find_id_in_menu($id, $v['child']);
-                        }
-                    }
-                }
-        return null;
-    }
-
-**/
 
 
     public function deleteAction()
     {
         if (Session::hasUser('admin')) {
-            /**
-            $menModel = new MenuModel();
+
+            $deleteModel = new DeleteModel(Router::getId());
+            $deleteModel->delete();
+
+            $this->rewrite_file_alias();
+
+            $this->redirect('/' . Router::get_alis_by_id(94, 'uk'));
+
+        } else {
+            throw new Exception('Access  denied', 403);
+        }
+    }
+
+    public function editBasicPageAction()
+    {
+        if (Session::hasUser('admin')) {
+
+            $indexModel = new IndexModel();
+            $data_page = $indexModel->getPage(Router::getId(), Router::getLanguage());
 
 
+
+            $menuModel = new MenuModel();
+            $data = $menuModel->getMainMenu('uk');
             $menuController = new MenuController();
-            $menu_array = $menuController->menuArray($menModel->getMainMenu(Config::get('default_language')));
-            //  $id_array = array();
-            $id_delete = Router::getId();
-            $id_array = $this->find_id_in_menu($id_delete, $menu_array);
+            $main_menu_array = $menuController->menuArray($data);
+            $data_menu_item = $menuModel->getMenuDatePage($data_page[0]['id']);
+           // Debugger::PrintR($main_menu_array);
 
-            Debugger::PrintR($id_array);
-            $id_child_arr =array();
 
-            if($id_array){
-                foreach($id_array[$id_delete]['child'] as $k => $v){
-                    $id_child_arr[]= $k;
+            $request = new Request();
+            $editModel = new AddEditModel($request);
+            if ($request->isPost()) {
+                if ($editModel->isValid()) {
+                    if ($editModel->isAliasExist($data_page[0]['id'])) {
+                        if ($editModel->inMenu()) {
+
+                            $editModel->editBasicPage($data_page[0]['id']);
+
+                        } else {
+                            $with_without_menu = 1;
+                         //   $editModel->addBasicPage($with_without_menu);
+                        }
+                    } else {
+                        Session::setFlash('Документ с таким псевдонимом уже существует!');
+                    }
+                } else {
+                    Session::setFlash('Поле "Заголовок" обязательно для заполнения');
                 }
             }
-**/
+            $this->rewrite_file_alias();
 
-            $deleteModel = new deleteModel(Router::getId());
-             $deleteModel->delete();
+            $args = array(
+                'data_page' => $data_page,
+                'data_menu' => $main_menu_array,
+                'edit_model' => $editModel,
+                'data_menu_item' => $data_menu_item
+            );
 
-              $this->rewrite_file_alias();
-
-            $this->redirect('/'.Router::get_alis_by_id(94, 'uk'));
-
+            return $this->render_admin($args);
         } else {
             throw new Exception('Access  denied', 403);
         }

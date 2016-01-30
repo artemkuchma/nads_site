@@ -17,6 +17,9 @@ try{
     if($e->getCode()== 403){
         $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_403'), $lang));
     }
+    elseif($e->getCode() == 2){
+        $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('not_publish'), $lang));
+    }
     else{
     $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_404'), $lang));
     }

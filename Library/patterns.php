@@ -58,6 +58,20 @@ $url_patterns = array(
         'action' => 'delete',
         'elements_before_alias' => 2
     ),
+    'edit_basic_page' => array(
+        'pattern_uk' => 'admin/edit/basic_page/.*',
+        'pattern_en' => 'admin/edit/basic_page/.*',
+        'controller' => 'admin',
+        'action' => 'editBasicPage',
+        'elements_before_alias' => 3
+    ),
+    'edit_news' => array(
+        'pattern_uk' => 'admin/edit/news/.*',
+        'pattern_en' => 'admin/edit/news/.*',
+        'controller' => 'admin',
+        'action' => 'editNews',
+        'elements_before_alias' => 3
+    ),
 
     /**
      * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут
