@@ -170,7 +170,7 @@ abstract class Controller
             if($k == $data_menu_item[0]['id_parent_page']){
                 $selected = 'selected';
             }
-           echo '<option '.$selected.' value = "'.$v['alias_menu'].'!'.$k. '" >'.$t.' '.$v['name'].'</option>';
+           echo '<option '.$selected.' value = "'.$v['alias_menu'].'!'.$k.'" >'.$t.' '.$v['name'].'</option>';
             if(isset($v['child'])){
                 self::recurs_render_menu_in_form($v['child'],$data_menu_item);
             }

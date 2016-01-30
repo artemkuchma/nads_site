@@ -86,12 +86,12 @@ class addEditModel
             );
 
             $sql = "SELECT * FROM `basic_page_{$lang}` WHERE alias= :new_alias";
-        }else{
+        } else {
             $placeholders = array(
                 'new_alias' => $this->new_alias,
                 'id' => $id
             );
-            $sql ="SELECT * FROM `basic_page_uk` WHERE alias= :new_alias AND  id_basic_page !=
+            $sql = "SELECT * FROM `basic_page_uk` WHERE alias= :new_alias AND  id_basic_page !=
              (SELECT bp_uk.id_basic_page FROM basic_page_uk bp_uk JOIN basic_page bp
              ON bp.id_page = :id AND bp.id = bp_uk.id_basic_page)";
         }
@@ -189,7 +189,7 @@ class addEditModel
 
     }
 
-    public function editBasicPage($id)
+    public function editBasicPage($id, $with_without_menu = null)
     {
         $lang = Router::getLanguage();
         $placeholders = array(
@@ -206,7 +206,7 @@ class addEditModel
             'title' => $this->title,
             'text' => $this->text,
             'alias' => $this->new_alias,
-            'id_basic_page'=> $id_basic_page
+            'id_basic_page' => $id_basic_page
         );
         $sql = "UPDATE `basic_page_{$lang}` SET `title`= :title,`text`= :text,`alias`= :alias WHERE id_basic_page = :id_basic_page ";
 
@@ -218,16 +218,61 @@ class addEditModel
             'id' => $id,
             'publish' => $publish
         );
-        $sql ="UPDATE `pages` SET `status`= :publish WHERE id = :id";
+        $sql = "UPDATE `pages` SET `status`= :publish WHERE id = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
+// Проверка - есть ли для этого докумета пункт меню
+        $placeholders = array(
+            'id' => $id,
+        );
+        $sql = "SELECT id FROM `main_menu` WHERE id_page = :id ";
+        $date = $dbc->getDate($sql, $placeholders);
+        $isInMenu = empty($date);
+        //Если полученный массив пустой добавляем инф. в меню
+        if ($isInMenu) {
 
-        $this->edit_menu($id);
+            $placeholders = array(
+                'id_new_page' => $id,
+                'id_parent' => $this->id_parent
+            );
+            $sql = "INSERT INTO `main_menu`(`id_page`, `id_parent_page`, `status`) VALUES (:id_new_page,:id_parent,1)";
+            $sth = $dbc->getPDO()->prepare($sql);
+            $sth->execute($placeholders);
 
+
+            $sql = "SELECT MAX(id) AS max_id FROM main_menu";
+            $placeholders = array();
+            $date = $dbc->getDate($sql, $placeholders);
+            $id_new_menu = $date[0]['max_id'];
+
+            $placeholders = array(
+                'id_new_menu' => $id_new_menu,
+                'title' => $this->title_or_menu_name,
+                'alias' => $this->new_alias
+            );
+            $lang = Config::get('default_language');
+
+            $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
+            $sth = $dbc->getPDO()->prepare($sql);
+            $sth->execute($placeholders);
+
+        }
+
+
+        if (!isset($with_without_menu)) {
+
+            $this->edit_menu($id);
+        } else {
+            $edit = 1;
+            $deleteModel = new DeleteModel($id, $edit);
+
+            $deleteModel->delete_from_menu();
+        }
 
     }
 
-    private function recurs_update_menu($dbc, $data,$placeholders)
+
+    private function recurs_update_menu($dbc, $data, $placeholders)
     {
         $lang = Router::getLanguage();
 
@@ -246,24 +291,23 @@ class addEditModel
                 $alias_arr = explode('/', $old_alias);
                 $last_element = array_pop($alias_arr);
                 $alias_arr = array($parent_alias, $last_element);
-                $new_alias =implode('/',$alias_arr);
-        echo $new_alias;
-
+                $new_alias = implode('/', $alias_arr);
 
 
                 $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = {$id_t}";
                 $data = $dbc->getDate($sql, $placeholders);
-                Debugger::PrintR($data);
-                echo $id_t.PHP_EOL;
-                echo $lang;
-                $placeholders = array();
 
-                $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.alias_menu = ".'"'.$new_alias.'"'."
+                $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.alias_menu = " . '"' . $new_alias . '"' . "
                 WHERE  mm_{$lang}.id_main_menu = mm.id AND mm.id_page = {$id_t}";
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
 
-                $this->recurs_update_menu($dbc,$data,$placeholders);
+                $sql = "UPDATE basic_page_{$lang} bp_{$lang} JOIN basic_page bp SET bp_{$lang}.alias = " . '"' . $new_alias . '"' . "
+                WHERE  bp_{$lang}.id_basic_page = bp.id AND bp.id_page = {$id_t}";
+                $sth = $dbc->getPDO()->prepare($sql);
+                $sth->execute($placeholders);
+
+                $this->recurs_update_menu($dbc, $data, $placeholders);
             }
         }
 
@@ -284,16 +328,17 @@ class addEditModel
             'id' => $id_page,
             'title' => $this->title_or_menu_name,
             'alias' => $this->new_alias,
+            'id_parent_page' => $this->id_parent
         );
 
-        $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.name = :title, mm_{$lang}.alias_menu = :alias
+        $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.name = :title, mm_{$lang}.alias_menu = :alias, mm.id_parent_page = :id_parent_page
          WHERE mm_{$lang}.id_main_menu = mm.id AND mm.id_page = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
         $placeholders = array();
 
-        $this->recurs_update_menu($dbc, $data,$placeholders);
+        $this->recurs_update_menu($dbc, $data, $placeholders);
     }
 
     public function getAlias()

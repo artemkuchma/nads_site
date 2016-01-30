@@ -276,7 +276,7 @@ class AdminController extends Controller
 
                         } else {
                             $with_without_menu = 1;
-                         //   $editModel->addBasicPage($with_without_menu);
+                            $editModel->editBasicPage($data_page[0]['id'],$with_without_menu);
                         }
                     } else {
                         Session::setFlash('Документ с таким псевдонимом уже существует!');
@@ -286,6 +286,7 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
+
 
             $args = array(
                 'data_page' => $data_page,

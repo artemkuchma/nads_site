@@ -71,53 +71,39 @@ $url_alias = array(
             'alias_uk' => 'storinka_ne_opublikovana',
       ),
 
-      157 => array(
+      205 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1111',
+            'alias_uk' => 'statti/test111',
       ),
 
-      158 => array(
+      206 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2',
+            'alias_uk' => 'test2',
       ),
 
-      159 => array(
+      207 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2/test3',
+            'alias_uk' => 'statti/stattia_1/stattia_2/testeee',
       ),
 
-      160 => array(
+      208 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2/test3/test4',
+            'alias_uk' => 'test4',
       ),
 
-      161 => array(
+      209 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2/test3/test5',
-      ),
-
-      162 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2/test3/test4/test6',
-      ),
-
-      163 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/test1/test2/test3/test7',
+            'alias_uk' => 'test5',
       ),
 
       12 => array(

@@ -18,7 +18,7 @@
         Если оставить поле пустым адрес (псевдоним) документа, а также название пункта меню будут сформированы на основе
         заголовка</p></br>
     <label for="menu_name_edit_form_bp">Название пункта меню: </label>
-    <input type="text" id="menu_name_edit_form_bp" name="menu_name" value="<?= isset($editModel->menu_name)? $editModel->menu_name : $data_menu_item[0]['name_menu_item'] ?>"/> <br/><br/>
+    <input type="text" id="menu_name_edit_form_bp" name="menu_name" value="<?= isset($data_menu_item[0]['name_menu_item'])? $data_menu_item[0]['name_menu_item'] : '' ?>"/> <br/><br/>
     <label for="menuselect_edit_form_bp">Родительский пункт меню: </label>
     <select name="menu" id="menuselect_edit_form_bp">
         <option value="">Главное меню</option>
@@ -26,5 +26,7 @@
     </select><br/><br/>
     <label for="publication_edit_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_edit_form_bp" name="publication"/> <br/><br/>
+    <input type="hidden" name="redirect" value="/admin/materials"/>
     <input type="submit" value="Сохранить"/>
 </form>
+

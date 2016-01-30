@@ -1,6 +1,11 @@
+<?php Debugger::PrintR($data_materials);
+echo $data_url;  ?>
+
 <h1> <?= $data_admin['name'] ?></h1>
 
 <?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','materials_per_page'); ?>
+
+
 
 <?php foreach($type_of_materials as $v):
     if($v != 'admin'):?>
@@ -27,7 +32,7 @@
             <td><?= $v['id'] ?></td>
             <td><?= $v['type_materials'] ?></td>
             <td><?= $v['status'] ?></td>
-            <td><?= $v['title_uk'] ?></td>
+            <td><a href="/<?= $v['alias_uk'] ?>"><?= $v['title_uk'] ?></a></td>
             <td><a href="/admin/edit/<?= strtolower($v['type_materials']) ?>/<?= $v['alias_uk'] ?>">Редактировать</a></td>
             <td></td>
             <td><?= $v['title_en'] ?></td>
