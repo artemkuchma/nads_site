@@ -2,6 +2,7 @@
 
 
 
+
 <p><b><?= Session::getFlash() ?></b></p>
 
 <form method="post">
@@ -30,3 +31,4 @@
     <input type="submit" value="Сохранить"/>
 </form>
 
+<?php isset($redirect)? Controller::redirect($redirect): null; ?>

@@ -59,17 +59,17 @@ $url_patterns = array(
         'elements_before_alias' => 2
     ),
     'edit_basic_page' => array(
-        'pattern_uk' => 'admin/edit/basic_page/.*',
-        'pattern_en' => 'admin/edit/basic_page/.*',
+        'pattern_uk' => 'admin/edit/.*',
+        'pattern_en' => 'admin/edit/.*',
         'controller' => 'admin',
-        'action' => 'editBasicPage',
-        'elements_before_alias' => 3
+        'action' => 'edit',
+        'elements_before_alias' => 2
     ),
     'edit_news' => array(
         'pattern_uk' => 'admin/edit/news/.*',
         'pattern_en' => 'admin/edit/news/.*',
         'controller' => 'admin',
-        'action' => 'editNews',
+        'action' => 'edit',
         'elements_before_alias' => 3
     ),
 

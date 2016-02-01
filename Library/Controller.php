@@ -3,10 +3,10 @@
 abstract class Controller
 {
 
-    private function file_path()
+    private function file_path($tpl = null)
     {
         $tplDir = Router::getController();
-        $tplName = Router::getAction();
+        $tplName = isset($tpl)? $tpl : Router::getAction();
         $templateFile = VIEW_DIR . $tplDir . DS . $tplName . '.phtml';
         if (!file_exists($templateFile)) {
             throw new Exception("{$templateFile} not found", 404);
@@ -70,12 +70,12 @@ abstract class Controller
         return ob_get_clean();
     }
 
-    protected function render_admin(array $args = array())
+    protected function render_admin(array $args = array(), $tpl = null)
     {
         extract($args);
 
         ob_start();
-        require $this->file_path(); //$templateFile;
+        require $this->file_path($tpl); //$templateFile;
         $content = ob_get_clean();
 
         $menu = new MenuController();
@@ -159,7 +159,7 @@ abstract class Controller
         return $pagination_arr;
     }
 
-    public static function recurs_render_menu_in_form($array, $data_menu_item)
+    public static function recurs_render_menu_in_form($array, $data_menu_item = null)
     {
 
         foreach($array as $k => $v){

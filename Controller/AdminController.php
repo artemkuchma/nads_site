@@ -3,6 +3,7 @@
 
 class AdminController extends Controller
 {
+    private $material_type;
 
     public function indexAction()
     {
@@ -185,13 +186,25 @@ class AdminController extends Controller
 
     public function addBasicPageAction()
     {
+        $this->material_type = 'basic_page';
+       return $this->addAction();
+    }
+
+    public function addNewsAction()
+    {
+        $this->material_type = 'news';
+        return $this->addAction();
+    }
+
+    public function addAction()
+    {
         if (Session::hasUser('admin')) {
 
             $adminModel = new AdminModel();
             $data_admin = $adminModel->getAdminPage(Router::getId());
 
             $request = new Request();
-            $addModel = new AddEditModel($request);
+            $addModel = new AddEditModel($request, $this->material_type);
 
             $menuModel = new MenuModel();
             $data = $menuModel->getMainMenu('uk');
@@ -203,11 +216,11 @@ class AdminController extends Controller
                     if ($addModel->isAliasExist()) {
                         if ($addModel->inMenu()) {
 
-                            $addModel->addBasicPage();
+                            $addModel->add();
 
                         } else {
                             $with_without_menu = 1;
-                            $addModel->addBasicPage($with_without_menu);
+                            $addModel->add($with_without_menu);
                         }
                     } else {
                         Session::setFlash('Документ с таким псевдонимом уже существует!');
@@ -220,11 +233,12 @@ class AdminController extends Controller
             $args = array(
                 'data_admin' => $data_admin[0],
                 'addModel' => $addModel,
-                'data_menu' => $main_menu_array
+                'data_menu' => $main_menu_array,
+                'redirect' => $request->post('redirect')
             );
+            $tpl = 'add'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
-
-            return $this->render_admin($args);
+            return $this->render_admin($args, $tpl);
 
         } else {
             throw new Exception('Access  denied', 403);
@@ -248,12 +262,12 @@ class AdminController extends Controller
         }
     }
 
-    public function editBasicPageAction()
+    public function editAction()
     {
         if (Session::hasUser('admin')) {
 
             $indexModel = new IndexModel();
-            $data_page = $indexModel->getPage(Router::getId(), Router::getLanguage());
+            $data_page = $indexModel->getPage(Router::getId(), Router::getLanguage(), 'basic_page');
 
 
 
@@ -266,17 +280,17 @@ class AdminController extends Controller
 
 
             $request = new Request();
-            $editModel = new AddEditModel($request);
+            $editModel = new AddEditModel($request, $this->material_type);
             if ($request->isPost()) {
                 if ($editModel->isValid()) {
                     if ($editModel->isAliasExist($data_page[0]['id'])) {
                         if ($editModel->inMenu()) {
 
-                            $editModel->editBasicPage($data_page[0]['id']);
+                            $editModel->edit($data_page[0]['id']);
 
                         } else {
                             $with_without_menu = 1;
-                            $editModel->editBasicPage($data_page[0]['id'],$with_without_menu);
+                            $editModel->edit($data_page[0]['id'],$with_without_menu);
                         }
                     } else {
                         Session::setFlash('Документ с таким псевдонимом уже существует!');
@@ -286,16 +300,20 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
+          //  Debugger::PrintR($data_page);
 
 
             $args = array(
                 'data_page' => $data_page,
                 'data_menu' => $main_menu_array,
                 'edit_model' => $editModel,
-                'data_menu_item' => $data_menu_item
+                'data_menu_item' => $data_menu_item,
+                'redirect' => $request->post('redirect')
             );
 
-            return $this->render_admin($args);
+            $tpl = 'add'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+
+            return $this->render_admin($args, $tpl);
         } else {
             throw new Exception('Access  denied', 403);
         }

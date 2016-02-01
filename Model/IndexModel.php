@@ -3,17 +3,27 @@
 
 class IndexModel
 {
-    public function getPage($id, $lang)
+    public function getPage($id, $lang, $material_type)
     {
+        $fields = new FieldsModel($material_type);
+
+        $fields_list ='';
+        foreach($fields->getFields() as $v){
+            if($v != 'id'&& $v != 'alias'&& $v != 'id_'.$material_type.''){
+                $fields_list .= ', bp_'.$lang.'.'.$v.' ';
+            }
+        }
+
         $dbc = Connect::getConnection();
-        $sql = "SELECT p.id, p.status, bp_{$lang}.title, bp_{$lang}.text FROM pages p JOIN basic_page bp JOIN basic_page_{$lang} bp_{$lang}
-        WHERE p.id = :id AND p.id = bp.id_page AND  bp.id = bp_{$lang}.id_basic_page";
+        $sql = "SELECT p.id, p.status {$fields_list} FROM pages p JOIN {$material_type} bp JOIN {$material_type}_{$lang} bp_{$lang}
+        WHERE p.id = :id AND p.id = bp.id_page AND  bp.id = bp_{$lang}.id_{$material_type}";
         $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);
 
         return $date;
 
     }
+
 
     public function getType_of_Materials()
     {

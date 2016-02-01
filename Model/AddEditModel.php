@@ -5,7 +5,7 @@ class addEditModel
 {
 
     private $title;
-    private $text;
+  //  private $text;
     private $new_alias;
     private $translit;
     private $id_parent;
@@ -14,11 +14,17 @@ class addEditModel
     private $without_menu;
     private $publication;
     private $title_or_menu_name;
+    private $material_type;
+    private $additional_fields_arr;
+    private $additional_fields_value;
+    private $additional_fields_value_arr;
+    private $additional_fields_key_value;
 
-    public function __construct(Request $request)
+
+    public function __construct(Request $request,$material_type)
     {
         $this->title = $request->post('title');
-        $this->text = $request->post('text');
+      //  $this->text = $request->post('text');
         $this->menu_name = $request->post('menu_name');
         $this->menu_data = $request->post('menu');
         $this->without_menu = $request->post('without_menu');
@@ -28,7 +34,26 @@ class addEditModel
         $this->new_alias = $alias_data['new_alias'];
         $this->translit = $alias_data['translit'];
         $this->id_parent = $alias_data['id_parent'];
+        $this->material_type = $material_type;
 
+        $fields_model = new FieldsModel($material_type);
+        $fields = $fields_model->getFields();
+        $additional_fields_list = array();
+        $additional_fields_value = '';
+        $additional_fields_key_value = '';
+        $additional_fields_value_arr = array();
+        foreach($fields as $v){
+            if($v != 'id'&& $v != 'alias'&& $v != 'id_'.$material_type.''&& $v != 'title'){
+                $additional_fields_list[] = $v ;
+                $additional_fields_value .= ", '".$request->post($v)."'";
+                $additional_fields_value_arr[$v] = $request->post($v);
+                $additional_fields_key_value .= ", `".$v."` = '".$request->post($v)."'";
+            }
+        }
+        $this->additional_fields_arr = $additional_fields_list;
+        $this->additional_fields_value = $additional_fields_value;
+        $this->additional_fields_value_arr = $additional_fields_value_arr;
+        $this->additional_fields_key_value = $additional_fields_key_value;
 
     }
 
@@ -80,20 +105,21 @@ class addEditModel
             'new_alias' => $this->new_alias
         );
         $lang = Config::get('default_language');
+        $mat_type = $this->material_type;
         if (!$id) {
             $placeholders = array(
                 'new_alias' => $this->new_alias
             );
 
-            $sql = "SELECT * FROM `basic_page_{$lang}` WHERE alias= :new_alias";
+            $sql = "SELECT * FROM `{$mat_type}_{$lang}` WHERE alias= :new_alias";
         } else {
             $placeholders = array(
                 'new_alias' => $this->new_alias,
                 'id' => $id
             );
-            $sql = "SELECT * FROM `basic_page_uk` WHERE alias= :new_alias AND  id_basic_page !=
-             (SELECT bp_uk.id_basic_page FROM basic_page_uk bp_uk JOIN basic_page bp
-             ON bp.id_page = :id AND bp.id = bp_uk.id_basic_page)";
+            $sql = "SELECT * FROM `{$mat_type}_{$lang}` WHERE alias= :new_alias AND  id_{$mat_type} !=
+             (SELECT bp_{$lang}.id_{$mat_type} FROM {$mat_type}_{$lang} bp_{$lang} JOIN {$mat_type} bp
+             ON bp.id_page = :id AND bp.id = bp_{$lang}.id_{$mat_type})";
         }
         $date = $dbc->getDate($sql, $placeholders);
 
@@ -101,13 +127,15 @@ class addEditModel
     }
 
 
-    public function addBasicPage($with_without_menu = null)
+    public function add($with_without_menu = null)
     {
 
         $publish = $this->publication ? 1 : 0;
 
+        $controller = $this->material_type == 'basic_page'? 'Index' : $this->material_type;
+
         $placeholders = array(
-            'controller' => 'Index',
+            'controller' => $controller,
             'action' => 'index',
             'publish' => $publish
         );
@@ -124,7 +152,7 @@ class addEditModel
         $placeholders = array(
             'id_new_page' => $id_new_page
         );
-        $sql = "INSERT INTO `basic_page`(`id_page`) VALUES (:id_new_page)";
+        $sql = "INSERT INTO `{$this->material_type}`(`id_page`) VALUES (:id_new_page)";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
@@ -157,7 +185,7 @@ class addEditModel
             $sth->execute($placeholders);
         }
 
-        $sql = "SELECT MAX(id) AS max_id FROM basic_page";
+        $sql = "SELECT MAX(id) AS max_id FROM {$this->material_type}";
         $placeholders = array();
         $date = $dbc->getDate($sql, $placeholders);
         $id_new_page = $date[0]['max_id'];
@@ -166,12 +194,17 @@ class addEditModel
         $placeholders = array(
             'id_new_page' => $id_new_page,
             'title' => $this->title,
-            'text' => $this->text,
+          //  'text' => $this->text,
             'alias' => $this->new_alias
         );
+        $additional_fields = '';
+        foreach($this->additional_fields_arr as $v){
+            $additional_fields .= ", `$v`";
+        }
         $lang = Config::get('default_language');
 
-        $sql = "INSERT INTO basic_page_{$lang} (`id_basic_page`,`title`, `text`, `alias`) VALUES (:id_new_page, :title, :text, :alias)";
+        $sql = "INSERT INTO {$this->material_type}_{$lang} (`id_{$this->material_type}`,`title`, `alias` $additional_fields)
+        VALUES (:id_new_page, :title, :alias $this->additional_fields_value)";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
@@ -180,7 +213,7 @@ class addEditModel
         );
         foreach (Config::get('languages') as $v) {
             if ($v != Config::get('default_language')) {
-                $sql = "INSERT INTO basic_page_{$v} (`id_basic_page`) VALUES (:id_new_page)";
+                $sql = "INSERT INTO {$this->material_type}_{$v} (`id_{$this->material_type}`) VALUES (:id_new_page)";
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
             }
@@ -189,26 +222,26 @@ class addEditModel
 
     }
 
-    public function editBasicPage($id, $with_without_menu = null)
+    public function edit($id, $with_without_menu = null)
     {
         $lang = Router::getLanguage();
         $placeholders = array(
             'id' => $id
         );
         $dbc = Connect::getConnection();
-        $sql = "SELECT bp_{$lang}.id_basic_page AS id FROM  basic_page_{$lang} bp_{$lang} JOIN basic_page bp ON bp.id = bp_{$lang}.id_basic_page
+        $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}
         AND bp.id_page = :id";
         $date = $dbc->getDate($sql, $placeholders);
-        $id_basic_page = $date[0]['id'];
+        $id_{$this->material_type} = $date[0]['id'];
 
 
         $placeholders = array(
             'title' => $this->title,
-            'text' => $this->text,
+          //  'text' => $this->text,
             'alias' => $this->new_alias,
-            'id_basic_page' => $id_basic_page
+            'id_'.$this->material_type => $id_{$this->material_type}
         );
-        $sql = "UPDATE `basic_page_{$lang}` SET `title`= :title,`text`= :text,`alias`= :alias WHERE id_basic_page = :id_basic_page ";
+        $sql = "UPDATE `{$this->material_type}_{$lang}` SET `title`= :title,`alias`= :alias $this->additional_fields_key_value WHERE id_{$this->material_type} = :id_{$this->material_type} ";
 
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
@@ -346,10 +379,7 @@ class addEditModel
         return $this->new_alias;
     }
 
-    public function getText()
-    {
-        return $this->text;
-    }
+
 
     public function getTitle()
     {
@@ -394,6 +424,11 @@ class addEditModel
     public function getTranslit()
     {
         return $this->translit;
+    }
+
+    public function getAdditionalFieldsValueArr()
+    {
+        return $this->additional_fields_value_arr;
     }
 
 

@@ -7,12 +7,14 @@
 <form method="post">
     <label for="title_add_form_bp">Заголовок: </label>
     <input type="text" required name="title" id="title_add_form_bp" value="<?= $addModel->getTitle(); ?>"/> <br/><br/>
+    <label for="description_add_form_bp">Краткое описание: </label>
+    <textarea name="description" id="description_add_form_bp" cols="30" rows="10"><?=$addModel->getAdditionalFieldsValueArr()['description']; ?></textarea><br/><br/>
     <label for="text_add_form_bp">Текст страници: </label>
-     <textarea name="text" id="text_add_form_bp" cols="30" rows="10"><?=$addModel->getAdditionalFieldsValueArr()['text']; ?></textarea><br/><br/>
+    <textarea name="text" id="text_add_form_bp" cols="30" rows="10"><?=$addModel->getAdditionalFieldsValueArr()['text']; ?></textarea><br/><br/>
 
     <p>Если поставить галочку - без меню - документ не будет доступен в главном меню</p></br>
     <label for="without_menu_add_form_bp">Без меню</label>
-     <input type="checkbox" id="without_menu_add_form_bp" name="without_menu"/> <br/><br/>
+    <input type="checkbox" id="without_menu_add_form_bp" name="without_menu"/> <br/><br/>
 
     <p>Если указать название пункта меню, адрес (псевдоним) документа будет сформирован на основе этого названия
         Если оставить поле пустым адрес (псевдоним) документа, а также название пункта меню будут сформированы на основе

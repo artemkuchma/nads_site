@@ -7,7 +7,7 @@ class IndexController extends Controller {
     {
         //$this->rewrite_file_alias();
         $indexModel = new IndexModel();
-        $data = $indexModel->getPage(Router::getId(), Router::getLanguage());
+        $data = $indexModel->getPage(Router::getId(), Router::getLanguage(),'basic_page');
         if (!$data) {
             throw new Exception(" Page is not exist", 404);
 

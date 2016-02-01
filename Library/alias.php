@@ -75,14 +75,14 @@ $url_alias = array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test111',
+            'alias_uk' => 'statti/test1',
       ),
 
       206 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'test2',
+            'alias_uk' => 'statti/test1/test4/test5/test2298',
       ),
 
       207 => array(
@@ -96,14 +96,28 @@ $url_alias = array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'test4',
+            'alias_uk' => 'statti/stattia_1/stattia_2/testeee/test4',
       ),
 
-      209 => array(
+      210 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'test5',
+            'alias_uk' => 'test8',
+      ),
+
+      215 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'o_nas/test_o_nas_44444',
+      ),
+
+      221 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'statti/testovaya_stranyca_5',
       ),
 
       12 => array(
@@ -111,6 +125,29 @@ $url_alias = array(
             'action' => 'index',
             'alias_en' => 'first_news',
             'alias_uk' => 'pervaya_novost',
+      ),
+
+      219 => array(
+            'controller' => 'news',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'pervaya_novost
+/testovaya_novost_5',
+      ),
+
+      220 => array(
+            'controller' => 'news',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'pervaya_novost
+/novost_6',
+      ),
+
+      222 => array(
+            'controller' => 'news',
+            'action' => 'index',
+            'alias_en' => '',
+            'alias_uk' => 'o_nas/testovaya_novost_6',
       ),
 
       17 => array(
@@ -164,7 +201,7 @@ $url_alias = array(
 
       25 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'addNews',
             'alias_en' => 'admin/add_new',
             'alias_uk' => 'admin/add_new',
       ),
