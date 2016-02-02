@@ -5,7 +5,6 @@ class addEditModel
 {
 
     private $title;
-  //  private $text;
     private $new_alias;
     private $translit;
     private $id_parent;
@@ -24,7 +23,6 @@ class addEditModel
     public function __construct(Request $request,$material_type)
     {
         $this->title = $request->post('title');
-      //  $this->text = $request->post('text');
         $this->menu_name = $request->post('menu_name');
         $this->menu_data = $request->post('menu');
         $this->without_menu = $request->post('without_menu');
@@ -98,13 +96,13 @@ class addEditModel
         return $alias_data;
     }
 
-    public function isAliasExist($id = null)
+    public function isAliasExist($id = null, $language = null)
     {
         $dbc = Connect::getConnection();
         $placeholders = array(
             'new_alias' => $this->new_alias
         );
-        $lang = Config::get('default_language');
+        $lang = isset($language)? $language : Config::get('default_language');
         $mat_type = $this->material_type;
         if (!$id) {
             $placeholders = array(
@@ -132,7 +130,15 @@ class addEditModel
 
         $publish = $this->publication ? 1 : 0;
 
-        $controller = $this->material_type == 'basic_page'? 'Index' : $this->material_type;
+        $indexModel = new IndexModel();
+        $id_mat_type = '';
+        foreach($indexModel->getType_of_Materials() as $v){
+            if($v['type_name'] == $this->material_type){
+                $id_mat_type = $v['id'];
+            }
+        }
+
+        $controller = $this->material_type == 'basic_page'? 'Index' : ucfirst($this->material_type);
 
         $placeholders = array(
             'controller' => $controller,
@@ -140,7 +146,7 @@ class addEditModel
             'publish' => $publish
         );
         $dbc = Connect::getConnection();
-        $sql = "INSERT INTO `pages`(`id_mat_type`, `status`, `controller`, `action`) VALUES (1,:publish,:controller,:action)";
+        $sql = "INSERT INTO `pages`(`id_mat_type`, `status`, `controller`, `action`) VALUES ($id_mat_type,:publish,:controller,:action)";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
@@ -194,7 +200,6 @@ class addEditModel
         $placeholders = array(
             'id_new_page' => $id_new_page,
             'title' => $this->title,
-          //  'text' => $this->text,
             'alias' => $this->new_alias
         );
         $additional_fields = '';
@@ -228,6 +233,7 @@ class addEditModel
         $placeholders = array(
             'id' => $id
         );
+
         $dbc = Connect::getConnection();
         $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}
         AND bp.id_page = :id";
@@ -237,7 +243,6 @@ class addEditModel
 
         $placeholders = array(
             'title' => $this->title,
-          //  'text' => $this->text,
             'alias' => $this->new_alias,
             'id_'.$this->material_type => $id_{$this->material_type}
         );
@@ -335,8 +340,16 @@ class addEditModel
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
 
-                $sql = "UPDATE basic_page_{$lang} bp_{$lang} JOIN basic_page bp SET bp_{$lang}.alias = " . '"' . $new_alias . '"' . "
-                WHERE  bp_{$lang}.id_basic_page = bp.id AND bp.id_page = {$id_t}";
+
+
+
+                $sql = "SELECT `type_name` FROM type_of_materyals tm JOIN pages p ON p.id = {$id_t} AND p.id_mat_type = tm.id";
+                $d = $dbc->getDate($sql, $placeholders);
+                $material_type = $d[0]['type_name'];
+
+
+                $sql = "UPDATE {$material_type}_{$lang} bp_{$lang} JOIN {$material_type} bp SET bp_{$lang}.alias = " . '"' . $new_alias . '"' . "
+                WHERE  bp_{$lang}.id_{$material_type} = bp.id AND bp.id_page = {$id_t}";
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
 

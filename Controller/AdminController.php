@@ -64,12 +64,23 @@ class AdminController extends Controller
                 $type_of_materials[] = strtolower($v['type_name']);
             }
 
+            $system_doc = array(
+                '404' => Config::get('default_id_error_404'),
+                '403' => Config::get('default_id_error_403'),
+                '204' => Config::get('default_id_error_204'),
+                '500' => Config::get('default_id_error_500'),
+                'default_page' => Config::get('default_id'),
+                'not_publish' => Config::get('not_publish')
+            );
+            $system_doc_rev = array_flip($system_doc);
+
             $args = array(
                 'data_admin' => $data_admin[0],
                 'data_materials' => $data_materials_page,
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0],
-                'type_of_materials' => $type_of_materials
+                'type_of_materials' => $type_of_materials,
+                'system_doc' => $system_doc_rev
             );
 
             return $this->render_admin($args);
@@ -262,14 +273,24 @@ class AdminController extends Controller
         }
     }
 
+    public function editBasicPageAction()
+    {
+        $this->material_type = 'basic_page';
+        return $this->editAction();
+    }
+
+    public function editNewsAction()
+    {
+        $this->material_type = 'news';
+        return $this->editAction();
+    }
+
     public function editAction()
     {
         if (Session::hasUser('admin')) {
 
             $indexModel = new IndexModel();
-            $data_page = $indexModel->getPage(Router::getId(), Router::getLanguage(), 'basic_page');
-
-
+            $data_page = $indexModel->getPage(Router::getId(), Router::getLanguage(), $this->material_type);
 
             $menuModel = new MenuModel();
             $data = $menuModel->getMainMenu('uk');
@@ -311,13 +332,71 @@ class AdminController extends Controller
                 'redirect' => $request->post('redirect')
             );
 
-            $tpl = 'add'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+            $tpl = 'edit'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
             return $this->render_admin($args, $tpl);
         } else {
             throw new Exception('Access  denied', 403);
         }
 
+    }
+
+    public function translateBasicPageAction()
+    {
+        $this->material_type = 'basic_page';
+        return $this->translateAction();
+    }
+
+    public function translateNewsAction()
+    {
+        $this->material_type = 'news';
+        return $this->translateAction();
+    }
+    public function translateAction()
+    {
+        if (Session::hasUser('admin')) {
+
+
+            $request = new Request();
+            $addModel = new AddEditModel($request, $this->material_type);
+
+            $menuModel = new MenuModel();
+            $data = $menuModel->getMainMenu('en');
+            $menuController = new MenuController();
+            $main_menu_array = $menuController->menuArray($data);
+
+            if ($request->isPost()) {
+                if ($addModel->isValid()) {
+                    if ($addModel->isAliasExist()) {
+                        if ($addModel->inMenu()) {
+
+                            $addModel->add();
+
+                        } else {
+                            $with_without_menu = 1;
+                            $addModel->add($with_without_menu);
+                        }
+                    } else {
+                        Session::setFlash('Документ с таким псевдонимом уже существует!');
+                    }
+                } else {
+                    Session::setFlash('Поле "Заголовок" обязательно для заполнения');
+                }
+            }
+            $this->rewrite_file_alias();
+            $args = array(
+
+                'addModel' => $addModel,
+                'data_menu' => $main_menu_array,
+                'redirect' => $request->post('redirect')
+            );
+            $tpl = 'translate'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+
+            return $this->render_admin($args, $tpl);
+
+        } else {
+            throw new Exception('Access  denied', 403);
+        }
     }
 
 

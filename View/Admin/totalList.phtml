@@ -32,11 +32,16 @@
             <td><?= $v['type_materials'] ?></td>
             <td><?= $v['status'] ?></td>
             <td><a href="/<?= $v['alias_uk'] ?>"><?= $v['title_uk'] ?></a></td>
-            <td><a href="/admin/edit/<?= strtolower($v['type_materials']) ?>/<?= $v['alias_uk'] ?>">Редактировать</a></td>
+            <td><a href="/admin/edit_<?= $v['type_materials'] ?>/<?= $v['alias_uk'] ?>">Редактировать</a></td>
             <td></td>
             <td><?= $v['title_en'] ?></td>
             <td></td>
-            <td><a href="/admin/delete/<?= $v['alias_uk'] ?>">Удалить материал</a></td>
+            <td>
+                <?php if(!isset($system_doc[$v['id']])): ?>
+                <a href="/admin/delete/<?= $v['alias_uk'] ?>">Удалить материал</a>
+                <?php endif ?>
+
+            </td>
         </tr>
 <?php endforeach ?>
 </table>

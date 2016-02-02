@@ -71,83 +71,39 @@ $url_alias = array(
             'alias_uk' => 'storinka_ne_opublikovana',
       ),
 
-      205 => array(
+      180 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1',
+            'alias_uk' => 'o_nas/test_11',
       ),
 
-      206 => array(
+      182 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/test1/test4/test5/test2298',
+            'alias_uk' => 'o_nas/test_11/test_22',
       ),
 
-      207 => array(
+      183 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/stattia_1/stattia_2/testeee',
+            'alias_uk' => 'o_nas/test_11/test_22/noost_11/test_33',
       ),
 
-      208 => array(
+      184 => array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'statti/stattia_1/stattia_2/testeee/test4',
+            'alias_uk' => 'o_nas/test_11/test_22/noost_11/test_33/olprp',
       ),
 
-      210 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'test8',
-      ),
-
-      215 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_o_nas_44444',
-      ),
-
-      221 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'statti/testovaya_stranyca_5',
-      ),
-
-      12 => array(
+      181 => array(
             'controller' => 'News',
             'action' => 'index',
-            'alias_en' => 'first_news',
-            'alias_uk' => 'pervaya_novost',
-      ),
-
-      219 => array(
-            'controller' => 'news',
-            'action' => 'index',
             'alias_en' => '',
-            'alias_uk' => 'pervaya_novost
-/testovaya_novost_5',
-      ),
-
-      220 => array(
-            'controller' => 'news',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'pervaya_novost
-/novost_6',
-      ),
-
-      222 => array(
-            'controller' => 'news',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/testovaya_novost_6',
+            'alias_uk' => 'o_nas/test_11/test_22/noost_11',
       ),
 
       17 => array(

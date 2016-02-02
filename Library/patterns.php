@@ -59,18 +59,32 @@ $url_patterns = array(
         'elements_before_alias' => 2
     ),
     'edit_basic_page' => array(
-        'pattern_uk' => 'admin/edit/.*',
-        'pattern_en' => 'admin/edit/.*',
+        'pattern_uk' => 'admin/edit_basic_page/.*',
+        'pattern_en' => 'admin/edit_basic_page/.*',
         'controller' => 'admin',
-        'action' => 'edit',
+        'action' => 'editBasicPage',
         'elements_before_alias' => 2
     ),
     'edit_news' => array(
-        'pattern_uk' => 'admin/edit/news/.*',
-        'pattern_en' => 'admin/edit/news/.*',
+        'pattern_uk' => 'admin/edit_news/.*',
+        'pattern_en' => 'admin/edit_news/.*',
         'controller' => 'admin',
-        'action' => 'edit',
-        'elements_before_alias' => 3
+        'action' => 'editNews',
+        'elements_before_alias' => 2
+    ),
+    'translate_basic_page' => array(
+        'pattern_uk' => 'admin/translate_basic_page/.*',
+        'pattern_en' => 'admin/translate_basic_page/.*',
+        'controller' => 'admin',
+        'action' => 'translateBasicPage',
+        'elements_before_alias' => 2
+    ),
+    'translate_news' => array(
+        'pattern_uk' => 'admin/translate_news/.*',
+        'pattern_en' => 'admin/translate_news/.*',
+        'controller' => 'admin',
+        'action' => 'translateNews',
+        'elements_before_alias' => 2
     ),
 
     /**

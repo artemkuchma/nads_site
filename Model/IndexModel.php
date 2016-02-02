@@ -28,7 +28,7 @@ class IndexModel
     public function getType_of_Materials()
     {
         $dbc = Connect::getConnection();
-        $sql = "SELECT type_name FROM  type_of_materyals";
+        $sql = "SELECT id, type_name FROM  type_of_materyals";
         $placeholders = array();
         $data = $dbc->getDate($sql, $placeholders);
         return $data;

@@ -5,9 +5,14 @@
 
 <p><b><?= Session::getFlash() ?></b></p>
 
+
+
 <form method="post">
     <label for="title_edit_form_bp">Заголовок: </label>
     <input type="text" required name="title" id="title_edit_form_bp" value="<?= $edit_model->getTitle() ? $edit_model->getTitle() : $data_page[0]['title']; ?>"/> <br/><br/>
+    <label for="description_edit_form_bp">Краткое описание: </label>
+    <textarea name="description" id="description_edit_form_bp" cols="30" rows="10"><?= isset($edit_model->getAdditionalFieldsValueArr()['description']) ? $edit_model->getAdditionalFieldsValueArr()['description'] : $data_page[0]['description']; ?></textarea><br/><br/>
+
     <label for="text_edit_form_bp">Текст страници: </label>
     <textarea name="text" id="text_edit_form_bp" cols="30" rows="10"><?= isset($edit_model->getAdditionalFieldsValueArr()['text']) ? $edit_model->getAdditionalFieldsValueArr()['text'] : $data_page[0]['text']; ?></textarea><br/><br/>
 
