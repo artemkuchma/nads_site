@@ -177,5 +177,18 @@ abstract class Controller
         }
     }
 
+    public static function recurs_render_menu_edit($array)
+    {
+        echo '<ul>';
+
+        foreach($array as $v){
+            echo '<li ><input type="number" required min = 1 max = 999  name = "'.$v['id_page'].'-'.$v['id_parent_page'].'" value = "'.$v['id'].'" >'.$v['name'].'</li>';
+            if(isset($v['child'])){
+                self::recurs_render_menu_edit($v['child']);
+            }
+        }
+        echo '</ul>';
+    }
+
 
 }

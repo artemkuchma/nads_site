@@ -1,0 +1,23 @@
+<h1> Перевод и редактирование  <?= $data_page['uk'][0]['title'] ?></h1>
+
+
+
+
+<p><b><?= Session::getFlash() ?></b></p>
+
+<form method="post">
+    <label for="title_edit_form_bp">Заголовок: </label>
+    <input type="text" required name="title" id="title_edit_form_bp" value="<?= $addModel->getTitle() ? $addModel->getTitle() : $data_page['en'][0]['title']; ?>"/> <br/><br/>
+    <label for="text_edit_form_bp">Текст страници: </label>
+    <textarea name="text" id="text_edit_form_bp" cols="30" rows="10"><?= isset($addModel->getAdditionalFieldsValueArr()['text']) ? $addModel->getAdditionalFieldsValueArr()['text'] : $data_page['en'][0]['text']; ?></textarea><br/><br/>
+
+    <p>Если указать название пункта меню, адрес (псевдоним) документа будет сформирован на основе этого названия
+        Если оставить поле пустым адрес (псевдоним) документа, а также название пункта меню будут сформированы на основе
+        заголовка</p></br>
+    <label for="menu_name_edit_form_bp">Название пункта меню: </label>
+    <input type="text" id="menu_name_edit_form_bp" name="menu_name" value="<?= $addModel->getMenuName(); ?>"/> <br/><br/>
+    <input type="hidden" name="redirect" value="/admin/materials"/>
+    <input type="submit" value="Сохранить"/>
+</form>
+
+<?php isset($redirect)? Controller::redirect($redirect): null; ?>

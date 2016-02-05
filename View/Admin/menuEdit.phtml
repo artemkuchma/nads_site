@@ -1,0 +1,14 @@
+<h1><?= $data_admin['name'] ?></h1>
+<p><?= $data_admin['text'] ?></p>
+
+<p><b><?= Session::getFlash() ?></b></p>
+
+
+<form method="post">
+
+<?php Controller::recurs_render_menu_edit($data_menu) ?>
+
+    <input type="submit" value="Сохранить"/>
+
+</form>
+

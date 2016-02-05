@@ -71,39 +71,25 @@ $url_alias = array(
             'alias_uk' => 'storinka_ne_opublikovana',
       ),
 
-      180 => array(
+      212 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_11',
+            'alias_en' => 'test_2',
+            'alias_uk' => 'test_2',
       ),
 
-      182 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_11/test_22',
-      ),
-
-      183 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_11/test_22/noost_11/test_33',
-      ),
-
-      184 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_11/test_22/noost_11/test_33/olprp',
-      ),
-
-      181 => array(
+      211 => array(
             'controller' => 'News',
             'action' => 'index',
-            'alias_en' => '',
-            'alias_uk' => 'o_nas/test_11/test_22/noost_11',
+            'alias_en' => 'about/news_1',
+            'alias_uk' => 'o_nas/novost_1',
+      ),
+
+      213 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'about/news_2',
+            'alias_uk' => 'o_nas/novost_2',
       ),
 
       17 => array(
@@ -122,14 +108,14 @@ $url_alias = array(
 
       20 => array(
             'controller' => 'Admin',
-            'action' => 'index',
-            'alias_en' => 'admin/basic_pages',
-            'alias_uk' => 'admin/basic_pages',
+            'action' => 'totalList',
+            'alias_en' => 'admin/basic_page',
+            'alias_uk' => 'admin/basic_page',
       ),
 
       21 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'totalList',
             'alias_en' => 'admin/news',
             'alias_uk' => 'admin/news',
       ),
@@ -181,5 +167,12 @@ $url_alias = array(
             'action' => 'totalList',
             'alias_en' => 'admin/materials',
             'alias_uk' => 'admin/materials',
+      ),
+
+      19 => array(
+            'controller' => 'Admin',
+            'action' => 'menuEdit',
+            'alias_en' => 'admin/menu',
+            'alias_uk' => 'admin/menu',
       ),
 );

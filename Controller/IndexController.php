@@ -16,6 +16,10 @@ class IndexController extends Controller {
 
             throw new Exception(" Page not publish", 2);
         }
+
+        if(!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(),'basic_page')){
+            throw new Exception(" Page has no translation", 204);
+        }
         $args = $data[0];
 
 

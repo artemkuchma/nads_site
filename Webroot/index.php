@@ -20,6 +20,9 @@ try{
     elseif($e->getCode() == 2){
         $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('not_publish'), $lang));
     }
+    elseif($e->getCode() == 204){
+        $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_204'), $lang));
+    }
     else{
     $content = Router::get_content_by_uri($lang . '/'. Router::get_alis_by_id(Config::get('default_id_error_404'), $lang));
     }

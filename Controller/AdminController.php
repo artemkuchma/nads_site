@@ -21,15 +21,41 @@ class AdminController extends Controller
 
     }
 
+    private function totalListMaterialType()
+    {
+        switch (Router::getId()) {
+            case Config::get('admin_basic_page'):
+                return $material_type = 'basic_page';
+                break;
+            case Config::get('admin_news'):
+                return $material_type = 'news';
+                break;
+            default:
+                return $material_type = 'all';
+        }
+    }
+
     public function totalListAction()
     {
         if (Session::hasUser('admin')) {
+
+            $menuModel = new MenuModel();
+            $menu_data = array();
+            foreach (Config::get('languages') as $v) {
+                foreach ($menuModel->getMainMenu($v) as $val) {
+                    $t = $val['id_page'];
+                    $menu_data[$v][$t] = $val;
+                }
+            }
+            //  Debugger::PrintR($menu_data);
+
 
             $adminModel = new AdminModel();
             $data_admin = $adminModel->getAdminPage(Router::getId());
 
             $indexModel = new IndexModel();
-            $data_materials = $indexModel->getTotalList();
+            $material_type = $this->totalListMaterialType();
+            $data_materials = $indexModel->getTotalList($material_type);
 
             foreach ($data_materials as $k => $v) {
                 if ($v['status'] == 1) {
@@ -39,7 +65,7 @@ class AdminController extends Controller
                 }
                 $data_materials[$k] = $v;
             }
-            $items_count = $indexModel->getCount();
+            $items_count = $indexModel->getCount($material_type);
             $items_per_page = Config::get('materials_per_page');
 
             $request = new Request();
@@ -80,7 +106,8 @@ class AdminController extends Controller
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0],
                 'type_of_materials' => $type_of_materials,
-                'system_doc' => $system_doc_rev
+                'system_doc' => $system_doc_rev,
+                'menu_data' => $menu_data
             );
 
             return $this->render_admin($args);
@@ -195,10 +222,62 @@ class AdminController extends Controller
 
     }
 
+    public function menuEditAction()
+    {
+        if (Session::hasUser('admin')) {
+            $adminModel = new AdminModel();
+            $data_admin = $adminModel->getAdminPage(Router::getId());
+
+            $request = new Request();
+            $menuIdEditModel = new MenuIdEditModel($request, 'uk');
+            $data = $menuIdEditModel->main_menu;
+            $menuController = new MenuController();
+            $main_menu_array = $menuController->menuArray($data);
+
+            // Debugger::PrintR($main_menu_array);
+
+            if ($request->isPost()) {
+                if ($menuIdEditModel->isEmpty()) {
+                    if ($menuIdEditModel->isValid()) {
+                        if ($menuIdEditModel->isNumeric()) {
+                            if ($menuIdEditModel->isNumberTrue()) {
+
+                                 $menuIdEditModel->insertIdMenuItems();
+                                Controller::redirect('/admin/menu');
+
+                            } else {
+                                Session::setFlash('Числа должны быть в диапазоне от 1 до 999!');
+                            }
+
+                        } else {
+                            Session::setFlash('Введите целые числа!');
+                        }
+                    } else {
+                        Session::setFlash('Не должно быть одинаковых id номеров!');
+                    }
+                } else {
+                    Session::setFlash('Все поля обязательны для заполнения!');
+                }
+            }
+            $this->rewrite_file_alias();
+
+            $args = array(
+                'data_admin' => $data_admin[0],
+                'data_menu' => $main_menu_array,
+            );
+            return $this->render_admin($args);
+
+        } else {
+            throw new Exception('Access is forbidden', 403);
+
+        }
+
+    }
+
     public function addBasicPageAction()
     {
         $this->material_type = 'basic_page';
-       return $this->addAction();
+        return $this->addAction();
     }
 
     public function addNewsAction()
@@ -247,7 +326,7 @@ class AdminController extends Controller
                 'data_menu' => $main_menu_array,
                 'redirect' => $request->post('redirect')
             );
-            $tpl = 'add'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+            $tpl = 'add' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
             return $this->render_admin($args, $tpl);
 
@@ -297,7 +376,7 @@ class AdminController extends Controller
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
             $data_menu_item = $menuModel->getMenuDatePage($data_page[0]['id']);
-           // Debugger::PrintR($main_menu_array);
+            // Debugger::PrintR($main_menu_array);
 
 
             $request = new Request();
@@ -311,7 +390,7 @@ class AdminController extends Controller
 
                         } else {
                             $with_without_menu = 1;
-                            $editModel->edit($data_page[0]['id'],$with_without_menu);
+                            $editModel->edit($data_page[0]['id'], $with_without_menu);
                         }
                     } else {
                         Session::setFlash('Документ с таким псевдонимом уже существует!');
@@ -321,7 +400,7 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
-          //  Debugger::PrintR($data_page);
+            //  Debugger::PrintR($data_page);
 
 
             $args = array(
@@ -332,7 +411,7 @@ class AdminController extends Controller
                 'redirect' => $request->post('redirect')
             );
 
-            $tpl = 'edit'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+            $tpl = 'edit' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
             return $this->render_admin($args, $tpl);
         } else {
@@ -352,30 +431,33 @@ class AdminController extends Controller
         $this->material_type = 'news';
         return $this->translateAction();
     }
+
     public function translateAction()
     {
         if (Session::hasUser('admin')) {
 
+            $indexModel = new IndexModel();
+            $data_page = array();
+            foreach (Config::get('languages') as $v) {
+                $data_page[$v] = $indexModel->getPage(Router::getId(), $v, $this->material_type);
+            }
+            Debugger::PrintR($data_page);
+            //echo Router::getLanguage();
 
             $request = new Request();
             $addModel = new AddEditModel($request, $this->material_type);
 
-            $menuModel = new MenuModel();
-            $data = $menuModel->getMainMenu('en');
-            $menuController = new MenuController();
-            $main_menu_array = $menuController->menuArray($data);
+            //    $menuModel = new MenuModel();
+            //  $data = $menuModel->getMainMenu('en');
+            //  $menuController = new MenuController();
+            //  $main_menu_array = $menuController->menuArray($data);
 
             if ($request->isPost()) {
                 if ($addModel->isValid()) {
                     if ($addModel->isAliasExist()) {
-                        if ($addModel->inMenu()) {
 
-                            $addModel->add();
+                        $addModel->translate($data_page['en'][0]['id'], 'en');
 
-                        } else {
-                            $with_without_menu = 1;
-                            $addModel->add($with_without_menu);
-                        }
                     } else {
                         Session::setFlash('Документ с таким псевдонимом уже существует!');
                     }
@@ -385,12 +467,12 @@ class AdminController extends Controller
             }
             $this->rewrite_file_alias();
             $args = array(
-
+                'data_page' => $data_page,
                 'addModel' => $addModel,
-                'data_menu' => $main_menu_array,
+                //  'data_menu' => $main_menu_array,
                 'redirect' => $request->post('redirect')
             );
-            $tpl = 'translate'.str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
+            $tpl = 'translate' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
             return $this->render_admin($args, $tpl);
 

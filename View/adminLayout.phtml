@@ -9,7 +9,7 @@
 
 
 <hr/>
-<?= $admin_menu ?>
+<?= Router::getId() != 17 ? $admin_menu : null ?>
 
 <hr/>
 
@@ -17,6 +17,7 @@
 <?= Router::getUri()?>
 
 <?=$content?>
+<?= Router::getId() == 17 ? $admin_menu : null ?>
 
 </body>
 </html>

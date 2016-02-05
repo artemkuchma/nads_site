@@ -20,7 +20,7 @@ class addEditModel
     private $additional_fields_key_value;
 
 
-    public function __construct(Request $request,$material_type)
+    public function __construct(Request $request, $material_type)
     {
         $this->title = $request->post('title');
         $this->menu_name = $request->post('menu_name');
@@ -40,12 +40,12 @@ class addEditModel
         $additional_fields_value = '';
         $additional_fields_key_value = '';
         $additional_fields_value_arr = array();
-        foreach($fields as $v){
-            if($v != 'id'&& $v != 'alias'&& $v != 'id_'.$material_type.''&& $v != 'title'){
-                $additional_fields_list[] = $v ;
-                $additional_fields_value .= ", '".$request->post($v)."'";
+        foreach ($fields as $v) {
+            if ($v != 'id' && $v != 'alias' && $v != 'id_' . $material_type . '' && $v != 'title') {
+                $additional_fields_list[] = $v;
+                $additional_fields_value .= ", '" . $request->post($v) . "'";
                 $additional_fields_value_arr[$v] = $request->post($v);
-                $additional_fields_key_value .= ", `".$v."` = '".$request->post($v)."'";
+                $additional_fields_key_value .= ", `" . $v . "` = '" . $request->post($v) . "'";
             }
         }
         $this->additional_fields_arr = $additional_fields_list;
@@ -102,12 +102,9 @@ class addEditModel
         $placeholders = array(
             'new_alias' => $this->new_alias
         );
-        $lang = isset($language)? $language : Config::get('default_language');
+        $lang = isset($language) ? $language : Config::get('default_language');
         $mat_type = $this->material_type;
         if (!$id) {
-            $placeholders = array(
-                'new_alias' => $this->new_alias
-            );
 
             $sql = "SELECT * FROM `{$mat_type}_{$lang}` WHERE alias= :new_alias";
         } else {
@@ -132,13 +129,13 @@ class addEditModel
 
         $indexModel = new IndexModel();
         $id_mat_type = '';
-        foreach($indexModel->getType_of_Materials() as $v){
-            if($v['type_name'] == $this->material_type){
+        foreach ($indexModel->getType_of_Materials() as $v) {
+            if ($v['type_name'] == $this->material_type) {
                 $id_mat_type = $v['id'];
             }
         }
 
-        $controller = $this->material_type == 'basic_page'? 'Index' : ucfirst($this->material_type);
+        $controller = $this->material_type == 'basic_page' ? 'Index' : ucfirst($this->material_type);
 
         $placeholders = array(
             'controller' => $controller,
@@ -189,6 +186,16 @@ class addEditModel
             $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
             $sth = $dbc->getPDO()->prepare($sql);
             $sth->execute($placeholders);
+// Добавление укр данных в англ. меню - необходимо для нормальной работы меню
+            foreach (Config::get('languages') as $v) {
+                if ($v != Config::get('default_language')) {
+                    $sql = "INSERT INTO `main_menu_{$v}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
+                    $sth = $dbc->getPDO()->prepare($sql);
+                    $sth->execute($placeholders);
+
+                }
+            }
+
         }
 
         $sql = "SELECT MAX(id) AS max_id FROM {$this->material_type}";
@@ -203,7 +210,7 @@ class addEditModel
             'alias' => $this->new_alias
         );
         $additional_fields = '';
-        foreach($this->additional_fields_arr as $v){
+        foreach ($this->additional_fields_arr as $v) {
             $additional_fields .= ", `$v`";
         }
         $lang = Config::get('default_language');
@@ -213,12 +220,16 @@ class addEditModel
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
+        //Добавление тайтла и алиаса для англоязычной версии (пока укр вариант  алиаса), необходимо для меню
+
+
         $placeholders = array(
-            'id_new_page' => $id_new_page
+            'id_new_page' => $id_new_page,
+            'alias' => $this->new_alias
         );
         foreach (Config::get('languages') as $v) {
             if ($v != Config::get('default_language')) {
-                $sql = "INSERT INTO {$this->material_type}_{$v} (`id_{$this->material_type}`) VALUES (:id_new_page)";
+                $sql = "INSERT INTO {$this->material_type}_{$v} (`id_{$this->material_type}`, `alias`) VALUES (:id_new_page, :alias)";
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
             }
@@ -244,7 +255,7 @@ class addEditModel
         $placeholders = array(
             'title' => $this->title,
             'alias' => $this->new_alias,
-            'id_'.$this->material_type => $id_{$this->material_type}
+            'id_' . $this->material_type => $id_{$this->material_type}
         );
         $sql = "UPDATE `{$this->material_type}_{$lang}` SET `title`= :title,`alias`= :alias $this->additional_fields_key_value WHERE id_{$this->material_type} = :id_{$this->material_type} ";
 
@@ -259,7 +270,7 @@ class addEditModel
         $sql = "UPDATE `pages` SET `status`= :publish WHERE id = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
-// Проверка - есть ли для этого докумета пункт меню
+         // Проверка - есть ли для этого докумета пункт меню
         $placeholders = array(
             'id' => $id,
         );
@@ -290,16 +301,78 @@ class addEditModel
             );
             $lang = Config::get('default_language');
 
-            $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
-            $sth = $dbc->getPDO()->prepare($sql);
-            $sth->execute($placeholders);
+
+                $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
+                $sth = $dbc->getPDO()->prepare($sql);
+                $sth->execute($placeholders);
+
+            foreach (Config::get('languages') as $v){
+                if($v != $lang){
+
+                    $placeholders = array();
+
+                    $sql = "SELECT `alias_menu` FROM main_menu_{$v} WHERE id_main_menu =
+                (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = {$id}) )";
+                    $data = $dbc->getDate($sql, $placeholders);
+                    $parent_alias = $data[0]['alias_menu'];
+
+
+                    $sql = "SELECT n_{$v}.title FROM {$this->material_type}_{$v} n_{$v} JOIN {$this->material_type} n ON n_{$v}.id_{$this->material_type} = n.id AND n.id_page = {$id}";
+                    $data = $dbc->getDate($sql, $placeholders);
+                    $title = $data[0]['title'];
+
+                    $translitClass = new Translit($title);
+                    $translit = $translitClass->translit;
+                    $alias_arr = array($parent_alias, $translit);
+                    $new_alias = implode('/', $alias_arr);
+
+                    $placeholders = array(
+                        'id_new_menu' => $id_new_menu,
+                        'title' => $title,
+                        'alias' => $new_alias
+                    );
+
+                    $sql = "INSERT INTO `main_menu_{$v}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
+                    $sth = $dbc->getPDO()->prepare($sql);
+                    $sth->execute($placeholders);
+                }
+            }
 
         }
 
 
         if (!isset($with_without_menu)) {
+            $lang = Config::get('default_language');
+            $this->edit_menu($id, $lang, $this->new_alias);
 
-            $this->edit_menu($id);
+
+            foreach (Config::get('languages') as $v) {
+                if ($v != $lang) {
+                    $sql = "SELECT `alias_menu` FROM main_menu_{$v} WHERE id_main_menu =
+                (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = {$id}) )";
+                    $data = $dbc->getDate($sql, $placeholders);
+                    $parent_alias = $data[0]['alias_menu'];
+
+
+                    $sql = "SELECT mm_{$v}.alias_menu, mm_{$v}.name  FROM main_menu_{$v} mm_{$v} JOIN main_menu mm ON mm_{$v}.id_main_menu = mm.id AND mm.id_page = {$id}";
+                    $data = $dbc->getDate($sql, $placeholders);
+                    $old_alias = $data[0]['alias_menu'];
+                    $alias_arr = explode('/', $old_alias);
+                    $last_element = array_pop($alias_arr);
+                    $alias_arr = array($parent_alias, $last_element);
+                    $new_alias = implode('/', $alias_arr);
+                    $title = $data[0]['name'];
+
+                    $sql = "UPDATE {$this->material_type}_{$v} bp_{$v} JOIN {$this->material_type} bp SET `alias`= " . '"' . $new_alias . '"' . " WHERE bp_{$v}.id_{$this->material_type} = bp.id AND bp.id_page = {$id} ";
+                    $placeholders = array();
+                    $sth = $dbc->getPDO()->prepare($sql);
+                    $sth->execute($placeholders);
+
+
+                    $this->edit_menu($id, $v, $new_alias, $title);
+                }
+            }
+
         } else {
             $edit = 1;
             $deleteModel = new DeleteModel($id, $edit);
@@ -309,10 +382,56 @@ class addEditModel
 
     }
 
-
-    private function recurs_update_menu($dbc, $data, $placeholders)
+    public function translate($id, $lang)
     {
-        $lang = Router::getLanguage();
+        // Получение нового алиаса по пункту меню
+
+        $placeholders = array(
+            'id' => $id
+        );
+        $dbc = Connect::getConnection();
+        $sql = "SELECT `alias_menu` FROM main_menu_{$lang} WHERE id_main_menu =
+                (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = :id) )";
+        $data = $dbc->getDate($sql, $placeholders);
+        $parent_alias = $data[0]['alias_menu'];
+
+        $translitClass = new Translit($this->title_or_menu_name);
+        $translit = $translitClass->translit;
+
+        $new_alias = $parent_alias . '/'. $translit;
+
+
+        $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}
+        AND bp.id_page = :id";
+        $date = $dbc->getDate($sql, $placeholders);
+        $id_{$this->material_type} = $date[0]['id'];
+
+
+        $placeholders = array(
+            'title' => $this->title,
+            'alias' => $new_alias,
+            'id_' . $this->material_type => $id_{$this->material_type}
+        );
+        $sql = "UPDATE `{$this->material_type}_{$lang}` SET `title`= :title,`alias`= :alias $this->additional_fields_key_value WHERE id_{$this->material_type} = :id_{$this->material_type} ";
+        $sth = $dbc->getPDO()->prepare($sql);
+        $sth->execute($placeholders);
+
+        $placeholders = array(
+            'id' => $id
+        );
+        $sql = "SELECT `id_parent_page` FROM `main_menu` WHERE `id_page`= :id";
+        $date = $dbc->getDate($sql, $placeholders);
+        $id_parent = $date[0]['id_parent_page'];
+
+        $this->edit_menu($id, 'en', $new_alias, $this->title_or_menu_name, $id_parent );
+
+
+    }
+
+
+    private function recurs_update_menu($dbc, $data, $placeholders, $lang)
+    {
+        // $lang = Router::getLanguage();
 
         if (count($data)) {
             foreach ($data as $v) {
@@ -341,8 +460,6 @@ class addEditModel
                 $sth->execute($placeholders);
 
 
-
-
                 $sql = "SELECT `type_name` FROM type_of_materyals tm JOIN pages p ON p.id = {$id_t} AND p.id_mat_type = tm.id";
                 $d = $dbc->getDate($sql, $placeholders);
                 $material_type = $d[0]['type_name'];
@@ -353,13 +470,13 @@ class addEditModel
                 $sth = $dbc->getPDO()->prepare($sql);
                 $sth->execute($placeholders);
 
-                $this->recurs_update_menu($dbc, $data, $placeholders);
+                $this->recurs_update_menu($dbc, $data, $placeholders, $lang);
             }
         }
 
     }
 
-    private function edit_menu($id_page)
+    private function edit_menu($id_page, $lang, $new_alias, $title = null, $id_parent = null)
     {
         $placeholders = array(
             'id' => $id_page
@@ -368,13 +485,15 @@ class addEditModel
         $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = :id";
         $data = $dbc->getDate($sql, $placeholders);
         // Debugger::PrintR($date);
+        $new_title = $title ? $title : $this->title_or_menu_name;
+        $id_p = $id_parent ? $id_parent :  $this->id_parent;
 
-        $lang = Router::getLanguage();
+        //   $lang = Router::getLanguage();
         $placeholders = array(
             'id' => $id_page,
-            'title' => $this->title_or_menu_name,
-            'alias' => $this->new_alias,
-            'id_parent_page' => $this->id_parent
+            'title' => $new_title,
+            'alias' => $new_alias,
+            'id_parent_page' => $id_p
         );
 
         $sql = "UPDATE main_menu_{$lang} mm_{$lang} JOIN main_menu mm SET mm_{$lang}.name = :title, mm_{$lang}.alias_menu = :alias, mm.id_parent_page = :id_parent_page
@@ -384,14 +503,14 @@ class addEditModel
 
         $placeholders = array();
 
-        $this->recurs_update_menu($dbc, $data, $placeholders);
+        $this->recurs_update_menu($dbc, $data, $placeholders, $lang);
     }
+
 
     public function getAlias()
     {
         return $this->new_alias;
     }
-
 
 
     public function getTitle()

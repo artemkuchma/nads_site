@@ -16,26 +16,42 @@
 <table border="1">
     <tr>
         <td>id</td>
-        <td>Тип материала</td>
+        <td>Тип материала</br>
+            <?php  foreach($type_of_materials as $k => $v):
+                if($v != 'admin'):?>
+                    <a href="/admin/<?= $v ?>"><?= $v ?></a></br>
+
+
+            <?php endif;
+            endforeach ?>
+            <a href="/admin/materials">all</a></br>
+
+
+        </td>
         <td>Опубликовано/</br>Не опубликовано</td>
         <td>Укр.</br> материал</td>
+        <td>Укр.</br> пункт меню</td>
         <td>Редактировать</br> укр</td>
 
-        <td>Добавить</br> перевод</td>
+
         <td>Англ.</br> материал</td>
+        <td>Англ.</br> путь меню</td>
         <td>Редактировать</br> англ</td>
         <td>Удалить </br>материал</td>
     </tr>
-<?php  foreach($data_materials as $k => $v): ?>
+<?php  foreach($data_materials as $k => $v):?>
+
         <tr>
             <td><?= $v['id'] ?></td>
             <td><?= $v['type_materials'] ?></td>
             <td><?= $v['status'] ?></td>
             <td><a href="/<?= $v['alias_uk'] ?>"><?= $v['title_uk'] ?></a></td>
+            <td><?= isset($menu_data['uk'][$v['id']]['name'])? $menu_data['uk'][$v['id']]['name']: '-'  ?></td>
             <td><a href="/admin/edit_<?= $v['type_materials'] ?>/<?= $v['alias_uk'] ?>">Редактировать</a></td>
-            <td></td>
-            <td><?= $v['title_en'] ?></td>
-            <td></td>
+
+            <td><a href="/en/<?= $v['alias_en'] ?>"><?= $v['title_en'] ?></a></td>
+            <td><?= isset($menu_data['en'][$v['id']]['name'])? $menu_data['en'][$v['id']]['name']: '-'  ?></td>
+            <td><a href="/admin/translate_<?= $v['type_materials'] ?>/<?= $v['alias_uk'] ?>">Перевести/Редактировать</a></td>
             <td>
                 <?php if(!isset($system_doc[$v['id']])): ?>
                 <a href="/admin/delete/<?= $v['alias_uk'] ?>">Удалить материал</a>
@@ -43,7 +59,7 @@
 
             </td>
         </tr>
-<?php endforeach ?>
+<?php endforeach; ?>
 </table>
 <?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml',$data_pagination,$data_url,$data_materials, 'materials_per_page'); ?>
 
