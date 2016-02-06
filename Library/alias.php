@@ -71,25 +71,11 @@ $url_alias = array(
             'alias_uk' => 'storinka_ne_opublikovana',
       ),
 
-      212 => array(
+      216 => array(
             'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => 'test_2',
-            'alias_uk' => 'test_2',
-      ),
-
-      211 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'about/news_1',
-            'alias_uk' => 'o_nas/novost_1',
-      ),
-
-      213 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'about/news_2',
-            'alias_uk' => 'o_nas/novost_2',
+            'action' => 'contact',
+            'alias_en' => 'contacts',
+            'alias_uk' => 'kontakty',
       ),
 
       17 => array(
@@ -174,5 +160,12 @@ $url_alias = array(
             'action' => 'menuEdit',
             'alias_en' => 'admin/menu',
             'alias_uk' => 'admin/menu',
+      ),
+
+      215 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/messages',
+            'alias_uk' => 'admin/messages',
       ),
 );

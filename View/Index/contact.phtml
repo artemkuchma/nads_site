@@ -1,0 +1,10 @@
+<h1>Contact</h1>
+<p><?= $msg ?></p>
+
+<form method="post">
+    Name: <input type="text" name="name" value="<?=$form->name?>"> <br>
+    Email: <input type="email" name="email" value="<?=$form->email?>"> <br>
+    Message: <textarea name="message" id="" cols="30" rows="10"><?=$form->message?></textarea>
+    <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s')?>">
+    <button type="submit">Go</button>
+</form>

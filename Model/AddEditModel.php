@@ -394,11 +394,14 @@ class addEditModel
                 (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = :id) )";
         $data = $dbc->getDate($sql, $placeholders);
         $parent_alias = $data[0]['alias_menu'];
+        //предотвращает появление двойного слеша в алиасах где нет родительского элемента
+        $slash = isset($parent_alias) ? '/' : '';
+
 
         $translitClass = new Translit($this->title_or_menu_name);
         $translit = $translitClass->translit;
 
-        $new_alias = $parent_alias . '/'. $translit;
+        $new_alias = $parent_alias .$slash. $translit;
 
 
         $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}

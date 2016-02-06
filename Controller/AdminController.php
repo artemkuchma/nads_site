@@ -96,7 +96,8 @@ class AdminController extends Controller
                 '204' => Config::get('default_id_error_204'),
                 '500' => Config::get('default_id_error_500'),
                 'default_page' => Config::get('default_id'),
-                'not_publish' => Config::get('not_publish')
+                'not_publish' => Config::get('not_publish'),
+                'contacts' => Config::get('contacts')
             );
             $system_doc_rev = array_flip($system_doc);
 
@@ -441,8 +442,7 @@ class AdminController extends Controller
             foreach (Config::get('languages') as $v) {
                 $data_page[$v] = $indexModel->getPage(Router::getId(), $v, $this->material_type);
             }
-            Debugger::PrintR($data_page);
-            //echo Router::getLanguage();
+
 
             $request = new Request();
             $addModel = new AddEditModel($request, $this->material_type);

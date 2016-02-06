@@ -3,6 +3,11 @@
 
 class IndexController extends Controller {
 
+    private function index()
+    {
+
+    }
+
     public function indexAction()
     {
         //$this->rewrite_file_alias();
@@ -25,14 +30,7 @@ class IndexController extends Controller {
 
         return $this->render($args);
     }
-    public function testAction (Request $request)
-    {
 
-        $args = array(
-            'text'=>'Еще одна тестовая страница'
-        );
-        return $this->render($args);
-    }
 
     public static  function errorAction(Exception $e)
     {
@@ -45,6 +43,32 @@ class IndexController extends Controller {
 
 
        self::rewrite_file(WEBROOT_DIR.'log.txt','a', $date);
+    }
+
+    public function contactAction(Request $request)
+    {
+        $form = new ContactModel($request);
+        $msg = $request->get('msg');
+
+        if ($request->isPost()) {
+            if ($form->isValid()) {
+                $this->redirect('/_index.php?rout=index/contact&id=3&msg=Сообщение отправленно');
+                $form->saveToDb();
+                mail('ts@test.com', 'HELLOW', $form->name . PHP_EOL . $form->email . PHP_EOL . $form->message. PHP_EOL. $form->date);
+                $form->name = '';
+                $form->email = '';
+                $form->message = '';
+            }else{
+                $msg = 'Fail!!!';
+            }
+        }
+        $args = array(
+            'form' => $form,
+            'msg' => $msg
+        );
+
+
+        return $this->render($args);
     }
 /**
     public function deleteAction()
