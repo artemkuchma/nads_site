@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="/Webroot/plagins/ckeditor_mono/ckeditor.js"></script>
     <title><?=Config::get('site_name') ?></title>
 </head>
 <body>
@@ -19,5 +20,20 @@
 <?=$content?>
 <?= Router::getId() == 17 ? $admin_menu : null ?>
 
+
+<script type="text/javascript">
+    CKEDITOR.replace("text",{'filebrowserBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=files',
+        'filebrowserImageBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=images',
+        'filebrowserFlashBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=flash',
+        'filebrowserUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=files',
+        'filebrowserImageUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=images',
+        'filebrowserFlashUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=flash'});
+    CKEDITOR.replace("description",{'filebrowserBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=files',
+        'filebrowserImageBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=images',
+        'filebrowserFlashBrowseUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=flash',
+        'filebrowserUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=files',
+        'filebrowserImageUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=images',
+        'filebrowserFlashUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=flash'});
+</script>
 </body>
 </html>

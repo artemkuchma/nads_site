@@ -397,11 +397,12 @@ class addEditModel
         //предотвращает появление двойного слеша в алиасах где нет родительского элемента
         $slash = isset($parent_alias) ? '/' : '';
 
-
         $translitClass = new Translit($this->title_or_menu_name);
         $translit = $translitClass->translit;
 
         $new_alias = $parent_alias .$slash. $translit;
+        trim($new_alias, '/');
+
 
 
         $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}
@@ -452,6 +453,9 @@ class addEditModel
                 $last_element = array_pop($alias_arr);
                 $alias_arr = array($parent_alias, $last_element);
                 $new_alias = implode('/', $alias_arr);
+
+              //  trim($new_alias, '/');
+
 
 
                 $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = {$id_t}";

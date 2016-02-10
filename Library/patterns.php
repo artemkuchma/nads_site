@@ -86,6 +86,13 @@ $url_patterns = array(
         'action' => 'translateNews',
         'elements_before_alias' => 2
     ),
+    'delete_message' => array(
+        'pattern_uk' => 'admin/delete_message',
+        'pattern_en' => 'admin/delete_message',
+        'controller' => 'admin',
+        'action' => 'deleteMessage',
+        'elements_before_alias' => 2
+    ),
 
     /**
      * также можно добавлять сюда и контроллеры. Контроллеры и экшены прописанные в шаблонах перепишут

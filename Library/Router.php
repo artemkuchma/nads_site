@@ -12,12 +12,15 @@ class Router
     private static $rout;
 
 
+
+
     private static function url_to_array($uri)
     {
         self::$uri = urldecode(trim($uri, '/'));
         $uri_parts = explode('?', self::$uri);
 
         $first_part = $uri_parts[0];
+
 
         $uri_array = explode('/', $first_part);
         $uri_elements = array();
@@ -151,6 +154,7 @@ class Router
     {
         return self::$url_array;
     }
+
 
 
 

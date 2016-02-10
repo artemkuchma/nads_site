@@ -14,6 +14,25 @@ abstract class Controller
         return $templateFile;
     }
 
+    public function index($material_type){
+        $indexModel = new IndexModel();
+        $data = $indexModel->getPage(Router::getId(), Router::getLanguage(),$material_type);
+        if (!$data) {
+            throw new Exception(" Page is not exist", 404);
+
+        }
+        elseif($data[0]['status'] == 0){
+
+            throw new Exception(" Page not publish", 2);
+        }
+
+        if(!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(),$material_type)){
+            throw new Exception(" Page has no translation", 204);
+        }
+        $args = $data[0];
+        return $args;
+    }
+
     public static  function render_simple($path,$params1 = null,$params2 = null,$params3 = null,$params4 = null)
     {
         ob_start();
@@ -22,12 +41,12 @@ abstract class Controller
     }
 
 
-    protected function render(array $args = array())
+    protected function render(array $args = array(), $tpl = null)
     {
         extract($args);
 
         ob_start();
-        require $this->file_path(); //$templateFile;
+        require $this->file_path($tpl); //$templateFile;
         $content = ob_get_clean();
 
         $menu = new MenuController();

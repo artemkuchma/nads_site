@@ -98,5 +98,16 @@ pages p JOIN `{$material_type}` JOIN `{$material_type}_en` JOIN `{$material_type
         return empty($date[0]['title']) ? false : true;
     }
 
+    public function getViews($material_type)
+    {
+        $dbc = Connect::getConnection();
+        $lang = Router::getLanguage();
+        $sql = "SELECT * FROM `{$material_type}_{$lang}`";
+        $placeholders = array();
+        $date = $dbc->getDate($sql, $placeholders);
 
+        return $date;
+
+
+    }
 }

@@ -1,0 +1,27 @@
+<h1><?= $data_admin['name'] ?></h1>
+
+<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','message_per_page'); ?>
+
+<table border="1">
+    <tr>
+
+        <td>Пользователь</td>
+        <td>e-mail</td>
+        <td>Сообщение</td>
+        <td>Дата-время</td>
+        <td>Регистрация</td>
+        <td>Удалить</td>
+    </tr>
+    <?php  foreach($data_materials as $k => $v): ?>
+        <tr>
+
+            <td><?= $v['user_name'] ?></td>
+            <td><?= $v['user_email']?></td>
+            <td><?= $v['message']?></td>
+            <td><?= $v['message_date']?></td>
+            <td><?= $v['id_reg_user']?  'Да' : 'Нет' ?></td>
+            <td><a href="/admin/delete_message?id=<?= $v['id'] ?>">Удалить</a></td>
+        </tr>
+    <?php endforeach ?>
+</table>
+<?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml',$data_pagination, $data_url, $data_materials, 'message_per_page'); ?>

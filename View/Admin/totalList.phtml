@@ -39,7 +39,8 @@
         <td>Редактировать</br> англ</td>
         <td>Удалить </br>материал</td>
     </tr>
-<?php  foreach($data_materials as $k => $v):?>
+<?php if(!empty($data_materials)):
+    foreach($data_materials as $k => $v):?>
 
         <tr>
             <td><?= $v['id'] ?></td>
@@ -59,7 +60,8 @@
 
             </td>
         </tr>
-<?php endforeach; ?>
+<?php endforeach;
+    endif ?>
 </table>
 <?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml',$data_pagination,$data_url,$data_materials, 'materials_per_page'); ?>
 

@@ -1,4 +1,8 @@
 <h1><?= $name ?></h1>
 
 <p><?= $text ?></p>
+<?php if(Router::getId() == 223): ?>
+<div><a target="_blank" href="/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=files&CKEditor=text_edit_form_bp&CKEditorFuncNum=1&langCode=ru">Менеджер управления файлами</a></div>
+<div><a target="_blank" href="/Webroot/plagins/ckeditor_mono/kcfinder/browse.php?type=images&CKEditor=text_edit_form_bp&CKEditorFuncNum=1&langCode=ru">Менеджер управления изображениями</a></div>
+<?php endif ?>
 

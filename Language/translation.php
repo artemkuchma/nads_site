@@ -105,4 +105,24 @@ return array(
         'en' => 'Next',
         'uk' => 'Наступна'
     ),
+    'message_not_send' => array(
+        'en' => 'The message was not sent!',
+        'uk' => 'Сообщение не было отправленно!'
+    ),
+    'message_send' => array(
+        'en' => 'The message was sent!',
+        'uk' => 'Сообщение отправленно!'
+    ),
+    'name' => array(
+        'en' => 'Name: ',
+        'uk' => 'Iм\'я: '
+    ),
+    'message' => array(
+        'en' => 'Message: ',
+        'uk' => 'Повiдомлення: '
+    ),
+    'read_more' => array(
+        'en' => 'Read more',
+        'uk' => 'Читать далее'
+    ),
 );

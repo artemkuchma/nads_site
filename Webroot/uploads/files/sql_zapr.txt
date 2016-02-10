@@ -1,0 +1,14 @@
+SELECT pages.id, pages.controller, pages.action, basic_page_en.alias AS alias_en, basic_page_uk.alias AS alias_uk FROM `pages` JOIN `basic_page` JOIN `basic_page_en` JOIN `basic_page_uk` ON (pages.id = basic_page.id_page AND basic_page.id = basic_page_en.id_basic_page) AND (pages.id = basic_page.id_page AND basic_page.id = basic_page_uk.id_basic_page )
+
+
+SELECT pages.id, pages.status, basic_page_uk.title FROM `pages` JOIN `basic_page` JOIN `basic_page_uk` WHERE pages.id = 11 AND pages.id = basic_page.id_page AND  basic_page.id = basic_page_uk.id_basic_page
+
+SELECT mm.id_page, mm.id_parent_page, mm.status, mm_en.name FROM main_menu mm JOIN main_menu_en mm_en ON mm.id = mm_en.id_main_menu 
+
+SELECT mm.id_page, mm.id_parent_page, mm.status, mm_en.name FROM main_menu mm JOIN main_menu_en mm_en ON mm.id = mm_en.id_main_menu
+
+
+
+
+SELECT mm.id_page, mm.id_parent_page, mm.status, mm_en.name, tm.type_name FROM main_menu mm JOIN 
+main_menu_en mm_en JOIN pages p JOIN type_of_materyals tm ON mm.id = mm_en.id_main_menu AND mm.id_page = p.id AND p.id_mat_type = tm.id

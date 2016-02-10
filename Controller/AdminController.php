@@ -21,6 +21,8 @@ class AdminController extends Controller
 
     }
 
+
+
     private function totalListMaterialType()
     {
         switch (Router::getId()) {
@@ -97,7 +99,8 @@ class AdminController extends Controller
                 '500' => Config::get('default_id_error_500'),
                 'default_page' => Config::get('default_id'),
                 'not_publish' => Config::get('not_publish'),
-                'contacts' => Config::get('contacts')
+                'contacts' => Config::get('contacts'),
+                'news' => Config::get('news'),
             );
             $system_doc_rev = array_flip($system_doc);
 
@@ -223,6 +226,66 @@ class AdminController extends Controller
 
     }
 
+    public function messagesListAction()
+    {
+        if (Session::hasUser('admin')) {
+            $adminModel = new AdminModel();
+            $data_admin = $adminModel->getAdminPage(Router::getId());
+
+            $request = new Request();
+            $contactModel = new ContactModel($request);
+            $data_message = $contactModel->getMessagesList();
+
+            $items_count = count($data_message);
+            $items_per_page = Config::get('message_per_page');
+
+
+            $currentPage = $request->get('page') ? (int)$request->get('page') : 1;
+            $data_pagination = self::getPagination($items_count, $items_per_page, $currentPage);
+
+            if ($items_count) {
+                $data_message_page = array_chunk($data_message, $items_per_page, true);
+                if (isset($data_message_page[$currentPage - 1])) {
+                    $data_message_page = $data_message_page[$currentPage - 1];
+                } else {
+                    throw new Exception('Page (' . Router::getUri() . ') not found', 404);
+                }
+            } else {
+            $data_message_page = null;
+        }
+            $data_url = explode('?', Router::getUri());
+
+            $args = array(
+                'data_admin' => $data_admin[0],
+                'data_message' => $data_message,
+                'data_materials' => $data_message_page,
+                'data_pagination' => $data_pagination,
+                'data_url' => $data_url[0]
+            );
+            return $this->render_admin($args);
+
+        } else {
+            throw new Exception('Access is forbidden', 403);
+
+        }
+
+    }
+
+    public function deleteMessageAction()
+    {
+        if (Session::hasUser('admin')) {
+            $request = new Request();
+            $contactModel = new ContactModel($request);
+            $contactModel->deleteMessage($request->get('id'));
+
+            $this->redirect('/admin/messages');
+
+        } else {
+            throw new Exception('Access is forbidden', 403);
+
+        }
+    }
+
     public function menuEditAction()
     {
         if (Session::hasUser('admin')) {
@@ -234,8 +297,6 @@ class AdminController extends Controller
             $data = $menuIdEditModel->main_menu;
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
-
-            // Debugger::PrintR($main_menu_array);
 
             if ($request->isPost()) {
                 if ($menuIdEditModel->isEmpty()) {
@@ -377,8 +438,6 @@ class AdminController extends Controller
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
             $data_menu_item = $menuModel->getMenuDatePage($data_page[0]['id']);
-            // Debugger::PrintR($main_menu_array);
-
 
             $request = new Request();
             $editModel = new AddEditModel($request, $this->material_type);
@@ -401,8 +460,6 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
-            //  Debugger::PrintR($data_page);
-
 
             $args = array(
                 'data_page' => $data_page,

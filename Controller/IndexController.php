@@ -1,91 +1,94 @@
 <?php
 
 
-class IndexController extends Controller {
+class IndexController extends Controller
+{
 
-    private function index()
-    {
-
-    }
 
     public function indexAction()
     {
         //$this->rewrite_file_alias();
-        $indexModel = new IndexModel();
-        $data = $indexModel->getPage(Router::getId(), Router::getLanguage(),'basic_page');
-        if (!$data) {
-            throw new Exception(" Page is not exist", 404);
-
-        }
-        elseif($data[0]['status'] == 0){
-
-            throw new Exception(" Page not publish", 2);
-        }
-
-        if(!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(),'basic_page')){
-            throw new Exception(" Page has no translation", 204);
-        }
-        $args = $data[0];
-
+        $args = $this->index('basic_page');
 
         return $this->render($args);
     }
 
 
-    public static  function errorAction(Exception $e)
+    public static function errorAction(Exception $e)
     {
-        $date = date('Y-m-d H:i:s') .PHP_EOL;
-        $date .= '/./ '.$e->getCode().PHP_EOL;
-        $date .= '/./ '.$e->getMessage().PHP_EOL;
-        $date .= '/./ '.$e->getFile().PHP_EOL;
-        $date .= '/./ '.$e->getLine().PHP_EOL;
+        $date = date('Y-m-d H:i:s') . PHP_EOL;
+        $date .= '/./ ' . $e->getCode() . PHP_EOL;
+        $date .= '/./ ' . $e->getMessage() . PHP_EOL;
+        $date .= '/./ ' . $e->getFile() . PHP_EOL;
+        $date .= '/./ ' . $e->getLine() . PHP_EOL;
         $date .= '///';
 
 
-       self::rewrite_file(WEBROOT_DIR.'log.txt','a', $date);
+        self::rewrite_file(WEBROOT_DIR . 'log.txt', 'a', $date);
     }
 
     public function contactAction(Request $request)
     {
+        $data_page = $this->index('basic_page');
         $form = new ContactModel($request);
-        $msg = $request->get('msg');
 
         if ($request->isPost()) {
             if ($form->isValid()) {
-                $this->redirect('/_index.php?rout=index/contact&id=3&msg=Сообщение отправленно');
-                $form->saveToDb();
-                mail('ts@test.com', 'HELLOW', $form->name . PHP_EOL . $form->email . PHP_EOL . $form->message. PHP_EOL. $form->date);
+                $form->saveToDB();
+                mail(Config::get('admin_email'), "Сообщение от пользователя $form->name ", $form->name . PHP_EOL . $form->email . PHP_EOL . $form->message . PHP_EOL . $form->date);
                 $form->name = '';
                 $form->email = '';
                 $form->message = '';
-            }else{
-                $msg = 'Fail!!!';
+                Session::setFlash(__t('message_send'));
+            } else {
+                Session::setFlash(__t('message_not_send'));
             }
         }
         $args = array(
             'form' => $form,
-            'msg' => $msg
+            'data_page' => $data_page,
         );
-
 
         return $this->render($args);
     }
-/**
-    public function deleteAction()
+
+    public function viewsNewsAction()
     {
-        if (Session::hasUser('admin')){
+        $data_page = $this->index('basic_page');
+        $indexModel = new IndexModel();
+        $data_news_arr = $indexModel->getViews('news');
 
+        $items_count = count($data_news_arr);
+        $items_per_page = Config::get('news_per_page');
 
-            $adminController = new AdminController();
-            $adminController->deleteAction();
+        $request = new Request();
+        $currentPage = $request->get('page') ? (int)$request->get('page') : 1;
+        $data_pagination = self::getPagination($items_count, $items_per_page, $currentPage);
 
-        }else {
-            throw new Exception('Access  denied', 403);
+        if ($items_count) {
+            $data_news_page = array_chunk($data_news_arr, $items_per_page, true);
+            if (isset($data_news_page[$currentPage - 1])) {
+                $data_news_page = $data_news_page[$currentPage - 1];
+            } else {
+                throw new Exception('Page (' . Router::getUri() . ') not found', 404);
+            }
+        } else {
+            $data_news_page = null;
         }
+        $data_url = explode('?', Router::getUri());
 
+        $lang = Router::getLanguage()==Config::get('default_language')? '' : Router::getLanguage().'/';
+
+        $args = array(
+            'data_page' => $data_page,
+            'data_news' => $data_news_page,
+            'data_pagination' => $data_pagination,
+            'data_url' => $data_url[0],
+            'lang' => $lang
+        );
+
+        return $this->render($args);
     }
-
-**/
 
 
 }

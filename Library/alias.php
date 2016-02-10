@@ -33,7 +33,7 @@ $url_alias = array(
             'controller' => 'Index',
             'action' => 'index',
             'alias_en' => 'articles/article_1/article_2',
-            'alias_uk' => 'statti/stattia_1/stattia_2',
+            'alias_uk' => 'statti/stattia_1/statya_2',
       ),
 
       13 => array(
@@ -76,6 +76,41 @@ $url_alias = array(
             'action' => 'contact',
             'alias_en' => 'contacts',
             'alias_uk' => 'kontakty',
+      ),
+
+      218 => array(
+            'controller' => 'Index',
+            'action' => 'viewsNews',
+            'alias_en' => 'news',
+            'alias_uk' => 'novyny',
+      ),
+
+      219 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'news/news_1',
+            'alias_uk' => 'novyny/novost_1',
+      ),
+
+      220 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'news/news_2',
+            'alias_uk' => 'novyny/novost_2',
+      ),
+
+      221 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'news/news_3',
+            'alias_uk' => 'novyny/novost_3',
+      ),
+
+      222 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'news/news_4',
+            'alias_uk' => 'novyny/novost_4',
       ),
 
       17 => array(
@@ -164,8 +199,15 @@ $url_alias = array(
 
       215 => array(
             'controller' => 'Admin',
-            'action' => 'index',
+            'action' => 'messagesList',
             'alias_en' => 'admin/messages',
             'alias_uk' => 'admin/messages',
+      ),
+
+      223 => array(
+            'controller' => 'Admin',
+            'action' => 'index',
+            'alias_en' => 'admin/media',
+            'alias_uk' => 'admin/media',
       ),
 );
