@@ -85,6 +85,13 @@ $url_alias = array(
             'alias_uk' => 'novyny',
       ),
 
+      224 => array(
+            'controller' => 'Index',
+            'action' => 'search',
+            'alias_en' => 'search_result',
+            'alias_uk' => 'dannye_poyska',
+      ),
+
       219 => array(
             'controller' => 'News',
             'action' => 'index',

@@ -77,7 +77,7 @@ class IndexController extends Controller
         }
         $data_url = explode('?', Router::getUri());
 
-        $lang = Router::getLanguage()==Config::get('default_language')? '' : Router::getLanguage().'/';
+        $lang = Router::getLanguage() == Config::get('default_language') ? '' : Router::getLanguage() . '/';
 
         $args = array(
             'data_page' => $data_page,
@@ -86,6 +86,71 @@ class IndexController extends Controller
             'data_url' => $data_url[0],
             'lang' => $lang
         );
+
+        return $this->render($args);
+    }
+
+    public function searchAction()
+    {
+        $page_data = $this->index('basic_page');
+
+        //   echo Router::getLanguage().'/' . Router::get_alis_by_id(Config::get('search'), Router::getLanguage());
+        $request = new Request();
+        if ($request->isPost()) {
+            $search = new SearchModel($request);
+            if (!$search->isSmall()) {
+                if (!$search->isLarge()) {
+
+                    $search_data = $search->search();
+                }else{
+                    Session::setFlash(__t('long_inquiry'));
+                }
+            } else {
+                Session::setFlash(__t('short_inquiry'));
+            }
+        }
+        $search_array = array();
+        if (isset($search_data)) {
+            foreach ($search_data as $material_type) {
+                foreach ($material_type as $val) {
+                    $search_array[] = $val;
+                }
+            }
+        }
+        $items_count = count($search_array);
+        $items_per_page = Config::get('search_per_page');
+
+        $request = new Request();
+        $currentPage = $request->get('page') ? (int)$request->get('page') : 1;
+        $data_pagination = self::getPagination($items_count, $items_per_page, $currentPage);
+
+        if ($items_count) {
+            $data_search_page = array_chunk($search_array, $items_per_page, true);
+            if (isset($data_search_page[$currentPage - 1])) {
+                $data_search_page = $data_search_page[$currentPage - 1];
+            } else {
+                throw new Exception('Page (' . Router::getUri() . ') not found', 404);
+            }
+        } else {
+            $data_search_page = null;
+        }
+        $data_url = explode('?', Router::getUri());
+
+        $lang = Router::getLanguage() == Config::get('default_language') ? '' : Router::getLanguage() . '/';
+
+        $search_request = $search->getSearchRequest();
+
+        $args = array(
+            // 'search_result' => $search_data,
+            'page_data' => $page_data,
+            'data_search' => $data_search_page,
+            'data_pagination' => $data_pagination,
+            'data_url' => $data_url[0],
+            'lang' => $lang,
+            'search_request' => $search_request,
+            'items_count' => $items_count
+        );
+        // Debugger::PrintR($search_data);
 
         return $this->render($args);
     }

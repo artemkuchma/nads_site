@@ -49,6 +49,8 @@ abstract class Controller
         require $this->file_path($tpl); //$templateFile;
         $content = ob_get_clean();
 
+        $search = require VIEW_DIR.'searchForm.phtml';
+
         $menu = new MenuController();
         $main_menu = $menu->mainMenuAction();
 

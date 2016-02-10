@@ -1,0 +1,20 @@
+<h1><?= $page_data['title']?></h1>
+<p><?=$page_data['text'] ?></p>
+
+<p><?= __t('search_request'). $search_request ?></p>
+<p><?= __t('search_request_count'). $items_count ?></p>
+
+<?php if(isset($data_search)):
+foreach($data_search as $v): ?>
+
+        <div>
+            <p>
+                <a href="/<?= $lang.$v['alias'] ?>"><?= $v['title'] ?></a>
+            </p>
+        </div>
+
+<?php
+    endforeach;
+    endif ?>
+
+<?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml', $data_pagination, $data_url, $data_search, 'search_per_page'); ?>

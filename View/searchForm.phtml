@@ -1,0 +1,6 @@
+<form name="search" method="post" action="<?= '/'.Router::getLanguage().'/' . Router::get_alis_by_id(Config::get('search'), Router::getLanguage())  ?>" >
+    <input type="search" name="search" placeholder="<?= __t('search') ?>">
+    <button type="submit"><?= __t('find') ?></button>
+</form>
+<p><?= Session::getFlash(); ?></p>
+

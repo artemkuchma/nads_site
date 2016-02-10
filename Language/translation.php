@@ -125,4 +125,28 @@ return array(
         'en' => 'Read more',
         'uk' => 'Читать далее'
     ),
+    'search' => array(
+        'en' => 'Search',
+        'uk' => 'Поиск'
+    ),
+    'find' => array(
+        'en' => 'Search',
+        'uk' => 'Найти'
+    ),
+    'search_request' => array(
+        'en' => 'Search request: ',
+        'uk' => 'Поисковый запрос: '
+    ),
+    'search_request_count' => array(
+        'en' => 'Number of search results: ',
+        'uk' => 'Количество полученных результатов по данному запросу: '
+    ),
+    'short_inquiry' => array(
+        'en' => 'The search query must contain at least 3 characters.',
+        'uk' => 'Поисковый запрос должен содержать не менее 3 символов.'
+    ),
+    'long_inquiry' => array(
+        'en' => 'The search query must contain at least 3 characters.',
+        'uk' => 'The search query must contain no more than 128 characters.'
+    ),
 );

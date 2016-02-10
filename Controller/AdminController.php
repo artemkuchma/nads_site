@@ -101,6 +101,7 @@ class AdminController extends Controller
                 'not_publish' => Config::get('not_publish'),
                 'contacts' => Config::get('contacts'),
                 'news' => Config::get('news'),
+                'search' => Config::get('search'),
             );
             $system_doc_rev = array_flip($system_doc);
 
