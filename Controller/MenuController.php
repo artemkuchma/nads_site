@@ -112,12 +112,7 @@ class MenuController extends Controller
         }
          **/
 
-        echo'<pre>';
-        // print_r(self::getMenuLevelAction($d));
-        echo'</pre>';
-        echo'<pre>';
-        // print_r($args);
-        echo'</pre>';
+
 
         return $args; //$this->render_main_menu($args);//render($args);
 
@@ -150,19 +145,20 @@ class MenuController extends Controller
 
     public static function menu_recurs($array = array(), $main_teg_open, $main_teg_close, $teg_open, $teg_close)
     {
-        echo $main_teg_open;
+        echo '<ul>';
         $lang = '';
         if (Router::getLanguage() != Config::get('default_language')) {
             $lang = Router::getLanguage() . '/';
         }
         foreach ($array as $v) {
-            echo $teg_open . '<a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a>' . $teg_close;
+            echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a>';
             if (isset($v['child'])) {
                 self::menu_recurs($v['child'], $main_teg_open, $main_teg_close, $teg_open, $teg_close);
 
             }
+            echo '</li>';
         }
-        echo $main_teg_close;
+        echo '</ul>';
     }
 
     public function adminMenuAction()

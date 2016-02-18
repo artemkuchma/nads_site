@@ -19,6 +19,7 @@ class Lang
 
     public static function url_translation($lang, $id_default_page)
     {
+        $icon_url = "/Webroot/icons/".$lang.".png";
         $url_arr = array();
         // скрывает язык установленный по умолчанию
         if ($lang != Config::get('default_language')) {
@@ -35,7 +36,8 @@ class Lang
                 $url_arr[] = $rout_pattern;
                 $url_translation = '/' . implode('/', $url_arr);
                 self::$url_translation = $url_translation;
-                return Controller::render_lang_icon($url_translation);
+
+                return Controller::render_lang_icon($url_translation,  $icon_url);
 
             }
         }
@@ -46,7 +48,7 @@ class Lang
         }
         $url_translation = '/' . implode('/', $url_arr);
         self::$url_translation = $url_translation;
-        return Controller::render_lang_icon($url_translation); //$url_translation;
+        return Controller::render_lang_icon($url_translation, $icon_url); //$url_translation;
     }
 
     public static function load_static_translation()

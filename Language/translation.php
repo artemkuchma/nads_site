@@ -126,27 +126,31 @@ return array(
         'uk' => 'Читать далее'
     ),
     'search' => array(
-        'en' => 'Search',
-        'uk' => 'Поиск'
+        'en' => 'Site search',
+        'uk' => 'Пошук по сайту'
     ),
     'find' => array(
         'en' => 'Search',
-        'uk' => 'Найти'
+        'uk' => 'Знайти'
     ),
     'search_request' => array(
         'en' => 'Search request: ',
-        'uk' => 'Поисковый запрос: '
+        'uk' => 'Пошуковий запит: '
     ),
     'search_request_count' => array(
         'en' => 'Number of search results: ',
-        'uk' => 'Количество полученных результатов по данному запросу: '
+        'uk' => 'Кількість отриманих результатів по даному запиту: '
     ),
     'short_inquiry' => array(
         'en' => 'The search query must contain at least 3 characters.',
-        'uk' => 'Поисковый запрос должен содержать не менее 3 символов.'
+        'uk' => 'Пошуковий запит повинен містити не менше 3 символів.'
     ),
     'long_inquiry' => array(
-        'en' => 'The search query must contain at least 3 characters.',
-        'uk' => 'The search query must contain no more than 128 characters.'
+        'en' => 'The search query must contain no more than 128 characters.',
+        'uk' => 'Пошуковий запит повинен містити не бiльше 128 символів.'
+    ),
+    'site_name' => array(
+        'en' => 'National Anti-Doping Center',
+        'uk' => 'Нацiональний антидопiнговий центр'
     ),
 );

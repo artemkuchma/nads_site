@@ -38,7 +38,6 @@ class SearchModel
                $fields_list_value = trim($fields_list_value, 'OR ');
 
                 $sql = "SELECT `id`, `id_{$material_type}` {$fields_list}, `alias` FROM `{$material_type}_{$lang}` WHERE {$fields_list_value}";
-                //echo $sql;
                 $placeholders = array();
                 $data = $dbc->getDate($sql, $placeholders);
 

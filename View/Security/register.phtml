@@ -4,10 +4,10 @@
 
 <br/>
 <form method="post">
-    <?= __t('username') ?>: <input type="text" name="username" value="<?=$registerForm->getUsername(); ?>"/> <br/><br/>
-    Email: <input type="email" name="email" value="<?=$registerForm->getEmail(); ?>"/> <br/><br/>
+    <?= __t('username') ?>: <input type="text" required name="username" value="<?=$registerForm->getUsername(); ?>"/> <br/><br/>
+    Email: <input type="email" name="email" required value="<?=$registerForm->getEmail(); ?>"/> <br/><br/>
     <p><?= __t('password_must_contain') ?></p>
-    <?= __t('password') ?>: <input type="password" name="password"/> <br/><br/>
-   <?= __t('confirm_password') ?>: <input type="password" name="passwordConfirm"/> <br/><br/>
+    <?= __t('password') ?>: <input type="password" required name="password"/> <br/><br/>
+   <?= __t('confirm_password') ?>: <input type="password" required name="passwordConfirm"/> <br/><br/>
     <input type="submit" value="<?= __t('submit') ?>"/>
 </form>

@@ -6,6 +6,7 @@ class Request
     private $get = array();
     private $post = array();
     private $server = array();
+    private $files = array();
 
     private function request_method($method, $key)
     {
@@ -20,6 +21,7 @@ class Request
         $this->get = $_GET;
         $this->post = $_POST;
         $this->server = $_SERVER;
+        $this->files = $_FILES;
     }
 
 
@@ -37,6 +39,19 @@ class Request
     public function server($key)
     {
         return $this->request_method($this->server, $key);
+    }
+
+    public function files($key)
+    {
+        if (isset($this->files['userfile'][$key])){
+            return $this->files['userfile'][$key];
+        }
+        return null;
+    }
+
+    public function isUserfile()
+    {
+        return isset($this->files['userfile'])? true : false;
     }
 
     public function isPost()

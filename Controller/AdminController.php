@@ -22,7 +22,6 @@ class AdminController extends Controller
     }
 
 
-
     private function totalListMaterialType()
     {
         switch (Router::getId()) {
@@ -252,8 +251,8 @@ class AdminController extends Controller
                     throw new Exception('Page (' . Router::getUri() . ') not found', 404);
                 }
             } else {
-            $data_message_page = null;
-        }
+                $data_message_page = null;
+            }
             $data_url = explode('?', Router::getUri());
 
             $args = array(
@@ -305,7 +304,7 @@ class AdminController extends Controller
                         if ($menuIdEditModel->isNumeric()) {
                             if ($menuIdEditModel->isNumberTrue()) {
 
-                                 $menuIdEditModel->insertIdMenuItems();
+                                $menuIdEditModel->insertIdMenuItems();
                                 Controller::redirect('/admin/menu');
 
                             } else {
@@ -363,13 +362,27 @@ class AdminController extends Controller
             $data = $menuModel->getMainMenu('uk');
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
+            $redirect_status = null;
+
 
             if ($request->isPost()) {
                 if ($addModel->isValid()) {
                     if ($addModel->isAliasExist()) {
                         if ($addModel->inMenu()) {
+                            $file_data = array(
+                                'max_image_size' => Config::get('max_image_size'),
+                                'max_image_width' => Config::get('max_image_width'),
+                                'max_image_height' => Config::get('max_image_height')
+                            );
+                            $fileUpload = new UploadFile($request, $file_data);
+                            $redirect_status = $fileUpload->uploadImg($request, $this->material_type);
+                            if ($redirect_status) {
 
-                            $addModel->add();
+
+                                $addModel->add();
+
+
+                            }
 
                         } else {
                             $with_without_menu = 1;
@@ -387,7 +400,9 @@ class AdminController extends Controller
                 'data_admin' => $data_admin[0],
                 'addModel' => $addModel,
                 'data_menu' => $main_menu_array,
-                'redirect' => $request->post('redirect')
+                'redirect' => $request->post('redirect'),
+                'redirect_status' => $redirect_status
+
             );
             $tpl = 'add' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
 
@@ -439,6 +454,8 @@ class AdminController extends Controller
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
             $data_menu_item = $menuModel->getMenuDatePage($data_page[0]['id']);
+            $redirect_status = null;
+
 
             $request = new Request();
             $editModel = new AddEditModel($request, $this->material_type);
@@ -447,7 +464,18 @@ class AdminController extends Controller
                     if ($editModel->isAliasExist($data_page[0]['id'])) {
                         if ($editModel->inMenu()) {
 
+                            $file_data = array(
+                                'max_image_size' => Config::get('max_image_size'),
+                                'max_image_width' => Config::get('max_image_width'),
+                                'max_image_height' => Config::get('max_image_height')
+                            );
+                            $fileUpload = new UploadFile($request, $file_data);
+                            $redirect_status = $fileUpload->uploadImg($request, $this->material_type);
+                            if ($redirect_status) {
+
                             $editModel->edit($data_page[0]['id']);
+
+                            }
 
                         } else {
                             $with_without_menu = 1;
@@ -467,7 +495,9 @@ class AdminController extends Controller
                 'data_menu' => $main_menu_array,
                 'edit_model' => $editModel,
                 'data_menu_item' => $data_menu_item,
-                'redirect' => $request->post('redirect')
+                'redirect' => $request->post('redirect'),
+                'redirect_status' => $redirect_status,
+                'id' => $data_page[0]['id']
             );
 
             $tpl = 'edit' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));

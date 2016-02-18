@@ -7,7 +7,7 @@
 
 
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <label for="title_edit_form_bp">Заголовок: </label>
     <input type="text" required name="title" id="title_edit_form_bp" value="<?= $edit_model->getTitle() ? $edit_model->getTitle() : $data_page[0]['title']; ?>"/> <br/><br/>
     <label for="description_edit_form_bp">Краткое описание: </label>
@@ -15,6 +15,13 @@
 
     <label for="text_edit_form_bp">Текст страници: </label>
     <textarea name="text" id="text_edit_form_bp" cols="30" rows="10"><?= isset($edit_model->getAdditionalFieldsValueArr()['text']) ? $edit_model->getAdditionalFieldsValueArr()['text'] : $data_page[0]['text']; ?></textarea><br/><br/>
+
+    <input type="hidden" name="MAX_FILE_SIZE" value=2000000>
+    <p>Загружаемое изображение не должно превышать объем больше 2 мб и размер не менее 945х250px. Если загружаемое изображение
+        имеет размеры более 945х250px оно будет обрезано в процессе загрузки до необходимого размера </p>
+    <label for="file_add_form_bp">Изображение: </label>
+    <input id="file_add_form_bp" name="userfile" type="file">
+    <img src="/<?= $edit_model->getImg($id) ?>" alt=""/>
 
     <p>Если поставить галочку - без меню - документ не будет доступен в главном меню</p></br>
     <label for="without_menu_edit_form_bp">Без меню</label>
@@ -36,4 +43,7 @@
     <input type="submit" value="Сохранить"/>
 </form>
 
-<?php isset($redirect)? Controller::redirect($redirect): null; ?>
+<?php if($redirect_status){
+    isset($redirect)? Controller::redirect($redirect): null;
+}
+?>

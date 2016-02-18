@@ -1,0 +1,180 @@
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    border: red 3px solid;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+    border: green 3px solid;
+}
+
+body {
+    background:#BBDBFF;
+    margin:0;
+    padding:0;
+    font-family: Trebuchet MS,Geneva,sans-serif;
+    font-size: 13px;
+    color: #444;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #357FD6;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:focus {
+    outline: none;
+}
+
+h1 {
+    color: #59ABFD;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h2 {
+    color: #59ABFD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+h3 {
+    color: #59ABFD;
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+h4 {
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+h5 {
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+ul, ol {
+    margin: 0 0 35px 35px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+li ol, li ul {
+    font-size: 1.0em;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+
+img {
+    width: 33%;
+
+}
+
+.main_img {
+    width: 100%;
+}
+
+
+/*----------- Header -----------------*/
+
+.site_name,.lang_icon {
+    display: inline-block;
+}
+.lang_icon {
+    padding-top: 15px;
+    text-align: right;
+}
+.search,.log {
+    text-align: right;
+}
+
+.site_name p, .log p{
+    margin-bottom: 0;
+}
+
+.log p{
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+
+
+
+p a.text_site_name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #59ABFD;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+header div p {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+div a img {
+    width: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_div {
+    background-color: #ffffff;
+ /*   opacity: 0.5;*/
+
+}

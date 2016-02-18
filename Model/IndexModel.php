@@ -17,7 +17,7 @@ class IndexModel
         }
 
         $dbc = Connect::getConnection();
-        $sql = "SELECT p.id, p.status {$fields_list} FROM pages p JOIN {$material_type} bp JOIN {$material_type}_{$lang} bp_{$lang}
+        $sql = "SELECT p.id, p.status, bp.img {$fields_list} FROM pages p JOIN {$material_type} bp JOIN {$material_type}_{$lang} bp_{$lang}
         WHERE p.id = :id AND p.id = bp.id_page AND  bp.id = bp_{$lang}.id_{$material_type}";
         $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);

@@ -1,37 +1,115 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
 <head>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title><?=Config::get('site_name') ?></title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="stylesheet" href="/Webroot/plagins/bootstrap/bootstrap-grid-3.3.1.min.css"/>
+    <link rel="stylesheet" href="/Webroot/plagins/font-awesome-4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/Webroot/plagins/fancybox/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="/Webroot/plagins/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="/Webroot/plagins/countdown/jquery.countdown.css"/>
+    <link rel="stylesheet" href="/Webroot/css/css_reset.css"/>
+    <link rel="stylesheet" href="/Webroot/css/fonts.css"/>
+    <link rel="stylesheet" href="/Webroot/css/main.css"/>
+    <link rel="stylesheet" href="/Webroot/css/media.css"/>
+    <style type="text/css">
+
+
+    </style>
+
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 main_div">
+            <header>
+                <div class="row">
+                    <div class="site_name col-xs-9 col-sm-9 col-md-9">
+                        <p>
+                            <a class="text_site_name"
+                               href="/"><?=  Config::get("site_name_" . Router::getLanguage()) ?></a>
+                        </p>
+                    </div>
 
-<?= $search; ?>
+                    <div class="lang_icon col-xs-3 col-sm-3  col-md-3">
+                        <?= $lang_icon; ?>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="search">
+                            <?= $search; ?>
+                        </div>
+                        <div class="log">
+                            <?=  '';//$login_logout_block; ?>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <?= $img_content; ?>
+                </div>
+
+              <nav>
+
+              </nav>
+
+                <?= $main_menu; ?>
+
+            </header>
+
+            <hr/>
+
+            <?= $bread_crumbs; ?>
+
+            <hr/>
 
 
-<?= $main_menu; ?>
+            <hr/>
+            <?= 'id: ' . Router::getId() ?></br>
+            <?= 'Url: ' . Router::getUri() ?></br>
+            <?= 'action: ' . Router::getAction() ?></br>
+            <?= 'controller: ' . Router::getController() ?></br>
+            <?= 'lang: ' . Router::getLanguage() ?></br>
+            <?= 'rout: ' . Router::getRout() ?></br>
 
-<hr/>
-<?= $lang_icon; ?>
-<hr/>
-<?= $bread_crumbs; ?>
-
-<hr/>
-<?= $login_logout_block; ?>
-
-
-<hr/>
-<?='id: '. Router::getId()?></br>
-<?='Url: '. Router::getUri()?></br>
-<?= 'action: '.Router::getAction()?></br>
-<?='controller: '. Router::getController()?></br>
-<?='lang: '. Router::getLanguage()?></br>
-<?='rout: '. Router::getRout()?></br>
-<?php'url_arr: '. Debugger::PrintR(Router::getUrlArray());  ?></br>
+            <?=$content?>
+        </div>
+    </div>
+</div>
 
 
-<?=$content?>
+<!--[if lt IE 9]>
+<script src="/Webroot/plagins/html5shiv/es5-shim.min.js"></script>
+<script src="/Webroot/plagins/html5shiv/html5shiv.min.js"></script>
+<script src="/Webroot/plagins/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="/Webroot/plagins/respond/respond.min.js"></script>
+<![endif]-->
+<script src="/Webroot/plagins/jquery/jquery-1.11.1.min.js"></script>
+<script src="/Webroot/plagins/bootstrap/js/bootstrap.js"></script>
+<script src="/Webroot/plagins/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 
+<script src="/Webroot/plagins/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="/Webroot/plagins/scrollto/jquery.scrollTo.min.js"></script>
+<script src="/Webroot/plagins/owl-carousel/owl.carousel.min.js"></script>
+<script src="/Webroot/plagins/countdown/jquery.plugin.js"></script>
+<script src="/Webroot/plagins/countdown/jquery.countdown.min.js"></script>
+<script src="/Webroot/plagins/countdown/jquery.countdown-ru.js"></script>
+<script src="/Webroot/plagins/landing-nav/navigation.js"></script>
+<script src="/Webroot/js/common.js"></script>
 </body>
 </html>

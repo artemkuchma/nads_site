@@ -7,6 +7,8 @@ class addEditModel
     private $title;
     private $new_alias;
     private $translit;
+    private $img;
+    private $img_thumb;
     private $id_parent;
     private $menu_name;
     private $menu_data;
@@ -33,6 +35,9 @@ class addEditModel
         $this->translit = $alias_data['translit'];
         $this->id_parent = $alias_data['id_parent'];
         $this->material_type = $material_type;
+        $name = $request->files('name');
+        $this->img = "Webroot/uploads/images/$name";
+
 
         $fields_model = new FieldsModel($material_type);
         $fields = $fields_model->getFields();
@@ -121,6 +126,22 @@ class addEditModel
         return empty($date) ? true : false;
     }
 
+    public function getImg($id)
+    {
+        $placeholders = array(
+            'id' => $id
+        );
+        $dbc = Connect::getConnection();
+        $sql = "SELECT `img` FROM `{$this->material_type}` WHERE `id_page`= :id";
+        $date = $dbc->getDate($sql, $placeholders);
+        $img = $date[0]['img'];
+        $img_arr = explode('/', $img);
+        $img_name = array_pop($img_arr);
+
+        $img_thumb = "Webroot/uploads/.thumbs/images/$img_name";
+        return $img_thumb;
+    }
+
 
     public function add($with_without_menu = null)
     {
@@ -153,9 +174,10 @@ class addEditModel
         $id_new_page = $date[0]['max_id'];
 
         $placeholders = array(
-            'id_new_page' => $id_new_page
+            'id_new_page' => $id_new_page,
+            'img' => $this->img
         );
-        $sql = "INSERT INTO `{$this->material_type}`(`id_page`) VALUES (:id_new_page)";
+        $sql = "INSERT INTO `{$this->material_type}`(`id_page`, `img`) VALUES (:id_new_page, :img)";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
@@ -240,6 +262,9 @@ class addEditModel
 
     public function edit($id, $with_without_menu = null)
     {
+
+
+
         $lang = Router::getLanguage();
         $placeholders = array(
             'id' => $id
@@ -250,7 +275,6 @@ class addEditModel
         AND bp.id_page = :id";
         $date = $dbc->getDate($sql, $placeholders);
         $id_{$this->material_type} = $date[0]['id'];
-
 
         $placeholders = array(
             'title' => $this->title,
@@ -270,6 +294,23 @@ class addEditModel
         $sql = "UPDATE `pages` SET `status`= :publish WHERE id = :id";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
+
+
+
+        $placeholders = array(
+            'id' => $id,
+            'img' => $this->img
+        );
+        $sql = "UPDATE `{$this->material_type}` SET `img`= :img WHERE id_page = :id";
+        $sth = $dbc->getPDO()->prepare($sql);
+        $sth->execute($placeholders);
+
+
+
+
+
+
+
          // Проверка - есть ли для этого докумета пункт меню
         $placeholders = array(
             'id' => $id,
@@ -569,6 +610,17 @@ class addEditModel
     {
         return $this->additional_fields_value_arr;
     }
+
+
+
+    public function getImgThumb()
+    {
+        return $this->img_thumb;
+    }
+
+
+
+
 
 
 }

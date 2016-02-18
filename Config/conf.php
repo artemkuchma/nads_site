@@ -9,7 +9,10 @@ define('MODEL_DIR', ROOT . 'Model' . DS);
 define('VIEW_DIR', ROOT . 'View' . DS);
 define('WEBROOT_DIR', ROOT . 'Webroot' . DS);
 
-Config::set('site_name', 'Антидопинговый центр');
+
+Config::set('site_name_uk', 'Нацiональний антидопiнговий центр' );
+Config::set('site_name_en', 'National Anti-Doping Center' );
+
 Config::set('languages', array('en', 'uk'));
 //Config::set('routs', array(
   //  'default'=>'',
@@ -33,7 +36,7 @@ Config::set('admin_news', 21);
 Config::set('contacts', 216);
 Config::set('news', 218);
 Config::set('search', 224);
-Config::set('bread_crumbs_last_element_view', 'yes');//текущий элемент в бредкрамбсов - показывать -'yes', не показывать - 'no'
+Config::set('bread_crumbs_last_element_view', 'no');//текущий элемент в бредкрамбсов - показывать -'yes', не показывать - 'no'
 Config::set('materials_per_page',$request->get('materials_per_page') ? $request->get('materials_per_page'):10 );
 Config::set('translation_per_page',$request->get('translation_per_page') ? $request->get('translation_per_page'):10 );
 Config::set('message_per_page',$request->get('message_per_page') ? $request->get('message_per_page'):10 );
@@ -41,6 +44,12 @@ Config::set('log_per_page',$request->get('log_per_page') ? $request->get('log_pe
 Config::set('news_per_page',$request->get('news_per_page') ? $request->get('news_per_page'):10 );
 Config::set('search_per_page',$request->get('search_per_page') ? $request->get('search_per_page'):10 );
 Config::set('admin_email', 'test@test6.ua');
+Config::set('max_image_size', 2000000);
+Config::set('max_image_width', 946);
+Config::set('max_image_height', 251);
+Config::set('img_width', 945);
+Config::set('img_height', 250);
+Config::set('image_types', array("gif","jpg", "png", "jpeg","JPG"));
 
 // DB Connect
 

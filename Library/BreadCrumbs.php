@@ -4,35 +4,33 @@
 class BreadCrumbs
 {
 
-    private function recursBreadCrumbsArray($menu_array, $val, $new_array)
+
+    private function breadCrumbsArray($alias_array = array())
     {
-        foreach ($menu_array as $v) {
-            $alias = $v['alias_menu'];
+        $menuModel = new MenuModel();
+        $data = $menuModel->getMainMenu(Router::getLanguage());
+
+        $data_menu_key_alias = array();
+        foreach ($data as $k => $v) {
+            $data_menu_key_alias[$v['alias_menu']] = $v;
+        }
+        $bread_crumbs_arr = array();
+        foreach ($alias_array as $val) {
             if (Router::getLanguage() != Config::get('default_language')) {
-                $alias = Router::getLanguage() . '/' . $v['alias_menu'];
+                $k = str_replace(Router::getLanguage() . '/', '', $val);
+            } else {
+                $k = $val;
             }
-            if ($alias == $val) {
-                $new_array[] = array(
-                    'name' => $v['name'],
+            if (isset($data_menu_key_alias[$k])) {
+                $bread_crumbs_arr[] = array(
+                    'name' => $data_menu_key_alias[$k]['name'],
                     'alias' => $val
                 );
             }
-            if (isset($v['child'])) {
-                return self::recursBreadCrumbsArray($v['child'], $val, $new_array);
-            }
         }
-        return $new_array;
+        return $bread_crumbs_arr;
     }
 
-    private function getBreadCrumbsAliasName($alias_array = array())
-    {
-        $menu_array = MenuController::getMainMenuArray();
-        $bread_crumbs_array = array();
-        foreach ($alias_array as $val) {
-            $bread_crumbs_array = self::recursBreadCrumbsArray($menu_array, $val, $bread_crumbs_array);
-        }
-        return $bread_crumbs_array;
-    }
 
     public static function getBreadcrumbs()
     {
@@ -56,7 +54,7 @@ class BreadCrumbs
         }
         $alias_array = array_reverse($alias_array);
 
-        $bread_crumbs_array = self::getBreadCrumbsAliasName($alias_array);
+        $bread_crumbs_array = self::breadCrumbsArray($alias_array);
 
         if (Config::get('bread_crumbs_last_element_view') != 'yes') {
             array_pop($bread_crumbs_array);

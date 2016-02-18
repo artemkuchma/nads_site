@@ -92,6 +92,48 @@ $url_alias = array(
             'alias_uk' => 'dannye_poyska',
       ),
 
+      225 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'statti/testtt',
+            'alias_uk' => 'statti/testtt',
+      ),
+
+      226 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'statti/stattia_1/ccc',
+            'alias_uk' => 'statti/stattia_1/ccc',
+      ),
+
+      227 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'articles/article_1/article_2/apaapa',
+            'alias_uk' => 'statti/stattia_1/statya_2/apaapa',
+      ),
+
+      228 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'articles/article_1/article_2/test_10',
+            'alias_uk' => 'statti/stattia_1/statya_2/test_10',
+      ),
+
+      313 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'articles/article_1/article_2/test_7',
+            'alias_uk' => 'statti/stattia_1/statya_2/test_7',
+      ),
+
+      314 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'statti/stattia_1/statya_2/test_8',
+            'alias_uk' => 'statti/stattia_1/statya_2/test_8',
+      ),
+
       219 => array(
             'controller' => 'News',
             'action' => 'index',
@@ -118,6 +160,13 @@ $url_alias = array(
             'action' => 'index',
             'alias_en' => 'news/news_4',
             'alias_uk' => 'novyny/novost_4',
+      ),
+
+      315 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/novost_7',
+            'alias_uk' => 'novyny/novost_7',
       ),
 
       17 => array(

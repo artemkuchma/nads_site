@@ -1,6 +1,7 @@
 
 
 <h1> <?= $data_admin['name'] ?></h1>
+<?= Session::getFlash() ?>
 
 <?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','materials_per_page'); ?>
 

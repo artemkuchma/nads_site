@@ -21,7 +21,7 @@ WHERE table_name = '".$material_type."_".$lang."'";
         $d = $dbc->getDate($sql, $placeholders);
         $data =array();
 
-        foreach($d as $k => $v){
+        foreach($d as $v){
             $data[]=$v['COLUMN_NAME'];
         }
         return $data;

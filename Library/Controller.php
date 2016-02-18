@@ -48,8 +48,15 @@ abstract class Controller
         ob_start();
         require $this->file_path($tpl); //$templateFile;
         $content = ob_get_clean();
+        ob_start();
 
-        $search = require VIEW_DIR.'searchForm.phtml';
+        ob_start();
+        require VIEW_DIR.'img_content.phtml'; //$templateFile;
+        $img_content = ob_get_clean();
+        ob_start();
+
+        require VIEW_DIR.'searchForm.phtml';
+        $search = ob_get_clean();
 
         $menu = new MenuController();
         $main_menu = $menu->mainMenuAction();
@@ -108,7 +115,7 @@ abstract class Controller
         return ob_get_clean();
     }
 
-    public static function render_lang_icon($url_translation)
+    public static function render_lang_icon($url_translation,  $icon_url)
     {
         ob_start();
         require VIEW_DIR . 'langIcon.phtml';

@@ -28,17 +28,4 @@ try{
     }
 }
 echo $content;
-/**
-echo '<pre>';
-print_r('Action: '.Router::getAction().PHP_EOL);
-print_r('Controller: '.Router::getController().PHP_EOL);
-print_r('Lang: '.Router::getLanguage().PHP_EOL);
-print_r('URL: ' .Router::getUri().PHP_EOL);
-print_r('ID: ' .Router::getId() .PHP_EOL);
-echo 'Params: ';
-print_r(Router::getParams());
-echo '</pre>';
-**/
 
-//$url=$_SERVER['REQUEST_URI'];
-//print_r($url);

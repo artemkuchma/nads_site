@@ -94,7 +94,6 @@ class IndexController extends Controller
     {
         $page_data = $this->index('basic_page');
 
-        //   echo Router::getLanguage().'/' . Router::get_alis_by_id(Config::get('search'), Router::getLanguage());
         $request = new Request();
         if ($request->isPost()) {
             $search = new SearchModel($request);
@@ -138,19 +137,17 @@ class IndexController extends Controller
 
         $lang = Router::getLanguage() == Config::get('default_language') ? '' : Router::getLanguage() . '/';
 
-        $search_request = $search->getSearchRequest();
+    //    $search_request = $search->getSearchRequest();
 
         $args = array(
-            // 'search_result' => $search_data,
             'page_data' => $page_data,
             'data_search' => $data_search_page,
             'data_pagination' => $data_pagination,
             'data_url' => $data_url[0],
             'lang' => $lang,
-            'search_request' => $search_request,
+         //   'search_request' => $search_request,
             'items_count' => $items_count
         );
-        // Debugger::PrintR($search_data);
 
         return $this->render($args);
     }
