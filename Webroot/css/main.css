@@ -58,14 +58,14 @@ a:hover {
 a:focus {
     outline: none;
 }
-
+/*
 h1 {
     color: #59ABFD;
     font-weight: normal;
     font-size: 40px;
 }
-
-h2 {
+*/
+h1 {
     color: #59ABFD;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
@@ -75,20 +75,20 @@ h2 {
     margin: 0;
 }
 
-h3 {
+h2 {
     color: #59ABFD;
     font-size: 17px;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
-h4 {
+h3 {
     padding-bottom: 10px;
     font-size: 15px;
     color: #999;
 }
 
-h5 {
+h4 {
     padding-bottom: 10px;
     font-size: 13px;
     color: #999;
@@ -96,6 +96,7 @@ h5 {
 
 ul, ol {
     margin: 0 0 35px 35px;
+
 }
 
 li {
@@ -159,8 +160,87 @@ div a img {
     width: 16px;
 }
 
+.bread_crumbs{
+    font-size: 15px;
+}
+
+/*-----------End Header -----------------*/
+
+/*----------- Body -----------------*/
 
 
+
+
+.sidebar {
+
+    padding-top: 15px;
+
+    float: left;
+}
+
+.sidebar_inner {
+    -moz-border-radius:17px;
+    background-color:#E8F3FF;
+    padding:15px;
+    margin-bottom:20px;
+
+}
+.sidebar_inner div p {
+    margin-bottom: 0px;
+
+}
+.sidebar_inner div h3 {
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+/*
+.sidebar ul {
+    padding: 0;
+    margin:10px 0 35px 35px;
+}
+
+.sidebar li ul li {
+    display: block;
+    border-top: none;
+    padding: 6px 7px;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 13px;
+    color: #555;
+}
+
+.sidebar li ul li a {
+    font-weight: normal;
+    color: #555;
+}
+
+.sidebar li ul li a:hover {
+    color: #59ABFD;
+}
+
+.sidebar h4 {
+    color: #59ABFD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.news-item {
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.latest-news a {
+    font-weight:bold;
+}
+.date {
+    color:#000;
+    font-weight:bold;
+}
+*/
 
 
 

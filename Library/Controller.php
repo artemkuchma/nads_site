@@ -64,6 +64,9 @@ abstract class Controller
         $login_logout = new SecurityController();
         $login_logout_block = $login_logout->logAction();
 
+        $news = new NewsController();
+        $news_block = $news->getBlockAction();
+
 
         if (Router::getLanguage() == 'uk') {
             $lang = 'en';
@@ -97,6 +100,17 @@ abstract class Controller
 
         return ob_get_clean();
     }
+
+    public  function render_news_block(array $args = array())
+    {
+        extract($args);
+        ob_start();
+        require VIEW_DIR.'News/getBlock.phtml';
+
+        return ob_get_clean();
+    }
+
+
 
     protected function render_admin(array $args = array(), $tpl = null)
     {

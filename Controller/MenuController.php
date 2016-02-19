@@ -143,23 +143,52 @@ class MenuController extends Controller
         }
     }
 
-    public static function menu_recurs($array = array(), $main_teg_open, $main_teg_close, $teg_open, $teg_close)
+    public static function menu_recurs($array = array(), $id_class=null)
     {
-        echo '<ul>';
+        $menu_class = isset($id_class)? $id_class : '';
+        echo '<ul '.$menu_class.'>';
         $lang = '';
         if (Router::getLanguage() != Config::get('default_language')) {
             $lang = Router::getLanguage() . '/';
         }
         foreach ($array as $v) {
-            echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a>';
-            if (isset($v['child'])) {
-                self::menu_recurs($v['child'], $main_teg_open, $main_teg_close, $teg_open, $teg_close);
 
+            if (isset($v['child'])) {
+                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '" >' . $v['name'] . '</a>';
+
+                self::menu_recurs($v['child']);
+                echo '</li>';
+            }else{
+                echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a></li>';
             }
-            echo '</li>';
+
         }
         echo '</ul>';
     }
+/**
+    public static function menu_recurs($array = array(), $dropdown_menu='')
+    {
+        $menu_class = isset($dropdown_menu)? $dropdown_menu : 'nav navbar-nav';
+        echo '<ul class="'.$menu_class.'">';
+        $lang = '';
+        if (Router::getLanguage() != Config::get('default_language')) {
+            $lang = Router::getLanguage() . '/';
+        }
+        foreach ($array as $v) {
+
+            if (isset($v['child'])) {
+                echo '<li class="dropdown"> <a href="/' . $lang . $v['alias_menu'] . '" class="dropdown-toggle" data-toggle="dropdown">' . $v['name'] . '<span class="caret"></span></a>';
+                $dropdown_menu = 'dropdown-menu';
+                self::menu_recurs($v['child'], $dropdown_menu);
+                echo '</li>';
+            }else{
+                echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a></li>';
+            }
+
+        }
+        echo '</ul>';
+    }
+ * */
 
     public function adminMenuAction()
     {

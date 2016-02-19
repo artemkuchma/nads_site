@@ -50,6 +50,7 @@ Config::set('max_image_height', 251);
 Config::set('img_width', 945);
 Config::set('img_height', 250);
 Config::set('image_types', array("gif","jpg", "png", "jpeg","JPG"));
+Config::set('news_in_block', 3);
 
 // DB Connect
 

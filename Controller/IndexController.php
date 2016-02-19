@@ -47,6 +47,7 @@ class IndexController extends Controller
         $args = array(
             'form' => $form,
             'data_page' => $data_page,
+            'img' =>$data_page['img']
         );
 
         return $this->render($args);
@@ -84,7 +85,8 @@ class IndexController extends Controller
             'data_news' => $data_news_page,
             'data_pagination' => $data_pagination,
             'data_url' => $data_url[0],
-            'lang' => $lang
+            'lang' => $lang,
+            'img' => $data_page['img']
         );
 
         return $this->render($args);
@@ -146,7 +148,8 @@ class IndexController extends Controller
             'data_url' => $data_url[0],
             'lang' => $lang,
          //   'search_request' => $search_request,
-            'items_count' => $items_count
+            'items_count' => $items_count,
+            'img' => $page_data['img']
         );
 
         return $this->render($args);

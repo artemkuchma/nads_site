@@ -35,6 +35,7 @@
     </select><br/><br/>
     <label for="publication_add_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>
+    <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s')?>">
     <input type="hidden" name="redirect" value="/admin/materials">
     <input type="submit" value="Сохранить"/>
 </form>

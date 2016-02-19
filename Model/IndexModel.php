@@ -107,7 +107,21 @@ pages p JOIN `{$material_type}` JOIN `{$material_type}_en` JOIN `{$material_type
         $date = $dbc->getDate($sql, $placeholders);
 
         return $date;
+    }
 
+    public function getNewsBlok($items_per_block)
+    {
+        $dbc = Connect::getConnection();
+        $lang = Router::getLanguage();
+        $placeholders = array(
+           // 'items_per_block' => $items_per_block
+        );
+
+        $sql = "SELECT n_{$lang}.title, n_{$lang}.description, n_{$lang}.text, n_{$lang}.alias, n.date, n.img FROM news_{$lang} n_{$lang} JOIN news n ON n.id = n_{$lang}.id_news ORDER BY n.date DESC LIMIT {$items_per_block}";
+
+        $date = $dbc->getDate($sql, $placeholders);
+
+        return $date;
 
     }
 }

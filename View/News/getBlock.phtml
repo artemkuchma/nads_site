@@ -1,0 +1,18 @@
+<div class="sidebar_inner">
+
+<h2><?= __t('last_news') ?></h2>
+
+
+    <?php foreach ($data as $v): ?>
+        <div>
+            <h3><a href="<?= $v['alias'] ?>"><?= $v['title'] ?></a></h3>
+            <span><?= $v['date'] ?></span>
+            <p><?= $v['short_text'] ?></p>
+
+        </div>
+
+    <?php endforeach; ?>
+
+
+</div>
+

@@ -153,4 +153,8 @@ return array(
         'en' => 'National Anti-Doping Center',
         'uk' => 'Нацiональний антидопiнговий центр'
     ),
+    'last_news' => array(
+        'en' => 'Last news',
+        'uk' => 'Останнi новини'
+    ),
 );

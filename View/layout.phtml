@@ -17,14 +17,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="favicon.png"/>
     <link rel="stylesheet" href="/Webroot/plagins/bootstrap/bootstrap-grid-3.3.1.min.css"/>
+    <link rel="stylesheet" href="/Webroot/plagins/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/Webroot/plagins/font-awesome-4.2.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/Webroot/plagins/fancybox/jquery.fancybox.css"/>
+
     <link rel="stylesheet" href="/Webroot/plagins/owl-carousel/owl.carousel.css"/>
     <link rel="stylesheet" href="/Webroot/plagins/countdown/jquery.countdown.css"/>
     <link rel="stylesheet" href="/Webroot/css/css_reset.css"/>
     <link rel="stylesheet" href="/Webroot/css/fonts.css"/>
     <link rel="stylesheet" href="/Webroot/css/main.css"/>
     <link rel="stylesheet" href="/Webroot/css/media.css"/>
+
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="/Webroot/plagins/smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css"/>
+
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="/Webroot/plagins/smartmenus/css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css"/>
+
+
     <style type="text/css">
 
 
@@ -64,30 +74,32 @@
                     <?= $img_content; ?>
                 </div>
 
-              <nav>
-
-              </nav>
-
-                <?= $main_menu; ?>
-
+                <nav id="main-nav" role="navigation ">
+                    <?= $main_menu; ?>
+                </nav>
+                <div>
+                    <p class="bread_crumbs">
+                        <?= $bread_crumbs; ?>
+                    </p>
+                </div>
             </header>
+            <section>
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8">
+                        <?=$content?>
+                    </div>
+                    <div class=" col-xs-4 col-sm-4 col-md-4 sidebar">
 
-            <hr/>
-
-            <?= $bread_crumbs; ?>
-
-            <hr/>
+                            <?=$news_block?>
 
 
-            <hr/>
-            <?= 'id: ' . Router::getId() ?></br>
-            <?= 'Url: ' . Router::getUri() ?></br>
-            <?= 'action: ' . Router::getAction() ?></br>
-            <?= 'controller: ' . Router::getController() ?></br>
-            <?= 'lang: ' . Router::getLanguage() ?></br>
-            <?= 'rout: ' . Router::getRout() ?></br>
+                    </div>
+                </div>
 
-            <?=$content?>
+
+            </section>
+
+
         </div>
     </div>
 </div>
@@ -99,8 +111,28 @@
 <script src="/Webroot/plagins/html5shiv/html5shiv-printshiv.min.js"></script>
 <script src="/Webroot/plagins/respond/respond.min.js"></script>
 <![endif]-->
-<script src="/Webroot/plagins/jquery/jquery-1.11.1.min.js"></script>
-<script src="/Webroot/plagins/bootstrap/js/bootstrap.js"></script>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="/Webroot/plagins/smartmenus/libs/jquery/jquery.js"></script>
+
+
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="/Webroot/plagins/smartmenus/jquery.smartmenus.js"></script>
+
+
+<!-- SmartMenus jQuery init -->
+<script type="text/javascript">
+    $(function () {
+        $('#main-menu').smartmenus({
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+    });
+</script>
+
+
+<script src="/Webroot/plagins/bootstrap/js/bootstrap.min.js"></script>
 <script src="/Webroot/plagins/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 
 <script src="/Webroot/plagins/waypoints/waypoints-1.6.2.min.js"></script>
@@ -111,5 +143,6 @@
 <script src="/Webroot/plagins/countdown/jquery.countdown-ru.js"></script>
 <script src="/Webroot/plagins/landing-nav/navigation.js"></script>
 <script src="/Webroot/js/common.js"></script>
+
 </body>
 </html>

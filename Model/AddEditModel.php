@@ -8,7 +8,9 @@ class addEditModel
     private $new_alias;
     private $translit;
     private $img;
+    private $img_name;
     private $img_thumb;
+    private $date;
     private $id_parent;
     private $menu_name;
     private $menu_data;
@@ -32,11 +34,13 @@ class addEditModel
         $this->title_or_menu_name = $this->menu_name ? $this->menu_name : $this->title;
         $alias_data = $this->createAlias($this->title_or_menu_name, $this->menu_data);
         $this->new_alias = $alias_data['new_alias'];
+        $this->date = $request->post('date');
         $this->translit = $alias_data['translit'];
         $this->id_parent = $alias_data['id_parent'];
         $this->material_type = $material_type;
-        $name = $request->files('name');
-        $this->img = "Webroot/uploads/images/$name";
+        $this->img_name = $request->files('name');
+        // $name = $request->files('name');
+        $this->img = "Webroot/uploads/images/$this->img_name";
 
 
         $fields_model = new FieldsModel($material_type);
@@ -173,11 +177,14 @@ class addEditModel
         $date = $dbc->getDate($sql, $placeholders);
         $id_new_page = $date[0]['max_id'];
 
+
+
         $placeholders = array(
             'id_new_page' => $id_new_page,
-            'img' => $this->img
+            'img' => $this->img,
+            'date'=> $this->date
         );
-        $sql = "INSERT INTO `{$this->material_type}`(`id_page`, `img`) VALUES (:id_new_page, :img)";
+        $sql = "INSERT INTO `{$this->material_type}`(`id_page`, `img`, `date`) VALUES (:id_new_page, :img, :date)";
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 
@@ -264,7 +271,6 @@ class addEditModel
     {
 
 
-
         $lang = Router::getLanguage();
         $placeholders = array(
             'id' => $id
@@ -296,22 +302,18 @@ class addEditModel
         $sth->execute($placeholders);
 
 
-
-        $placeholders = array(
-            'id' => $id,
-            'img' => $this->img
-        );
-        $sql = "UPDATE `{$this->material_type}` SET `img`= :img WHERE id_page = :id";
-        $sth = $dbc->getPDO()->prepare($sql);
-        $sth->execute($placeholders);
-
-
-
+        if ($this->img_name) {
+            $placeholders = array(
+                'id' => $id,
+                'img' => $this->img
+            );
+            $sql = "UPDATE `{$this->material_type}` SET `img`= :img WHERE id_page = :id";
+            $sth = $dbc->getPDO()->prepare($sql);
+            $sth->execute($placeholders);
+        }
 
 
-
-
-         // Проверка - есть ли для этого докумета пункт меню
+        // Проверка - есть ли для этого докумета пункт меню
         $placeholders = array(
             'id' => $id,
         );
@@ -343,12 +345,12 @@ class addEditModel
             $lang = Config::get('default_language');
 
 
-                $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
-                $sth = $dbc->getPDO()->prepare($sql);
-                $sth->execute($placeholders);
+            $sql = "INSERT INTO `main_menu_{$lang}`(`id_main_menu`, `name`, `alias_menu`) VALUES (:id_new_menu,:title,:alias)";
+            $sth = $dbc->getPDO()->prepare($sql);
+            $sth->execute($placeholders);
 
-            foreach (Config::get('languages') as $v){
-                if($v != $lang){
+            foreach (Config::get('languages') as $v) {
+                if ($v != $lang) {
 
                     $placeholders = array();
 
@@ -441,9 +443,8 @@ class addEditModel
         $translitClass = new Translit($this->title_or_menu_name);
         $translit = $translitClass->translit;
 
-        $new_alias = $parent_alias .$slash. $translit;
+        $new_alias = $parent_alias . $slash . $translit;
         trim($new_alias, '/');
-
 
 
         $sql = "SELECT bp_{$lang}.id_{$this->material_type} AS id FROM  {$this->material_type}_{$lang} bp_{$lang} JOIN {$this->material_type} bp ON bp.id = bp_{$lang}.id_{$this->material_type}
@@ -468,7 +469,7 @@ class addEditModel
         $date = $dbc->getDate($sql, $placeholders);
         $id_parent = $date[0]['id_parent_page'];
 
-        $this->edit_menu($id, 'en', $new_alias, $this->title_or_menu_name, $id_parent );
+        $this->edit_menu($id, 'en', $new_alias, $this->title_or_menu_name, $id_parent);
 
 
     }
@@ -495,8 +496,7 @@ class addEditModel
                 $alias_arr = array($parent_alias, $last_element);
                 $new_alias = implode('/', $alias_arr);
 
-              //  trim($new_alias, '/');
-
+                //  trim($new_alias, '/');
 
 
                 $sql = "SELECT id_page FROM `main_menu` WHERE id_parent_page = {$id_t}";
@@ -534,7 +534,7 @@ class addEditModel
         $data = $dbc->getDate($sql, $placeholders);
         // Debugger::PrintR($date);
         $new_title = $title ? $title : $this->title_or_menu_name;
-        $id_p = $id_parent ? $id_parent :  $this->id_parent;
+        $id_p = $id_parent ? $id_parent : $this->id_parent;
 
         //   $lang = Router::getLanguage();
         $placeholders = array(
@@ -612,15 +612,10 @@ class addEditModel
     }
 
 
-
     public function getImgThumb()
     {
         return $this->img_thumb;
     }
-
-
-
-
 
 
 }
