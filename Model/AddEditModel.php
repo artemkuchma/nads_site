@@ -8,6 +8,8 @@ class addEditModel
     private $new_alias;
     private $translit;
     private $img;
+    private $img_name_server;
+    private $img_name_local;
     private $img_name;
     private $img_thumb;
     private $date;
@@ -38,9 +40,27 @@ class addEditModel
         $this->translit = $alias_data['translit'];
         $this->id_parent = $alias_data['id_parent'];
         $this->material_type = $material_type;
-        $this->img_name = $request->files('name');
-        // $name = $request->files('name');
-        $this->img = "Webroot/uploads/images/$this->img_name";
+
+        $img_name_local = $request->files('name');
+        $this->img_name_local = isset($img_name_local) ? $img_name_local : '';
+        $img_name_server = $request->post('file_server');
+        $this->img_name_server = isset($img_name_server) ? $img_name_server : '';
+
+        if ($this->img_name_server && $this->img_name_local){
+            $this->img_name = $this->img_name_local;
+        }
+        if($this->img_name_server){
+            $this->img_name = $this->img_name_server;
+        }
+        if($this->img_name_local){
+            $this->img_name = $this->img_name_local;
+        }
+        if(!$this->img_name_server && !$this->img_name_local){
+            $this->img_name = Config::get('default_img');
+        }
+
+            // $name = $request->files('name');
+            $this->img = "Webroot/uploads/images/$this->img_name";
 
 
         $fields_model = new FieldsModel($material_type);
@@ -84,7 +104,6 @@ class addEditModel
 
         $translitClass = new Translit($title_name);
         $translit = $translitClass->translit;
-
 
         if ($menu_data) {
             $alias_data_arr = explode('!', $menu_data);
@@ -178,11 +197,10 @@ class addEditModel
         $id_new_page = $date[0]['max_id'];
 
 
-
         $placeholders = array(
             'id_new_page' => $id_new_page,
             'img' => $this->img,
-            'date'=> $this->date
+            'date' => $this->date
         );
         $sql = "INSERT INTO `{$this->material_type}`(`id_page`, `img`, `date`) VALUES (:id_new_page, :img, :date)";
         $sth = $dbc->getPDO()->prepare($sql);
@@ -287,6 +305,7 @@ class addEditModel
             'alias' => $this->new_alias,
             'id_' . $this->material_type => $id_{$this->material_type}
         );
+
         $sql = "UPDATE `{$this->material_type}_{$lang}` SET `title`= :title,`alias`= :alias $this->additional_fields_key_value WHERE id_{$this->material_type} = :id_{$this->material_type} ";
 
         $sth = $dbc->getPDO()->prepare($sql);
@@ -394,7 +413,8 @@ class addEditModel
                     $sql = "SELECT `alias_menu` FROM main_menu_{$v} WHERE id_main_menu =
                 (SELECT id FROM main_menu WHERE id_page = (SELECT id_parent_page FROM main_menu WHERE id_page = {$id}) )";
                     $data = $dbc->getDate($sql, $placeholders);
-                    $parent_alias = $data[0]['alias_menu'];
+                    $parent_alias = $data ? $data[0]['alias_menu'] : null;
+                    // Debugger::PrintR($data);
 
 
                     $sql = "SELECT mm_{$v}.alias_menu, mm_{$v}.name  FROM main_menu_{$v} mm_{$v} JOIN main_menu mm ON mm_{$v}.id_main_menu = mm.id AND mm.id_page = {$id}";
@@ -403,7 +423,7 @@ class addEditModel
                     $alias_arr = explode('/', $old_alias);
                     $last_element = array_pop($alias_arr);
                     $alias_arr = array($parent_alias, $last_element);
-                    $new_alias = implode('/', $alias_arr);
+                    $new_alias = $alias_arr[0] ? implode('/', $alias_arr) : $alias_arr[1];
                     $title = $data[0]['name'];
 
                     $sql = "UPDATE {$this->material_type}_{$v} bp_{$v} JOIN {$this->material_type} bp SET `alias`= " . '"' . $new_alias . '"' . " WHERE bp_{$v}.id_{$this->material_type} = bp.id AND bp.id_page = {$id} ";

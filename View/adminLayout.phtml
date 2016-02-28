@@ -35,5 +35,19 @@
         'filebrowserImageUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=images',
         'filebrowserFlashUploadUrl':'/Webroot/plagins/ckeditor_mono/kcfinder/upload.php?type=flash'});
 </script>
+<script type="text/javascript" src="/Webroot/plagins/smartmenus/libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="/Webroot/js/jquery.DOMWindow.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#browse').openDOMWindow({
+            height: 400,
+            width: 600,
+            eventType: 'click',
+            windowSource: 'ajax',
+            windowSourceURL: 'Library/DomWindows.php',
+            windowHTTPType: 'post'
+        });
+    });
+</script>
 </body>
 </html>

@@ -59,6 +59,17 @@ class IndexController extends Controller
         $indexModel = new IndexModel();
         $data_news_arr = $indexModel->getViews('news');
 
+        foreach($data_news_arr as $k => $v){
+            if ($v['description']) {
+
+                $data_news_arr[$k]['short_text'] = $this->cropString($v['description'], 600, '...');
+            } elseif ($v['text']) {
+                $data_news_arr[$k]['short_text'] = $this->cropString($v['text'], 600, '...');
+            } else {
+                $data_news_arr[$k]['short_text'] = '';
+            }
+        }
+
         $items_count = count($data_news_arr);
         $items_per_page = Config::get('news_per_page');
 
@@ -153,6 +164,23 @@ class IndexController extends Controller
         );
 
         return $this->render($args);
+    }
+
+    public function getBasicPageBlockAction()
+    {
+        $indexModel = new IndexModel();
+        $d = $indexModel->getBasicPageBlock();
+        $data = array();
+        foreach($d as $k => $v){
+            if($v['title']){
+                $data[$k] = $v;
+            }
+        }
+        $args = array(
+            'data' => $data
+        );
+
+        return $this->render_basic_page_block($args);
     }
 
 

@@ -4,14 +4,14 @@ $url_alias = array(
       7 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '/home',
+            'alias_en' => 'home',
             'alias_uk' => 'glavnaya',
       ),
 
       8 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '/about',
+            'alias_en' => 'about',
             'alias_uk' => 'o_nas',
       ),
 
@@ -74,7 +74,7 @@ $url_alias = array(
       216 => array(
             'controller' => 'Index',
             'action' => 'contact',
-            'alias_en' => '/contacts',
+            'alias_en' => 'contacts',
             'alias_uk' => 'kontakty',
       ),
 
@@ -95,7 +95,7 @@ $url_alias = array(
       225 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '/home/testtt',
+            'alias_en' => 'home/testtt',
             'alias_uk' => 'glavnaya/testtt',
       ),
 
@@ -116,7 +116,7 @@ $url_alias = array(
       228 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '/test_10',
+            'alias_en' => 'test_10',
             'alias_uk' => 'test_10',
       ),
 
@@ -130,8 +130,22 @@ $url_alias = array(
       314 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => '/test_8',
+            'alias_en' => 'test_8',
             'alias_uk' => 'test_8',
+      ),
+
+      327 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'statti/stattia_1/testovaya_stranyca_10',
+            'alias_uk' => 'statti/stattia_1/testovaya_stranyca_10',
+      ),
+
+      328 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'statti/stattia_1/statya_2/test_11',
+            'alias_uk' => 'statti/stattia_1/statya_2/test_11',
       ),
 
       219 => array(
@@ -176,6 +190,83 @@ $url_alias = array(
             'alias_uk' => 'novyny/novost_8',
       ),
 
+      317 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost',
+            'alias_uk' => 'novyny/testovaya_novost',
+      ),
+
+      318 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_2',
+            'alias_uk' => 'novyny/testovaya_novost_2',
+      ),
+
+      319 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_3',
+            'alias_uk' => 'novyny/testovaya_novost_3',
+      ),
+
+      320 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_4',
+            'alias_uk' => 'novyny/testovaya_novost_4',
+      ),
+
+      321 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/test_novost_5',
+            'alias_uk' => 'novyny/test_novost_5',
+      ),
+
+      322 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_7',
+            'alias_uk' => 'novyny/testovaya_novost_7',
+      ),
+
+      323 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_8',
+            'alias_uk' => 'novyny/testovaya_novost_8',
+      ),
+
+      324 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/test_n',
+            'alias_uk' => 'novyny/test_n',
+      ),
+
+      325 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/test_novost_9',
+            'alias_uk' => 'novyny/test_novost_9',
+      ),
+
+      329 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/novost_testovaya_1',
+            'alias_uk' => 'novyny/novost_testovaya_1',
+      ),
+
+      330 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/lhhkhyhkjh',
+            'alias_uk' => 'novyny/lhhkhyhkjh',
+      ),
+
       17 => array(
             'controller' => 'Admin',
             'action' => 'index',
@@ -213,9 +304,9 @@ $url_alias = array(
 
       23 => array(
             'controller' => 'Admin',
-            'action' => 'index',
-            'alias_en' => 'admin/magazin',
-            'alias_uk' => 'admin/magazin',
+            'action' => 'blockBasicPageEdit',
+            'alias_en' => 'admin/blok_ssilok_saitbar',
+            'alias_uk' => 'admin/blok_ssilok_saitbar',
       ),
 
       24 => array(

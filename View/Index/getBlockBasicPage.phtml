@@ -1,0 +1,15 @@
+<div class="sidebar_inner">
+
+    <h2><?= __t('information') ?></h2>
+
+
+    <?php foreach ($data as $v): ?>
+        <div>
+            <h3><a href="<?='/'.$v['alias'] ?>"><?= $v['title'] ?></a></h3>
+
+        </div>
+
+    <?php endforeach; ?>
+
+
+</div>

@@ -6,7 +6,7 @@ abstract class Controller
     private function file_path($tpl = null)
     {
         $tplDir = Router::getController();
-        $tplName = isset($tpl)? $tpl : Router::getAction();
+        $tplName = isset($tpl) ? $tpl : Router::getAction();
         $templateFile = VIEW_DIR . $tplDir . DS . $tplName . '.phtml';
         if (!file_exists($templateFile)) {
             throw new Exception("{$templateFile} not found", 404);
@@ -14,26 +14,36 @@ abstract class Controller
         return $templateFile;
     }
 
-    public function index($material_type){
+    public function index($material_type)
+    {
         $indexModel = new IndexModel();
-        $data = $indexModel->getPage(Router::getId(), Router::getLanguage(),$material_type);
+        $data = $indexModel->getPage(Router::getId(), Router::getLanguage(), $material_type);
         if (!$data) {
             throw new Exception(" Page is not exist", 404);
 
-        }
-        elseif($data[0]['status'] == 0){
+        } elseif ($data[0]['status'] == 0) {
 
             throw new Exception(" Page not publish", 2);
         }
 
-        if(!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(),$material_type)){
+        if (!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(), $material_type)) {
             throw new Exception(" Page has no translation", 204);
         }
         $args = $data[0];
         return $args;
     }
 
-    public static  function render_simple($path,$params1 = null,$params2 = null,$params3 = null,$params4 = null)
+    protected  function cropString($string, $limit, $after = '')
+    {
+        if (strlen($string) > $limit) {
+            $substring_limited = substr($string, 0, $limit); //режем строку от 0 до limit
+
+            return substr($substring_limited, 0, strrpos($substring_limited, ' ')) . $after;
+        } else
+            return $string;
+    }
+
+    public static function render_simple($path, $params1 = null, $params2 = null, $params3 = null, $params4 = null)
     {
         ob_start();
         require $path;
@@ -51,11 +61,11 @@ abstract class Controller
         ob_start();
 
         ob_start();
-        require VIEW_DIR.'img_content.phtml'; //$templateFile;
+        require VIEW_DIR . 'img_content.phtml'; //$templateFile;
         $img_content = ob_get_clean();
         ob_start();
 
-        require VIEW_DIR.'searchForm.phtml';
+        require VIEW_DIR . 'searchForm.phtml';
         $search = ob_get_clean();
 
         $menu = new MenuController();
@@ -66,6 +76,12 @@ abstract class Controller
 
         $news = new NewsController();
         $news_block = $news->getBlockAction();
+
+
+        $menu_block = $menu->getBlockMainMenuAction();
+
+        $basic_page_bl = new IndexController();
+        $basic_page_block = $basic_page_bl->getBasicPageBlockAction();
 
 
         if (Router::getLanguage() == 'uk') {
@@ -83,7 +99,6 @@ abstract class Controller
         return ob_get_clean();
 
 
-
     }
 
     protected function render_main_menu(array $args = array())
@@ -93,6 +108,7 @@ abstract class Controller
 
         return ob_get_clean();
     }
+
     protected function render_admin_menu(array $args = array())
     {
         ob_start();
@@ -101,15 +117,43 @@ abstract class Controller
         return ob_get_clean();
     }
 
-    public  function render_news_block(array $args = array())
+    public function render_news_block(array $args = array())
     {
         extract($args);
         ob_start();
-        require VIEW_DIR.'News/getBlock.phtml';
+        require VIEW_DIR . 'News/getBlock.phtml';
 
         return ob_get_clean();
     }
 
+    public function render_menu_block(array $args = array())
+    {
+        extract($args);
+        if (!empty($block_menu)) {
+
+            ob_start();
+
+            require VIEW_DIR . 'Menu/getBlockMainMenu.phtml';
+
+            return ob_get_clean();
+        }
+        return null;
+    }
+
+    public function render_basic_page_block(array $args = array())
+    {
+        extract($args);
+        if (!empty($data)) {
+
+
+            ob_start();
+
+            require VIEW_DIR . 'Index/getBlockBasicPage.phtml';
+
+            return ob_get_clean();
+        }
+        return null;
+    }
 
 
     protected function render_admin(array $args = array(), $tpl = null)
@@ -129,7 +173,7 @@ abstract class Controller
         return ob_get_clean();
     }
 
-    public static function render_lang_icon($url_translation,  $icon_url)
+    public static function render_lang_icon($url_translation, $icon_url)
     {
         ob_start();
         require VIEW_DIR . 'langIcon.phtml';
@@ -149,7 +193,7 @@ abstract class Controller
         return $bc;
     }
 
-    public static function render_login_logout (array $args = array())
+    public static function render_login_logout(array $args = array())
     {
         extract($args);
         ob_start();
@@ -166,7 +210,6 @@ abstract class Controller
     }
 
 
-
     public static function rewrite_file($file_path, $mode, $date)
     {
         $f = fopen($file_path, $mode);
@@ -177,7 +220,7 @@ abstract class Controller
     public static function rewrite_file_alias()
     {
         $aliasModel = new AliasModel();
-      //  Debugger::PrintR($aliasModel->getAliasDate());
+        //  Debugger::PrintR($aliasModel->getAliasDate());
         $date = '<?php' . PHP_EOL . '$url_alias = array(' . PHP_EOL;
         foreach ($aliasModel->getAliasDate() as $k => $v) {
             $date .= '' . PHP_EOL . '      ' . $k . ' => array(' . PHP_EOL;
@@ -193,8 +236,8 @@ abstract class Controller
 
     public function getPagination($itemsCount, $itemsPerPage, $currentPage)
     {
-        if($currentPage<0){
-            throw new Exception('Bad request' , 400);
+        if ($currentPage < 0) {
+            throw new Exception('Bad request', 400);
         }
         $pagination = new Pagination($currentPage, $itemsCount, $itemsPerPage);
         $pagination_arr = $pagination->buttons;
@@ -204,17 +247,18 @@ abstract class Controller
     public static function recurs_render_menu_in_form($array, $data_menu_item = null)
     {
 
-        foreach($array as $k => $v){
-            $t ='';
-            for($i=1; $i<=$v['level']; $i++){
-            $t .='+';
-        }  $selected = '';
-            if($k == $data_menu_item[0]['id_parent_page']){
+        foreach ($array as $k => $v) {
+            $t = '';
+            for ($i = 1; $i <= $v['level']; $i++) {
+                $t .= '+';
+            }
+            $selected = '';
+            if ($k == $data_menu_item[0]['id_parent_page']) {
                 $selected = 'selected';
             }
-           echo '<option '.$selected.' value = "'.$v['alias_menu'].'!'.$k.'" >'.$t.' '.$v['name'].'</option>';
-            if(isset($v['child'])){
-                self::recurs_render_menu_in_form($v['child'],$data_menu_item);
+            echo '<option ' . $selected . ' value = "' . $v['alias_menu'] . '!' . $k . '" >' . $t . ' ' . $v['name'] . '</option>';
+            if (isset($v['child'])) {
+                self::recurs_render_menu_in_form($v['child'], $data_menu_item);
             }
         }
     }
@@ -223,13 +267,21 @@ abstract class Controller
     {
         echo '<ul>';
 
-        foreach($array as $v){
-            echo '<li ><input type="number" required min = 1 max = 999  name = "'.$v['id_page'].'-'.$v['id_parent_page'].'" value = "'.$v['id'].'" >'.$v['name'].'</li>';
-            if(isset($v['child'])){
+        foreach ($array as $v) {
+            echo '<li ><input type="number" required min = 1 max = 999  name = "' . $v['id_page'] . '-' . $v['id_parent_page'] . '" value = "' . $v['id'] . '" >' . $v['name'] . '</li>';
+            if (isset($v['child'])) {
                 self::recurs_render_menu_edit($v['child']);
             }
         }
         echo '</ul>';
+    }
+
+    public function render_img_url_data(array $img_url_data = array())
+    {
+
+        extract($img_url_data);
+        require VIEW_DIR . 'Admin/imgBrowse.phtml';
+
     }
 
 

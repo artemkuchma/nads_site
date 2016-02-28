@@ -157,4 +157,12 @@ return array(
         'en' => 'Last news',
         'uk' => 'Останнi новини'
     ),
+    'menu_section' => array(
+        'en' => 'Section menu',
+        'uk' => 'Меню роздiлу'
+    ),
+    'information' => array(
+        'en' => 'Information',
+        'uk' => 'Цікава інформація'
+    ),
 );

@@ -1,23 +1,52 @@
 <h1><?= $data_admin['name'] ?></h1>
 
 
-
 <p><b><?= Session::getFlash() ?></b></p>
+
+
 
 <form method="post" enctype="multipart/form-data">
     <label for="title_add_form_bp">Заголовок: </label>
     <input type="text" required name="title" id="title_add_form_bp" value="<?= $addModel->getTitle(); ?>"/> <br/><br/>
     <label for="description_add_form_bp">Краткое описание: </label>
-    <textarea name="description" id="description_add_form_bp" cols="30" rows="10"><?=$addModel->getAdditionalFieldsValueArr()['description']; ?></textarea><br/><br/>
+
+    <p>Текст должно содержать не более 600 символов. Если текст краткого описания привысит лимит
+        текст будет обрезан по 600 символу и добавлено троеточие.</p>
+    <textarea name="description" id="description_add_form_bp" cols="30"
+              rows="10"><?=$addModel->getAdditionalFieldsValueArr()['description']; ?></textarea><br/><br/>
     <label for="text_add_form_bp">Текст страници: </label>
-    <textarea name="text" id="text_add_form_bp" cols="30" rows="10"><?=$addModel->getAdditionalFieldsValueArr()['text']; ?></textarea><br/><br/>
+    <textarea name="text" id="text_add_form_bp" cols="30"
+              rows="10"><?=$addModel->getAdditionalFieldsValueArr()['text']; ?></textarea><br/><br/>
 
 
-    <input type="hidden" name="MAX_FILE_SIZE" value=2000000>
-    <p>Загружаемое изображение не должно превышать объем больше 2 мб и размер не менее 945х250px. Если загружаемое изображение
-        имеет размеры более 945х250px оно будет обрезано в процессе загрузки до необходимого размера </p>
-    <label for="file_add_form_bp">Изображение: </label>
-    <input id="file_add_form_bp" name="userfile" type="file">
+    <p>Два способа вставки изображений. Первый вариант - "Загрузить изображение" - загрузка изображение с локального
+     компьютера. Второй вариант - "Вставить изображение" - выбор изображения из списка уже загруженных ранее, и используются
+    другими текстовыми документами. Хранятся на сервере. В доступном списке отображаются только те изображения размеры
+    которых составляют 945х250 px
+    Если будут выбранны изображения двумя способами то в документе будет сохранено изображение полученное методом - "Загрузить изображение".
+    Если изображение не будет выбранно не одним из методов, будет использованно изображение по умолчанию.
+    </p>
+
+    <div>
+
+        <input type="hidden" name="MAX_FILE_SIZE" value=2000000>
+
+        <p>Загружаемое изображение не должно превышать объем больше 2 мб и размер не менее 945х250px. Если загружаемое
+            изображение
+            имеет размеры более 945х250px оно будет обрезано в процессе загрузки до необходимого размера </p>
+        <label for="file_add_form_bp">Загрузить изображение: </label>
+        <input id="file_add_form_bp" name="userfile" type="file">
+
+    </div>
+    <div>
+
+        <label for="img_server">Вставить изображение: </label>
+        <input type="text" name="file_server" id="img_server" size="20" value="" readonly/>
+        <input type="button" id="browse" name="browse" value="Выбрать файл"/>
+
+
+    </div>
+
 
     <p>Если поставить галочку - без меню - документ не будет доступен в главном меню</p></br>
     <label for="without_menu_add_form_bp">Без меню</label>
@@ -35,12 +64,12 @@
     </select><br/><br/>
     <label for="publication_add_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>
-    <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s')?>">
+    <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s') ?>">
     <input type="hidden" name="redirect" value="/admin/materials">
     <input type="submit" value="Сохранить"/>
 </form>
 
-<?php if($redirect_status){
-    isset($redirect)? Controller::redirect($redirect): null;
+<?php if ($redirect_status) {
+    isset($redirect) ? Controller::redirect($redirect) : null;
 }
 ?>

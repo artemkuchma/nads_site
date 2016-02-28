@@ -3,15 +3,17 @@
 <p><?= $data_page['text'] ?></p>
 
 
+<?php foreach ($data_news as $k => $v):
+    if ($v['title']):
+        ?>
+        <div class="news_views">
+            <h2><a href="/<?= $lang . $v['alias'] ?>"><?= $v['title']?></a></h2>
 
+            <p><?= $v['short_text']?></p>
+            <a href="/<?= $lang . $v['alias'] ?>"><?= __t('read_more')?></a>
+        </div>
+    <?php endif ?>
 
-    <?php foreach($data_news as $k => $v): ?>
-    <div>
-    <h2><?= $v['title']?></h2>
-    <p><?= $v['description']?></p>
-    <a href="/<?= $lang.$v['alias'] ?>"><?= __t('read_more')?></a>
-    </div>
-
-    <?php endforeach ?>
+<?php endforeach ?>
 
 <?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml', $data_pagination, $data_url, $data_news, 'news_per_page'); ?>

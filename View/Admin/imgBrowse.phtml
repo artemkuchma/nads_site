@@ -1,0 +1,11 @@
+
+    <?php foreach ($name as $k => $v): ?>
+        <div>
+            <img src="<?= $thumbs_url[$k] ?>" id="<?= $v; ?>" onclick='img_server.value=this.id'/>
+            <p><?= $v ?></p>
+        </div>
+
+    <?php endforeach ?>
+    <div><button id="closeButton" class="closeDOMWindow">Close</button> </div>
+
+

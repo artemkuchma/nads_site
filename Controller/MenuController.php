@@ -5,6 +5,20 @@ class MenuController extends Controller
 {
     private static $main_menu_array;
     private static $admin_menu_array;
+    private static $main_menu_part;
+    private static $idArray;
+
+    public static function getIdArray()
+    {
+        return self::$idArray;
+    }
+
+
+    public static function getMainMenuPart()
+    {
+        return self::$main_menu_part;
+    }
+
 
     public static function getAdminMenuArray()
     {
@@ -113,7 +127,6 @@ class MenuController extends Controller
          **/
 
 
-
         return $args; //$this->render_main_menu($args);//render($args);
 
     }
@@ -143,52 +156,88 @@ class MenuController extends Controller
         }
     }
 
-    public static function menu_recurs($array = array(), $id_class=null)
+    public static function menu_recurs($array = array(), $id_class = null, $active_page_class = null)
     {
-        $menu_class = isset($id_class)? $id_class : '';
-        echo '<ul '.$menu_class.'>';
+        $menu_class = isset($id_class) ? $id_class : '';
+        echo '<ul ' . $menu_class . '>';
         $lang = '';
+        $class = '';
+
         if (Router::getLanguage() != Config::get('default_language')) {
             $lang = Router::getLanguage() . '/';
         }
         foreach ($array as $v) {
 
             if (isset($v['child'])) {
-                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '" >' . $v['name'] . '</a>';
+                if(isset($active_page_class) && $v['id_page'] == Router::getId()){
+                    $class = $active_page_class;
+                }
+                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '" class="'.$class.'" >' . $v['name'] . '</a>';
+                $class = '';
 
-                self::menu_recurs($v['child']);
+                self::menu_recurs($v['child'], $id_class = null, $active_page_class);
                 echo '</li>';
-            }else{
-                echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a></li>';
+            } else {
+
+                if(isset($active_page_class) && $v['id_page'] == Router::getId()){
+                    $class = $active_page_class;
+                }
+                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '"class="'.$class.'"  >' . $v['name'] . '</a></li>';
+                $class = '';
             }
 
         }
         echo '</ul>';
     }
-/**
+
+    public static function getById($array, $id_page)
+    {
+        foreach ($array as $val) {
+            if ($val['id_page'] == $id_page) {
+                self::$main_menu_part = $val;
+            } elseif (isset($val['child'])) {
+                self::getById($val['child'], $id_page);
+            }
+
+        }
+
+    }
+
+    public static function idArray($array)
+    {
+        foreach ($array as $k => $val) {
+            self::$idArray[$k] = $k;
+            if (isset($val['child'])) {
+                self::idArray($val['child']);
+            }
+        }
+    }
+
+
+    /**
     public static function menu_recurs($array = array(), $dropdown_menu='')
     {
-        $menu_class = isset($dropdown_menu)? $dropdown_menu : 'nav navbar-nav';
-        echo '<ul class="'.$menu_class.'">';
-        $lang = '';
-        if (Router::getLanguage() != Config::get('default_language')) {
-            $lang = Router::getLanguage() . '/';
-        }
-        foreach ($array as $v) {
-
-            if (isset($v['child'])) {
-                echo '<li class="dropdown"> <a href="/' . $lang . $v['alias_menu'] . '" class="dropdown-toggle" data-toggle="dropdown">' . $v['name'] . '<span class="caret"></span></a>';
-                $dropdown_menu = 'dropdown-menu';
-                self::menu_recurs($v['child'], $dropdown_menu);
-                echo '</li>';
-            }else{
-                echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a></li>';
-            }
-
-        }
-        echo '</ul>';
+    $menu_class = isset($dropdown_menu)? $dropdown_menu : 'nav navbar-nav';
+    echo '<ul class="'.$menu_class.'">';
+    $lang = '';
+    if (Router::getLanguage() != Config::get('default_language')) {
+    $lang = Router::getLanguage() . '/';
     }
- * */
+    foreach ($array as $v) {
+
+    if (isset($v['child'])) {
+    echo '<li class="dropdown"> <a href="/' . $lang . $v['alias_menu'] . '" class="dropdown-toggle" data-toggle="dropdown">' . $v['name'] . '<span class="caret"></span></a>';
+    $dropdown_menu = 'dropdown-menu';
+    self::menu_recurs($v['child'], $dropdown_menu);
+    echo '</li>';
+    }else{
+    echo '<li> <a href="/' . $lang . $v['alias_menu'] . '">' . $v['name'] . '</a></li>';
+    }
+
+    }
+    echo '</ul>';
+    }
+     * */
 
     public function adminMenuAction()
     {
@@ -206,6 +255,38 @@ class MenuController extends Controller
         self::$admin_menu_array = $args;
         return $this->render_admin_menu($args);
 
+    }
+
+    public function getBlockMainMenuAction()
+    {
+        $block_menu_array = array();
+        $page_with_menu_block = array();
+        $block_menu = array();
+
+        foreach (self::getMainMenuArray() as $k => $v) {
+            self::getById(self::getMainMenuArray(), $k);
+            if (isset($v['child'])) {
+                $block_menu_array[$k] = self::getMainMenuPart();
+                $array_for_id = self::getMainMenuPart()['child'];
+                self::$idArray = array();
+                self::idArray($array_for_id);
+                $page_with_menu_block[$k] = self::getIdArray();
+                $page_with_menu_block[$k][$k] = $k;
+            }
+        }
+        foreach($page_with_menu_block as $k => $v){
+            $id_page = Router::getId();
+            if(isset($v[$id_page])){
+                $block_menu[] = $block_menu_array[$k];
+            }
+        }
+
+        $args = array(
+            'block_menu' => $block_menu,
+            'pages' => $page_with_menu_block
+        );
+
+        return $this->render_menu_block($args);
     }
 
 

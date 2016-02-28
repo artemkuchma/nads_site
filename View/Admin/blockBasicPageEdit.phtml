@@ -1,0 +1,34 @@
+<h1><?= $data_admin['name'] ?></h1>
+<p><?= $data_admin['text'] ?></p>
+
+<p><b><?= Session::getFlash() ?></b></p>
+
+
+<form method="post">
+
+    <table border="1">
+        <tr>
+            <td>№</td>
+            <td>Заголовок</td>
+            <td>Удалить</td>
+
+        </tr>
+
+    <?php for($i=1; $i <= Config::get('basic_page_in_block'); $i++ ): ?>
+            <tr>
+                <td> <input type="number"  min = 1   name = "id_<?= $i ?>" value = "<?= isset($data_pages[$i-1]['id_page'])? $data_pages[$i-1]['id_page'] : ''  ?>" ></td>
+                <td><a href="/<?= isset($data_pages[$i-1]['alias'])? $data_pages[$i-1]['alias'] : ''  ?>"><?= isset($data_pages[$i-1]['title'])? $data_pages[$i-1]['title'] : ''  ?></a></td>
+                <td><?php if(isset($data_pages[$i-1]['id_page'])):  ?>
+                <input type="checkbox" name="delete_<?= $i ?>"/>
+
+                <?php endif ?>
+                </td>
+            </tr>
+    <?php endfor ?>
+    </table>
+    <input type="hidden" name="redirect" value="/admin/blok_ssilok_saitbar">
+    <input type="submit" value="Сохранить"/>
+
+</form>
+
+<?php  echo  isset($redirect)? Controller::redirect($redirect): null; ?>

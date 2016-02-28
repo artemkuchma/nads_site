@@ -4,15 +4,7 @@
 class NewsController extends Controller
 {
 
-    private function cropString($string, $limit, $after = '')
-    {
-        if (strlen($string) > $limit) {
-            $substring_limited = substr($string, 0, $limit); //режем строку от 0 до limit
 
-            return substr($substring_limited, 0, strrpos($substring_limited, ' ')) . $after;
-        } else
-            return $string;
-    }
 
     public function indexAction()
     {

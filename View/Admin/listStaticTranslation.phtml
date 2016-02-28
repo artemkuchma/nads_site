@@ -7,18 +7,16 @@
 
         <td>Ключ</td>
         <td>Украинский</td>
-        <td>Изменить укр.</td>
         <td>Английский</td>
-        <td>Изменить англ.</td>
+        <td>Редактировать</td>
     </tr>
     <?php foreach($data_materials as $k => $v): ?>
         <tr>
 
             <td><?= $k ?></td>
             <td><?= $v['en']?></td>
-            <td></td>
             <td><?= $v['uk']?></td>
-            <td></td>
+            <td><a  href="#">Редактировать</a></td>
         </tr>
     <?php endforeach ?>
 </table>

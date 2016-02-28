@@ -51,6 +51,8 @@ Config::set('img_width', 945);
 Config::set('img_height', 250);
 Config::set('image_types', array("gif","jpg", "png", "jpeg","JPG"));
 Config::set('news_in_block', 3);
+Config::set('basic_page_in_block', 3);
+Config::set('default_img','SAM_0060.JPG');
 
 // DB Connect
 

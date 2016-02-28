@@ -217,6 +217,7 @@ class AdminController extends Controller
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0]
             );
+            Debugger::PrintR($args);
             return $this->render_admin($args);
 
         } else {
@@ -336,6 +337,60 @@ class AdminController extends Controller
 
     }
 
+    public function blockBasicPageEditAction()
+    {
+        if (Session::hasUser('admin')) {
+            $adminModel = new AdminModel();
+            $data_admin = $adminModel->getAdminPage(Router::getId());
+
+            $indexModel = new IndexModel();
+            $data_pages = $indexModel->getBasicPageBlock();
+            //   $data_pages = array();
+            //   foreach($d_p as $v){
+            //     $data_pages[$v['id_page']] = $v;
+            // }
+            //Debugger::PrintR($data_pages);
+            $request = new Request();
+            $blockModel = new BlockModel($request);
+          //  $id_array = $blockModel->getIdArray();
+           // $del_array = $blockModel->getDeleteArray();
+            // $test = $blockModel->isExist();
+
+           // Debugger::PrintR($id_array);
+          //  Debugger::PrintR($del_array);
+            //Debugger::PrintR($test);
+
+            if ($request->isPost()) {
+                if ($blockModel->isNumeric()) {
+                    if (!$blockModel->isExist()) {
+
+                        $blockModel->update();
+
+                    } else {
+                        $id = $blockModel->isExist();
+                        Session::setFlash("Basic_page с id номером " . $id . " не существует!");
+                    }
+
+                }else{
+                    Session::setFlash('Введите целые числа!');
+                }
+
+            }
+
+
+            $args = array(
+                'data_admin' => $data_admin[0],
+                'data_pages' => $data_pages,
+                'redirect' => $request->post('redirect')
+            );
+            return $this->render_admin($args);
+
+        } else {
+            throw new Exception('Access is forbidden', 403);
+
+        }
+    }
+
     public function addBasicPageAction()
     {
         $this->material_type = 'basic_page';
@@ -401,7 +456,8 @@ class AdminController extends Controller
                 'addModel' => $addModel,
                 'data_menu' => $main_menu_array,
                 'redirect' => $request->post('redirect'),
-                'redirect_status' => $redirect_status
+                'redirect_status' => $redirect_status,
+                'request' => $request
 
             );
             $tpl = 'add' . str_replace(' ', '', ucwords(str_replace('_', ' ', $this->material_type)));
@@ -473,7 +529,7 @@ class AdminController extends Controller
                             $redirect_status = $fileUpload->uploadImg($request, $this->material_type);
                             if ($redirect_status) {
 
-                            $editModel->edit($data_page[0]['id']);
+                                $editModel->edit($data_page[0]['id']);
 
                             }
 
@@ -567,6 +623,20 @@ class AdminController extends Controller
         } else {
             throw new Exception('Access  denied', 403);
         }
+    }
+
+    public function imgBrowseAction()
+    {
+
+        $request = new Request();
+        $uploadFile = new UploadFile($request);
+        $img_url_data = $uploadFile->getImgDirArray();
+
+
+        return $this->render_img_url_data($img_url_data);
+
+
+
     }
 
 
