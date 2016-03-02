@@ -8,6 +8,7 @@ class IndexController extends Controller
     public function indexAction()
     {
         //$this->rewrite_file_alias();
+       // Controller::rewrite_file_translation();
         $args = $this->index('basic_page');
 
         return $this->render($args);

@@ -93,6 +93,8 @@ abstract class Controller
 
         $bread_crumbs = BreadCrumbs::getBreadcrumbs();
 
+        $footer_text =  __t('footer_text');
+
 
         ob_start();
         require VIEW_DIR . 'layout.phtml';
@@ -234,6 +236,22 @@ abstract class Controller
         self::rewrite_file(LIB_DIR . 'alias.php', 'w', $date);
     }
 
+    public static function rewrite_file_translation()
+    {
+        $adminModel = new AdminModel();
+        //  Debugger::PrintR($aliasModel->getAliasDate());
+        $date = '<?php' . PHP_EOL . 'return array(' . PHP_EOL;
+        foreach ($adminModel->getDBStaticTranslation() as $k => $v) {
+            $date .= "" . PHP_EOL . "      '" . $v['key'] . "' => array(" . PHP_EOL;
+            $date .= "'en' => '".$v['text_en']."',".PHP_EOL;
+            $date .= "'uk' => '".$v['text_uk']."'".PHP_EOL;
+            $date .= '      ),' . PHP_EOL . '';
+        }
+        $date .= ');';
+
+        self::rewrite_file(LANG_DIR . 'translation.php', 'w', $date);
+    }
+
     public function getPagination($itemsCount, $itemsPerPage, $currentPage)
     {
         if ($currentPage < 0) {
@@ -280,7 +298,20 @@ abstract class Controller
     {
 
         extract($img_url_data);
-        require VIEW_DIR . 'Admin/imgBrowse.phtml';
+
+
+
+        $content = require VIEW_DIR . 'Admin/imgBrowse.phtml';
+        require VIEW_DIR . 'DomWindowLayout.phtml';
+    }
+
+    public function render_edit_static_translation(array $args = array())
+    {
+        extract($args);
+
+       $content = require VIEW_DIR.'Admin/editStaticTranslation.phtml';
+        require VIEW_DIR . 'DomWindowLayout.phtml';
+
 
     }
 

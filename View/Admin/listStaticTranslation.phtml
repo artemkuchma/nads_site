@@ -1,23 +1,30 @@
 <h1><?= $data_admin['name'] ?></h1>
 
-<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','translation_per_page'); ?>
+<?php Session::getFlash() ;?>
 
-<table border="1">
-    <tr>
+<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml', 'translation_per_page'); ?>
 
-        <td>Ключ</td>
-        <td>Украинский</td>
-        <td>Английский</td>
-        <td>Редактировать</td>
-    </tr>
-    <?php foreach($data_materials as $k => $v): ?>
+    <table border="1">
         <tr>
 
-            <td><?= $k ?></td>
-            <td><?= $v['en']?></td>
-            <td><?= $v['uk']?></td>
-            <td><a  href="#">Редактировать</a></td>
+            <td>Ключ</td>
+            <td>Украинский</td>
+            <td>Английский</td>
+            <td>Редактировать</td>
         </tr>
-    <?php endforeach ?>
-</table>
-<?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml',$data_pagination,$data_url,$data_materials, 'translation_per_page'); ?>
+        <?php foreach ($data_materials as $k => $v): ?>
+            <tr>
+
+                <td><?= $k ?></td>
+                <td><?= $v['en']?></td>
+                <td><?= $v['uk']?></td>
+                <td>
+
+                    <a href="/Webroot/DomWindow.php?key=<?= $k; ?>"id="browse">Редактировать</a>
+
+                </td>
+            </tr>
+        <?php endforeach ?>
+    </table>
+
+<?= Controller::render_simple(VIEW_DIR . 'Admin/pagination.phtml', $data_pagination, $data_url, $data_materials, 'translation_per_page'); ?>

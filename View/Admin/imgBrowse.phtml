@@ -1,11 +1,15 @@
-
+<div class="dom_window">
+    <div>
+        <button id="closeButton" class="closeDOMWindow">Закрыть</button>
+    </div>
     <?php foreach ($name as $k => $v): ?>
-        <div>
+        <div class="dom_window_img">
             <img src="<?= $thumbs_url[$k] ?>" id="<?= $v; ?>" onclick='img_server.value=this.id'/>
+
             <p><?= $v ?></p>
         </div>
 
     <?php endforeach ?>
-    <div><button id="closeButton" class="closeDOMWindow">Close</button> </div>
+</div>
 
 

@@ -8,11 +8,13 @@ class AdminController extends Controller
     public function indexAction()
     {
 
+
         if (Session::hasUser('admin')) {
 
             $adminModel = new AdminModel();
             $data = $adminModel->getAdminPage(Router::getId());
             $args = $data[0];
+
             return $this->render_admin($args);
         } else {
             throw new Exception('Access is forbidden', 403);
@@ -217,7 +219,7 @@ class AdminController extends Controller
                 'data_pagination' => $data_pagination,
                 'data_url' => $data_url[0]
             );
-            Debugger::PrintR($args);
+          //  Debugger::PrintR($args);
             return $this->render_admin($args);
 
         } else {
@@ -352,12 +354,12 @@ class AdminController extends Controller
             //Debugger::PrintR($data_pages);
             $request = new Request();
             $blockModel = new BlockModel($request);
-          //  $id_array = $blockModel->getIdArray();
-           // $del_array = $blockModel->getDeleteArray();
+            //  $id_array = $blockModel->getIdArray();
+            // $del_array = $blockModel->getDeleteArray();
             // $test = $blockModel->isExist();
 
-           // Debugger::PrintR($id_array);
-          //  Debugger::PrintR($del_array);
+            // Debugger::PrintR($id_array);
+            //  Debugger::PrintR($del_array);
             //Debugger::PrintR($test);
 
             if ($request->isPost()) {
@@ -371,7 +373,7 @@ class AdminController extends Controller
                         Session::setFlash("Basic_page с id номером " . $id . " не существует!");
                     }
 
-                }else{
+                } else {
                     Session::setFlash('Введите целые числа!');
                 }
 
@@ -627,6 +629,7 @@ class AdminController extends Controller
 
     public function imgBrowseAction()
     {
+        if (Session::hasUser('admin')) {
 
         $request = new Request();
         $uploadFile = new UploadFile($request);
@@ -635,7 +638,43 @@ class AdminController extends Controller
 
         return $this->render_img_url_data($img_url_data);
 
+        } else {
+            throw new Exception('Access  denied', 403);
+        }
 
+
+    }
+
+    public function editStaticTranslation($get_key)
+    {
+        if (Session::hasUser('admin')) {
+            $adminModel = new AdminModel();
+            $texts = $adminModel->getStaticTranslationByKey($get_key);
+            $args = array(
+                'key' => $get_key,
+                'text_en' => $texts['text_en'],
+                'text_uk' => $texts['text_uk']
+            );
+
+
+            return $this->render_edit_static_translation($args);
+        } else {
+            throw new Exception('Access  denied', 403);
+        }
+
+    }
+
+    public function editStaticTranslationAction()
+    {
+        $adminModel = new AdminModel();
+        $request = new Request();
+        if($request->isPost()){
+
+            $adminModel->updateStaticTranslation($request);
+
+        }
+        Controller::rewrite_file_translation();
+        Controller::redirect('/admin/translations_static_text');
 
     }
 

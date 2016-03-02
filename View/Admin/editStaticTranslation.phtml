@@ -1,0 +1,38 @@
+<?php Session::getFlash(); ?>
+<div class="dom_window">
+
+    <div>
+        <button id="closeButton" class="closeDOMWindow">Закрыть</button>
+    </div>
+    <form method="post" action="/Webroot/DomWindowAction.php">
+        <div>
+            <div>
+                <lable for="key">Ключ</lable>
+            </div>
+            <div>
+                <input type="text" id="key" name="key" readonly value="<?= $key ?>"/>
+            </div>
+        </div>
+        <div>
+            <div>
+                <lable for="text_en">Английский текст</lable>
+            </div>
+            <div>
+                <textarea name="text_en" id="text_en" cols="60" rows="4"><?= $text_en ?></textarea>
+            </div>
+        </div>
+        <div>
+            <div>
+                <lable for="text_uk">Украинский текст</lable>
+            </div>
+            <div>
+                <textarea name="text_uk" id="text_uk" cols="60" rows="4"><?= $text_uk ?></textarea>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Сохранить"/>
+        </div>
+    </form>
+
+
+</div>

@@ -39,13 +39,17 @@
 <script type="text/javascript" src="/Webroot/js/jquery.DOMWindow.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#browse').openDOMWindow({
+        $('#browse*').openDOMWindow({
             height: 400,
-            width: 600,
+            width: 550,
             eventType: 'click',
+            loader: 1,
+            loaderImagePath: '',
+            loaderHeight: 16,
+            loaderWidth: 17,
             windowSource: 'ajax',
-            windowSourceURL: 'Library/DomWindows.php',
-            windowHTTPType: 'post'
+            windowSourceURL: '/Webroot/DomWindow.php',
+            windowHTTPType: 'get'
         });
     });
 </script>
