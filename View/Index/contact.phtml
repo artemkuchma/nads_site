@@ -1,12 +1,55 @@
 <h1><?= $data_page['title'] ?></h1>
 <p><?= Session::getFlash() ?></p>
+<div>
+    <p><?= $data_page['text'] ?></p>
+</div>
+<div class="contact_form">
+    <form method="post">
+        <?php if (!Session::has('user')): ?>
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                    <label for="name_contact"><?= __t('name') ?></label>
+                </div>
+                <div>
+                    <input type="text" id=name_contact name="name" size="60" value="<?= $form->name ?>">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                    <label for="email_contact">Email:</label>
+                </div>
+                <div>
+                    <input type="email" id="email_contact" name="email" size="60" value="<?= $form->email ?>">
+                </div>
+            </div>
+        <?php endif ?>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <label for="subject_contact"><?= __t('subject') ?></label>
+            </div>
+            <div>
+                <input type="text" name="subject" id="subject_contact" size="60" value="<?= $form->message_subject ?>"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <label for="message_contact"><?= __t('message') ?></label>
+            </div>
+            <div>
+                <textarea name="message" id="message_contact" cols="60" rows="7"><?=$form->message?></textarea>
+            </div>
+        </div>
+        <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s') ?>">
 
-<form method="post">
-    <?php if(!Session::has('user')): ?>
-    <?= __t('name') ?> <input type="text" name="name" value="<?=$form->name?>"> <br>
-    Email: <input type="email" name="email" value="<?=$form->email?>"> <br>
-    <?php endif ?>
-    <?= __t('message') ?> <textarea name="message" id="" cols="30" rows="10"><?=$form->message?></textarea>
-    <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s')?>">
-    <button type="submit"><?= __t('submit') ?></button>
-</form>
+        <div class="row">
+            <div class="col-xs-5 col-sm-5 col-md-5">
+                <div class="button_contact">
+                    <input type="submit" class="search_button" value="<?= __t('submit') ?>"/>
+                </div>
+                <div class="button_contact">
+                    <input type="reset" class="search_button" value="<?= __t('reset') ?>"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

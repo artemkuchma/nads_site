@@ -4,6 +4,7 @@
 class ContactModel {
     public $name;
     public $email;
+    public $message_subject;
     public $message;
     public $date;
     private $id_reg_user;
@@ -12,6 +13,7 @@ class ContactModel {
     {
         $this->name = Session::has('user')? Session::get('user')['user'] : $request->post('name');
         $this->email = Session::has('user')? $this->regUserData()['email'] : $request->post('email');
+        $this->message_subject = $request->get('message_subject');
         $this->message = $request->post('message');
         $this->date = $request->post('date');
         $this->id_reg_user = Session::has('user')? Session::get('user')['id'] : null;
@@ -31,7 +33,7 @@ class ContactModel {
 
     public function isValid()
     {
-        return $this->name !== '' && $this->email !== ''&& $this->message !== '';
+        return $this->name !== '' && $this->email !== ''&& $this->message !== ''&& $this->message_subject !== '';
 
     }
     public function saveToDb()
@@ -41,10 +43,11 @@ class ContactModel {
             'email'=> $this->email,
             'date'=> $this->date,
             'message'=> $this->message,
+            'message_subject' => $this->message_subject,
             'id_reg_user' => $this->id_reg_user
         );
 
-        $sql = 'INSERT INTO  message (user_name, user_email, message_date, message, id_reg_user) VALUES (:name,:email, :date, :message, :id_reg_user)';
+        $sql = 'INSERT INTO  message (user_name, user_email, message_date, message_subject, message, id_reg_user) VALUES (:name,:email, :date, :message_subject, :message, :id_reg_user)';
 
         $dbc = Connect::getConnection();
         $sth = $dbc->getPDO()->prepare($sql);

@@ -289,13 +289,25 @@ display: inline-block;
 .dom_window_img img:active{
     border: 3px solid forestgreen;
 }
+.contact_form div{
+    margin-bottom: 10px;
+}
+.contact_form div div {
+    display: inline-block;
+}
+.button_contact{
+    display: inline-block;
+}
+.login_form{
+    margin-top: 30px;
+}
 
 
 
 
 .main_div {
     background-color: #ffffff;
-    /*   opacity: 0.5;*/
+     /* opacity: 0.5; */
 
 }
 

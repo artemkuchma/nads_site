@@ -142,13 +142,13 @@ return array(
       ),
 
       'name' => array(
-'en' => 'Name: ',
-'uk' => 'Iм я: '
+'en' => 'Name',
+'uk' => 'Iм я'
       ),
 
       'message' => array(
-'en' => 'Message: ',
-'uk' => 'Повiдомлення: '
+'en' => 'Message',
+'uk' => 'Повiдомлення'
       ),
 
       'read_more' => array(
@@ -209,5 +209,15 @@ return array(
       'footer_text' => array(
 'en' => '© YourSite 2016. All rights reserved. ',
 'uk' => '© YourSite 2016 г. Всi права захищені.'
+      ),
+
+      'reset' => array(
+'en' => 'Reset',
+'uk' => 'Очистити'
+      ),
+
+      'subject' => array(
+'en' => 'Subject',
+'uk' => 'Тема'
       ),
 );
