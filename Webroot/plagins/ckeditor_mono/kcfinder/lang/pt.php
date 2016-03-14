@@ -46,10 +46,10 @@ $lang = array(
     "Denied file extension." =>
     "Extensão do ficheiro inválida.",
 
-    "Unknown image format/encoding." =>
+    "Unknown images format/encoding." =>
     "Formato/codificação da imagem desconhecido.",
 
-    "The image is too big and/or cannot be resized." =>
+    "The images is too big and/or cannot be resized." =>
     "A imagem é muito grande e não pode ser redimensionada.",
 
     "Cannot create {dir} folder." =>
@@ -176,7 +176,7 @@ $lang = array(
     "Date" => "Data",
     "Descending" => "",
     "Uploading file..." => "Carregando ficheiro...",
-    "Loading image..." => "Carregando imagens...",
+    "Loading images..." => "Carregando imagens...",
     "Loading folders..." => "Carregando pastas...",
     "Loading files..." => "Carregando ficheiros...",
     "New Subfolder..." => "Nova pasta...",

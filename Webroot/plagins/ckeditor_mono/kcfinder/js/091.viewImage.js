@@ -18,7 +18,7 @@ _.viewImage = function(data) {
 
     showImage = function(data) {
         _.lock = true;
-        $('#loading').html(_.label("Loading image...")).show();
+        $('#loading').html(_.label("Loading images...")).show();
 
         var url = $.$.escapeDirs(_.uploadURL + "/" + _.dir + "/" + data.name) + "?ts=" + ts,
             img = new Image(),

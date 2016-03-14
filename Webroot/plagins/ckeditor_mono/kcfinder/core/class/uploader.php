@@ -23,7 +23,7 @@ class uploader {
   * @var array */
     protected $config = array();
 
-/** Default image driver
+/** Default images driver
   * @var string */
     protected $imageDriver = "gd";
 
@@ -172,7 +172,7 @@ class uploader {
         if ((!isset($driver) || ($driver === false)) &&
             (image::getDriver(array($this->imageDriver)) === false)
         )
-            die("Cannot find any of the supported PHP image extensions!");
+            die("Cannot find any of the supported PHP images extensions!");
 
         // WATERMARK INIT
         if (isset($this->config['watermark']) && is_string($this->config['watermark']))
@@ -498,7 +498,7 @@ class uploader {
         // IMAGE RESIZE
         $img = image::factory($this->imageDriver, $file['tmp_name']);
         if (!$img->initError && !$this->imageResize($img, $file['tmp_name']))
-            return $this->label("The image is too big and/or cannot be resized.");
+            return $this->label("The images is too big and/or cannot be resized.");
 
         return true;
     }
@@ -690,7 +690,7 @@ class uploader {
             if (in_array($type, array("gif", "jpeg", "png")))
                 return true;
 
-        // Resize image
+        // Resize images
         } elseif (!$img->resizeFit($this->config['thumbWidth'], $this->config['thumbHeight']))
             return false;
 

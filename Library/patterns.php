@@ -32,7 +32,7 @@ $url_patterns = array(
     'register' => array(
         'pattern_uk' => 'registrachiya',
         'pattern_en' => 'register',
-        'controller' => 'security',
+        'controller' => 'Security',
         'action' => 'register',
         'elements_before_alias' => 1
     ),
@@ -40,56 +40,56 @@ $url_patterns = array(
     'login' => array(
         'pattern_uk' => 'uviiti',
         'pattern_en' => 'login',
-        'controller' => 'security',
+        'controller' => 'Security',
         'action' => 'login',
         'elements_before_alias' => 1
     ),
     'logout' => array(
         'pattern_uk' => 'vuhid',
         'pattern_en' => 'logout',
-        'controller' => 'security',
+        'controller' => 'Security',
         'action' => 'logout',
         'elements_before_alias' => 1
     ),
     'delete' => array(
         'pattern_uk' => 'admin/delete/.*',
         'pattern_en' => 'admin/delete/.*',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'delete',
         'elements_before_alias' => 2
     ),
     'edit_basic_page' => array(
         'pattern_uk' => 'admin/edit_basic_page/.*',
         'pattern_en' => 'admin/edit_basic_page/.*',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'editBasicPage',
         'elements_before_alias' => 2
     ),
     'edit_news' => array(
         'pattern_uk' => 'admin/edit_news/.*',
         'pattern_en' => 'admin/edit_news/.*',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'editNews',
         'elements_before_alias' => 2
     ),
     'translate_basic_page' => array(
         'pattern_uk' => 'admin/translate_basic_page/.*',
         'pattern_en' => 'admin/translate_basic_page/.*',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'translateBasicPage',
         'elements_before_alias' => 2
     ),
     'translate_news' => array(
         'pattern_uk' => 'admin/translate_news/.*',
         'pattern_en' => 'admin/translate_news/.*',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'translateNews',
         'elements_before_alias' => 2
     ),
     'delete_message' => array(
         'pattern_uk' => 'admin/delete_message',
         'pattern_en' => 'admin/delete_message',
-        'controller' => 'admin',
+        'controller' => 'Admin',
         'action' => 'deleteMessage',
         'elements_before_alias' => 2
     ),

@@ -18,6 +18,7 @@ abstract class Controller
     {
         $indexModel = new IndexModel();
         $data = $indexModel->getPage(Router::getId(), Router::getLanguage(), $material_type);
+       // Debugger::PrintR($data);
         if (!$data) {
             throw new Exception(" Page is not exist", 404);
 
@@ -29,7 +30,10 @@ abstract class Controller
         if (!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(), $material_type)) {
             throw new Exception(" Page has no translation", 204);
         }
+
+
         $args = $data[0];
+
         return $args;
     }
 

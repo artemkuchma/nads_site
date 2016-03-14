@@ -61,9 +61,11 @@ class SecurityController extends Controller
                 Session::setFlash( __t('fill_fields'));
             }
         }
+        $img_default_url = 'Webroot/uploads/images/'.Config::get('default_img');
 
         $args = array(
-            'login' => $login
+            'login' => $login,
+            'img' => $img_default_url
         );
         return $this->render($args);
     }

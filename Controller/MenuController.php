@@ -159,7 +159,7 @@ class MenuController extends Controller
     public static function menu_recurs($array = array(), $id_class = null, $active_page_class = null)
     {
         $menu_class = isset($id_class) ? $id_class : '';
-        echo '<ul ' . $menu_class . '>';
+        echo '<ul' . $menu_class . '>';
         $lang = '';
         $class = '';
 

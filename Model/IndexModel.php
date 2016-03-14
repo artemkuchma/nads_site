@@ -22,6 +22,7 @@ class IndexModel
         $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);
 
+
         return $date;
 
     }

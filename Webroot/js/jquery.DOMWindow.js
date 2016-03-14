@@ -188,7 +188,7 @@
 			//get values from element clicked, or assume its passed as an option
 			settings.windowSourceID = $(passingThis).attr('href') || settings.windowSourceID;
 			settings.windowSourceURL = $(passingThis).attr(settings.windowSourceAttrURL) || settings.windowSourceURL;
-			settings.windowBGImage = settings.windowBGImage ? 'background-image:url('+settings.windowBGImage+')' : '';
+			settings.windowBGImage = settings.windowBGImage ? 'background-images:url('+settings.windowBGImage+')' : '';
 			var urlOnly, urlQueryObject;
 			
 			if(settings.positionType == 'anchored'){//anchored DOM window

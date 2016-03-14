@@ -128,7 +128,7 @@ class UploadFile
         if ($type == 2) {
             return imagejpeg($img_o, $file_output, 100);
         } else {
-            $func = 'image' . $ext;
+            $func = 'images' . $ext;
             return $func($img_o, $file_output);
         }
 
@@ -172,7 +172,7 @@ class UploadFile
         if ($type == 2) {
             return imagejpeg($img_o, $file_output, 100);
         } else {
-            $func = 'image' . $ext;
+            $func = 'images' . $ext;
             return $func($img_o, $file_output);
         }
 

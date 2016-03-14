@@ -2,7 +2,7 @@
 
 /** This file is part of KCFinder project
   *
-  *      @desc Abstract image driver class
+  *      @desc Abstract images driver class
   *   @package KCFinder
   *   @version 3.12
   *    @author Pavel Tzonkov <sunhater@sunhater.com>
@@ -48,14 +48,14 @@ abstract class image {
     }
 
 
-/** Constructor. Parameter $image should be:
-  *   1. An instance of image driver class (copy instance).
-  *   2. An image represented by the type of the $image property
+/** Constructor. Parameter $images should be:
+  *   1. An instance of images driver class (copy instance).
+  *   2. An images represented by the type of the $images property
   *      (resource or object).
   *   3. An array with two elements. First - width, second - height.
-  *      Creates a blank image.
-  *   4. A filename string. Get image form file.
-  * Second paramaeter is used by pass some specific image driver options
+  *      Creates a blank images.
+  *   4. A filename string. Get images form file.
+  * Second paramaeter is used by pass some specific images driver options
   * @param mixed $image
   * @param array $options */
 
@@ -71,8 +71,8 @@ abstract class image {
     }
 
 
-/** Factory pattern to load selected driver. $image and $options are passed
-  * to the constructor of the image driver
+/** Factory pattern to load selected driver. $images and $options are passed
+  * to the constructor of the images driver
   * @param string $driver
   * @param mixed $image
   * @return object */
@@ -102,7 +102,7 @@ abstract class image {
     }
 
 
-/** Returns an array. Element 0 - image resource. Element 1 - width. Element 2 - height.
+/** Returns an array. Element 0 - images resource. Element 1 - width. Element 2 - height.
   * Returns FALSE on failure.
   * @param mixed $image
   * @return array */
@@ -151,26 +151,26 @@ abstract class image {
     }
 
 
-/** Checks if PHP needs some extra extensions to use the image driver. This
+/** Checks if PHP needs some extra extensions to use the images driver. This
   * static method should be implemented into driver classes like abstract
   * methods
   * @return bool */
     static function available() { return false; }
 
-/** Checks if file is an image. This static method should be implemented into
+/** Checks if file is an images. This static method should be implemented into
   * driver classes like abstract methods
   * @param string $file
   * @return bool */
     static function checkImage($file) { return false; }
 
-/** Resize image. Should return TRUE on success or FALSE on failure
+/** Resize images. Should return TRUE on success or FALSE on failure
   * @param integer $width
   * @param integer $height
   * @return bool */
     abstract public function resize($width, $height);
 
-/** Resize image to fit in given resolution. Should returns TRUE on success
-  * or FALSE on failure. If $background is set, the image size will be
+/** Resize images to fit in given resolution. Should returns TRUE on success
+  * or FALSE on failure. If $background is set, the images size will be
   * $width x $height and the empty spaces (if any) will be filled with defined
   * color. Background color examples: "#5f5", "#ff67ca", array(255, 255, 255)
   * @param integer $width
@@ -179,7 +179,7 @@ abstract class image {
   * @return bool */
     abstract public function resizeFit($width, $height, $background=false);
 
-/** Resize and crop the image to fit in given resolution. Returns TRUE on
+/** Resize and crop the images to fit in given resolution. Returns TRUE on
   * success or FALSE on failure
   * @param mixed $src
   * @param integer $offset
@@ -187,7 +187,7 @@ abstract class image {
     abstract public function resizeCrop($width, $height, $offset=false);
 
 
-/** Rotate image
+/** Rotate images
   * @param integer $angle
   * @param string $background
   * @return bool */
@@ -197,40 +197,40 @@ abstract class image {
 
     abstract public function flipVertical();
 
-/** Apply a PNG or GIF watermark to the image. $top and $left parameters sets
+/** Apply a PNG or GIF watermark to the images. $top and $left parameters sets
   * the offset of the watermark in pixels. Boolean and NULL values are possible
   * too. In default case (FALSE, FALSE) the watermark should be applyed to
   * the bottom right corner. NULL values means center aligning. If the
-  * watermark is bigger than the image or it's partialy or fully outside the
-  * image, it shoudn't be applied
+  * watermark is bigger than the images or it's partialy or fully outside the
+  * images, it shoudn't be applied
   * @param string $file
   * @param mixed $top
   * @param mixed $left
   * @return bool */
     abstract public function watermark($file, $left=false, $top=false);
 
-/** Should output the image. Second parameter is used to pass some options like
+/** Should output the images. Second parameter is used to pass some options like
   *   'file' - if is set, the output will be written to a file
   *   'quality' - compression quality
-  * It's possible to use extra specific options required by image type ($type)
+  * It's possible to use extra specific options required by images type ($type)
   * @param string $type
   * @param array $options
   * @return bool */
     abstract public function output($type='jpeg', array $options=array());
 
-/** This method should create a blank image with selected size. Should returns
-  * resource or object related to the created image, which will be passed to
-  * $image property
+/** This method should create a blank images with selected size. Should returns
+  * resource or object related to the created images, which will be passed to
+  * $images property
   * @param integer $width
   * @param integer $height
   * @return mixed */
     abstract protected function getBlankImage($width, $height);
 
-/** This method should create an image from source image. Only first parameter
-  * ($image) is input. Its type should be filename string or a type of the
-  * $image property. See the constructor reference for details. The
+/** This method should create an images from source images. Only first parameter
+  * ($images) is input. Its type should be filename string or a type of the
+  * $images property. See the constructor reference for details. The
   * parametters $width and $height are output only. Should returns resource or
-  * object related to the created image, which will be passed to $image
+  * object related to the created images, which will be passed to $images
   * property
   * @param mixed $image
   * @param integer $width

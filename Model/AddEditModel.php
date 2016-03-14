@@ -60,7 +60,7 @@ class addEditModel
         }
 
             // $name = $request->files('name');
-            $this->img = "Webroot/uploads/images/$this->img_name";
+            $this->img = isset($this->img_name)? "Webroot/uploads/images/$this->img_name" : "Webroot/uploads/images/".Config::get('default_img');
 
 
         $fields_model = new FieldsModel($material_type);

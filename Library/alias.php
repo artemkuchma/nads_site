@@ -267,6 +267,13 @@ $url_alias = array(
             'alias_uk' => 'novyny/lhhkhyhkjh',
       ),
 
+      331 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_10',
+            'alias_uk' => 'novyny/testovaya_novost_10',
+      ),
+
       17 => array(
             'controller' => 'Admin',
             'action' => 'index',
@@ -319,8 +326,8 @@ $url_alias = array(
       25 => array(
             'controller' => 'Admin',
             'action' => 'addNews',
-            'alias_en' => 'admin/add_new',
-            'alias_uk' => 'admin/add_new',
+            'alias_en' => 'admin/add_news',
+            'alias_uk' => 'admin/add_news',
       ),
 
       26 => array(

@@ -42,10 +42,10 @@ $lang = array(
     "Denied file extension." =>
     "Lêer uitbreiding verloën.",
 
-    "Unknown image format/encoding." =>
+    "Unknown images format/encoding." =>
     "Onbekende prentjie-formaat / kodering.",
 
-    "The image is too big and/or cannot be resized." =>
+    "The images is too big and/or cannot be resized." =>
     "Die beeld is te groot en / of kan nie verander word nie.",
 
     "Cannot create {dir} folder." =>
@@ -175,7 +175,7 @@ $lang = array(
     "Date" => "Datum",
     "Descending" => "Aflopend",
     "Uploading file..." => "Lêer Besig Met Oplaai...",
-    "Loading image..." => "Besig om beeld te laai...",
+    "Loading images..." => "Besig om beeld te laai...",
     "Loading folders..." => "Besig om Gidse te laai...",
     "Loading files..." => "Besig om Lêers te laai...",
     "New Subfolder..." => "Nuwe subgids...",

@@ -44,7 +44,7 @@ Config::set('log_per_page',$request->get('log_per_page') ? $request->get('log_pe
 Config::set('news_per_page',$request->get('news_per_page') ? $request->get('news_per_page'):10 );
 Config::set('search_per_page',$request->get('search_per_page') ? $request->get('search_per_page'):10 );
 Config::set('admin_email', 'test@test6.ua');
-Config::set('max_image_size', 2000000);
+Config::set('max_image_size', 500000);
 Config::set('max_image_width', 946);
 Config::set('max_image_height', 251);
 Config::set('img_width', 945);

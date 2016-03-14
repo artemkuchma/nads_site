@@ -10,7 +10,7 @@
     <input type="text" required name="title" id="title_edit_form_bp" value="<?= $edit_model->getTitle() ? $edit_model->getTitle() : $data_page[0]['title']; ?>"/> <br/><br/>
     <label for="text_edit_form_bp">Текст страници: </label>
     <textarea name="text" id="text_edit_form_bp" cols="30" rows="10"><?= isset($edit_model->getAdditionalFieldsValueArr()['text']) ? $edit_model->getAdditionalFieldsValueArr()['text'] : $data_page[0]['text']; ?></textarea><br/><br/>
-    <p>Два способа вставки изображений. Первый вариант - "Загрузить изображение" - загрузка изображение с локального
+    <p>Два способа вставки изображений в хедере (на верху страницы). Первый вариант - "Загрузить изображение" - загрузка изображение с локального
         компьютера. Второй вариант - "Вставить изображение" - выбор изображения из списка уже загруженных ранее, и используются
         другими текстовыми документами. Хранятся на сервере. В доступном списке отображаются только те изображения размеры
         которых составляют 945х250 px
@@ -18,10 +18,10 @@
 
     </p>
     <div>
-    <input type="hidden" name="MAX_FILE_SIZE" value=2000000>
-    <p>Загружаемое изображение не должно превышать объем больше 2 мб и размер не менее 945х250px. Если загружаемое изображение
+    <input type="hidden" name="MAX_FILE_SIZE" value=500000>
+    <p>Загружаемое изображение не должно превышать объем больше 0,5 мб и размер не менее 945х250px. Если загружаемое изображение
         имеет размеры более 945х250px оно будет обрезано в процессе загрузки до необходимого размера </p>
-    <label for="file_add_form_bp">Изображение: </label>
+    <label for="file_add_form_bp">Загрузить изображение: </label>
     <input id="file_add_form_bp" name="userfile" type="file">
     <img src="/<?= $edit_model->getImg($id) ?>" alt=""/>
     </div>

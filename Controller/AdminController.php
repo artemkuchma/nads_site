@@ -367,6 +367,7 @@ class AdminController extends Controller
                     if (!$blockModel->isExist()) {
 
                         $blockModel->update();
+                        $redirect = $request->post('redirect');
 
                     } else {
                         $id = $blockModel->isExist();
@@ -383,7 +384,8 @@ class AdminController extends Controller
             $args = array(
                 'data_admin' => $data_admin[0],
                 'data_pages' => $data_pages,
-                'redirect' => $request->post('redirect')
+                'redirect' => isset($redirect)? $redirect : null,
+
             );
             return $this->render_admin($args);
 
