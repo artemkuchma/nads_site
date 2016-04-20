@@ -24,14 +24,14 @@
 			width    : 50,       // thumbnail width
 			height   : 50,       // thumbnail height
 			position : 'bottom', // 'top' or 'bottom'
-			source   : function ( item ) {  // function to obtain the URL of the thumbnail images
+			source   : function ( item ) {  // function to obtain the URL of the thumbnail image
 				var href;
 
 				if (item.element) {
 					href = $(item.element).find('img').attr('src');
 				}
 
-				if (!href && item.type === 'images' && item.href) {
+				if (!href && item.type === 'image' && item.href) {
 					href = item.href;
 				}
 

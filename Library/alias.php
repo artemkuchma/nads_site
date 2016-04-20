@@ -4,36 +4,36 @@ $url_alias = array(
       7 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'home',
-            'alias_uk' => 'glavnaya',
+            'alias_en' => 'greetings_in_nadc_site',
+            'alias_uk' => 'vitamo_na_sayti_nadc',
       ),
 
       8 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'about',
-            'alias_uk' => 'o_nas',
+            'alias_en' => 'legal/ukranian_laws_and_rules/anti_doping_rules_of_nadc',
+            'alias_uk' => 'pravo/normatyvni_dokumenty_ukrany/antydopingovi_pravyla_nadc',
       ),
 
       9 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles',
-            'alias_uk' => 'statti',
+            'alias_en' => 'medicine/therapeutic_use_exemption_committee',
+            'alias_uk' => 'medycyna/ktv',
       ),
 
       10 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles/article_1',
-            'alias_uk' => 'statti/stattia_1',
+            'alias_en' => 'legal/wada_documentation/world_anti_doping_code',
+            'alias_uk' => 'pravo/dokumentaciya_vada/kodeks',
       ),
 
       11 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles/article_1/donec_lacinia',
-            'alias_uk' => 'statti/stattia_1/statya_2',
+            'alias_en' => 'legal/wada_documentation/prohibited_list_2016',
+            'alias_uk' => 'pravo/dokumentaciya_vada/zaboronenyy_spysok_2016',
       ),
 
       13 => array(
@@ -92,186 +92,151 @@ $url_alias = array(
             'alias_uk' => 'dannye_poyska',
       ),
 
-      225 => array(
-            'controller' => 'Index',
-            'action' => 'index',
-            'alias_en' => 'home/testtt',
-            'alias_uk' => 'glavnaya/testtt',
-      ),
-
       226 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'statti/stattia_1/ccc',
-            'alias_uk' => 'statti/stattia_1/ccc',
+            'alias_en' => 'qa/mildronat',
+            'alias_uk' => 'pytannya_ta_vidpovidi/mildronat',
       ),
 
-      227 => array(
+      343 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles/article_1/donec_lacinia/apaapa',
-            'alias_uk' => 'statti/stattia_1/statya_2/apaapa',
+            'alias_en' => 'legal',
+            'alias_uk' => 'pravo',
       ),
 
-      228 => array(
+      344 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'test_10',
-            'alias_uk' => 'test_10',
+            'alias_en' => 'legal/wada_documentation',
+            'alias_uk' => 'pravo/dokumentaciya_vada',
       ),
 
-      313 => array(
+      345 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'articles/article_1/donec_lacinia/test_7',
-            'alias_uk' => 'statti/stattia_1/statya_2/test_7',
+            'alias_en' => 'medicine',
+            'alias_uk' => 'medycyna',
       ),
 
-      314 => array(
+      346 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'test_8',
-            'alias_uk' => 'test_8',
+            'alias_en' => 'legal/ukranian_laws_and_rules',
+            'alias_uk' => 'pravo/normatyvni_dokumenty_ukrany',
       ),
 
-      327 => array(
+      347 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'statti/stattia_1/testovaya_stranyca_10',
-            'alias_uk' => 'statti/stattia_1/testovaya_stranyca_10',
+            'alias_en' => 'greetings_in_nadc_site/history',
+            'alias_uk' => 'vitamo_na_sayti_nadc/istoriya',
       ),
 
-      328 => array(
+      348 => array(
             'controller' => 'Index',
             'action' => 'index',
-            'alias_en' => 'statti/stattia_1/statya_2/test_11',
-            'alias_uk' => 'statti/stattia_1/statya_2/test_11',
+            'alias_en' => 'legal/ukranian_laws_and_rules/law_of_ukraine_about_anti_doping_contol_in_sport',
+            'alias_uk' => 'pravo/normatyvni_dokumenty_ukrany/zakon_ukrany',
       ),
 
-      219 => array(
+      349 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/international_conventions',
+            'alias_uk' => 'pravo/mijnarodni_konvenci',
+      ),
+
+      350 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/ukranian_laws_and_rules/cabinet_of_ministers_decree',
+            'alias_uk' => 'pravo/normatyvni_dokumenty_ukrany/postanova_kabinetu_ministriv',
+      ),
+
+      351 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/international_conventions/anti_doping_convention',
+            'alias_uk' => 'pravo/mijnarodni_konvenci/antydopingova_konvenciya',
+      ),
+
+      352 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/international_conventions/international_convention_against_doping_in_sport',
+            'alias_uk' => 'pravo/mijnarodni_konvenci/mijnarodna_konvenciya_pro_borotbu_z_dopingom_u_sporti',
+      ),
+
+      353 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'qa',
+            'alias_uk' => 'pytannya_ta_vidpovidi',
+      ),
+
+      354 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/international_conventions/additional_protocol_to_the_anti_doping_convention',
+            'alias_uk' => 'pravo/mijnarodni_konvenci/dodatkovyy_protokol_do_antydopingovo_konvenci',
+      ),
+
+      355 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'qa/athlete_biological_passport',
+            'alias_uk' => 'pytannya_ta_vidpovidi/biologichnyy_pasport_sportsmena',
+      ),
+
+      356 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'qa/steroidal_module',
+            'alias_uk' => 'pytannya_ta_vidpovidi/sterodnyy_modul',
+      ),
+
+      357 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/government_procurement',
+            'alias_uk' => 'pravo/derjzakupivli',
+      ),
+
+      358 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'legal/wada_documentation/international_standard_for_therapeutic_use_exemptions',
+            'alias_uk' => 'pravo/dokumentaciya_vada/mijnarodnyy_standart_z_terapevtychnogo_vykorystannya',
+      ),
+
+      364 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'vitamo_na_sayti_nadc/istoriya/vreoekkr',
+            'alias_uk' => 'vitamo_na_sayti_nadc/istoriya/vreoekkr',
+      ),
+
+      365 => array(
+            'controller' => 'Index',
+            'action' => 'index',
+            'alias_en' => 'vitamo_na_sayti_nadc/istoriya/test_ssylky',
+            'alias_uk' => 'vitamo_na_sayti_nadc/istoriya/test_ssylky',
+      ),
+
+      341 => array(
             'controller' => 'News',
             'action' => 'index',
-            'alias_en' => 'news/news_1',
-            'alias_uk' => 'novyny/novost_1',
+            'alias_en' => 'news/nadc_is_code_compliant',
+            'alias_uk' => 'novyny/nadc_ukrany_vidpovida_kodeksu_vada',
       ),
 
-      220 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'news/news_2',
-            'alias_uk' => 'novyny/novost_2',
-      ),
-
-      221 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'news/news_3',
-            'alias_uk' => 'novyny/novost_3',
-      ),
-
-      222 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'news/news_4',
-            'alias_uk' => 'novyny/novost_4',
-      ),
-
-      315 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/novost_7',
-            'alias_uk' => 'novyny/novost_7',
-      ),
-
-      316 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'news/novost_8',
-            'alias_uk' => 'novyny/novost_8',
-      ),
-
-      317 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost',
-            'alias_uk' => 'novyny/testovaya_novost',
-      ),
-
-      318 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost_2',
-            'alias_uk' => 'novyny/testovaya_novost_2',
-      ),
-
-      319 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost_3',
-            'alias_uk' => 'novyny/testovaya_novost_3',
-      ),
-
-      320 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost_4',
-            'alias_uk' => 'novyny/testovaya_novost_4',
-      ),
-
-      321 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/test_novost_5',
-            'alias_uk' => 'novyny/test_novost_5',
-      ),
-
-      322 => array(
+      363 => array(
             'controller' => 'News',
             'action' => 'index',
             'alias_en' => 'novyny/testovaya_novost_7',
             'alias_uk' => 'novyny/testovaya_novost_7',
-      ),
-
-      323 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost_8',
-            'alias_uk' => 'novyny/testovaya_novost_8',
-      ),
-
-      324 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/test_n',
-            'alias_uk' => 'novyny/test_n',
-      ),
-
-      325 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/test_novost_9',
-            'alias_uk' => 'novyny/test_novost_9',
-      ),
-
-      329 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/novost_testovaya_1',
-            'alias_uk' => 'novyny/novost_testovaya_1',
-      ),
-
-      330 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/lhhkhyhkjh',
-            'alias_uk' => 'novyny/lhhkhyhkjh',
-      ),
-
-      331 => array(
-            'controller' => 'News',
-            'action' => 'index',
-            'alias_en' => 'novyny/testovaya_novost_10',
-            'alias_uk' => 'novyny/testovaya_novost_10',
       ),
 
       17 => array(

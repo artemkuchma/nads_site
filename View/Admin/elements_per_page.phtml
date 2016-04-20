@@ -1,13 +1,9 @@
 <form  method="get">
     <label for="totallist">Элементов на странице:</label>
     <select name="<?= $params1 ?>" id="totallist">
-        <option  value="5">5</option>
-        <option selected value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-        <option value="25">25</option>
-        <option value="50">50</option>
-        <option value="10000">All</option>
+        <?php foreach(Config::get('elements_per_page') as $v): ?>
+            <option <?= $params2 == $v ? 'selected' : '' ?> value="<?= $v ?>"><?= $v == 10000 ? 'All' : $v ?></option>
+        <?php endforeach ?>
     </select>
     <input type="hidden" name="page" value="1"/>
     <input type="submit" value="Применить"/>

@@ -159,7 +159,8 @@ class MenuController extends Controller
     public static function menu_recurs($array = array(), $id_class = null, $active_page_class = null)
     {
         $menu_class = isset($id_class) ? $id_class : '';
-        echo '<ul' . $menu_class . '>';
+
+        echo '<ul ' . $menu_class . '>';
         $lang = '';
         $class = '';
 
@@ -167,12 +168,20 @@ class MenuController extends Controller
             $lang = Router::getLanguage() . '/';
         }
         foreach ($array as $v) {
+            $onclick = '';
+            if($v['alias_menu'] == "admin/zurnal_oshibok/clean"){
+                $onclick = 'onclick="return confirm(\'Вы уверены что хотите удалить журнал ошибок?\')"';
+            }
 
             if (isset($v['child'])) {
                 if(isset($active_page_class) && $v['id_page'] == Router::getId()){
                     $class = $active_page_class;
                 }
-                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '" class="'.$class.'" >' . $v['name'] . '</a>';
+
+
+
+
+                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '" class="'.$class.'"'. $onclick.' >' . $v['name'] . '</a>';
                 $class = '';
 
                 self::menu_recurs($v['child'], $id_class = null, $active_page_class);
@@ -182,7 +191,7 @@ class MenuController extends Controller
                 if(isset($active_page_class) && $v['id_page'] == Router::getId()){
                     $class = $active_page_class;
                 }
-                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '"class="'.$class.'"  >' . $v['name'] . '</a></li>';
+                echo '<li > <a href="/' . $lang . $v['alias_menu'] . '"class="'.$class.'" '. $onclick.'>' . $v['name'] . '</a></li>';
                 $class = '';
             }
 

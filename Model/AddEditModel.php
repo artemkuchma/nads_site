@@ -62,13 +62,13 @@ class addEditModel
             // $name = $request->files('name');
             $this->img = isset($this->img_name)? "Webroot/uploads/images/$this->img_name" : "Webroot/uploads/images/".Config::get('default_img');
 
-
         $fields_model = new FieldsModel($material_type);
         $fields = $fields_model->getFields();
         $additional_fields_list = array();
         $additional_fields_value = '';
         $additional_fields_key_value = '';
         $additional_fields_value_arr = array();
+
         foreach ($fields as $v) {
             if ($v != 'id' && $v != 'alias' && $v != 'id_' . $material_type . '' && $v != 'title') {
                 $additional_fields_list[] = $v;
@@ -264,6 +264,7 @@ class addEditModel
 
         $sql = "INSERT INTO {$this->material_type}_{$lang} (`id_{$this->material_type}`,`title`, `alias` $additional_fields)
         VALUES (:id_new_page, :title, :alias $this->additional_fields_value)";
+
         $sth = $dbc->getPDO()->prepare($sql);
         $sth->execute($placeholders);
 

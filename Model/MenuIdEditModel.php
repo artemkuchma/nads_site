@@ -74,4 +74,13 @@ class MenuIdEditModel extends MenuModel
         }
     }
 
+     public function getMaxId()
+    {
+        $placeholders = array();
+        $dbc = Connect::getConnection();
+        $sql = "SELECT MAX(id) AS max_id FROM `main_menu` ";
+        $data = $dbc->getDate($sql, $placeholders);
+        return $data[0]['max_id'];
+    }
+
 }

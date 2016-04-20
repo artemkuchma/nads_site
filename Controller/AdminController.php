@@ -113,7 +113,9 @@ class AdminController extends Controller
                 'data_url' => $data_url[0],
                 'type_of_materials' => $type_of_materials,
                 'system_doc' => $system_doc_rev,
-                'menu_data' => $menu_data
+                'menu_data' => $menu_data,
+                'items_per_page' => $items_per_page
+
             );
 
             return $this->render_admin($args);
@@ -163,7 +165,8 @@ class AdminController extends Controller
                 'data_admin' => $data_admin[0],
                 'data_materials' => $data_log_page,
                 'data_pagination' => $data_pagination,
-                'data_url' => $data_url[0]
+                'data_url' => $data_url[0],
+                'items_per_page' => $items_per_page
             );
             return $this->render_admin($args);
         } else {
@@ -217,7 +220,8 @@ class AdminController extends Controller
                 'data_admin' => $data_admin[0],
                 'data_materials' => $data_translation_page,
                 'data_pagination' => $data_pagination,
-                'data_url' => $data_url[0]
+                'data_url' => $data_url[0],
+                'items_per_page' => $items_per_page
             );
           //  Debugger::PrintR($args);
             return $this->render_admin($args);
@@ -263,7 +267,8 @@ class AdminController extends Controller
                 'data_message' => $data_message,
                 'data_materials' => $data_message_page,
                 'data_pagination' => $data_pagination,
-                'data_url' => $data_url[0]
+                'data_url' => $data_url[0],
+                'items_per_page' => $items_per_page
             );
             return $this->render_admin($args);
 
@@ -329,6 +334,7 @@ class AdminController extends Controller
             $args = array(
                 'data_admin' => $data_admin[0],
                 'data_menu' => $main_menu_array,
+                'max_id' => $menuIdEditModel->getMaxId()
             );
             return $this->render_admin($args);
 
@@ -385,7 +391,6 @@ class AdminController extends Controller
                 'data_admin' => $data_admin[0],
                 'data_pages' => $data_pages,
                 'redirect' => isset($redirect)? $redirect : null,
-
             );
             return $this->render_admin($args);
 
@@ -421,11 +426,11 @@ class AdminController extends Controller
             $data = $menuModel->getMainMenu('uk');
             $menuController = new MenuController();
             $main_menu_array = $menuController->menuArray($data);
-            $redirect_status = null;
+            $redirect_status = null; 
 
 
             if ($request->isPost()) {
-                if ($addModel->isValid()) {
+               if ($addModel->isValid()) {
                     if ($addModel->isAliasExist()) {
                         if ($addModel->inMenu()) {
                             $file_data = array(
@@ -452,9 +457,9 @@ class AdminController extends Controller
                     }
                 } else {
                     Session::setFlash('Поле "Заголовок" обязательно для заполнения');
-                }
+                } 
             }
-            $this->rewrite_file_alias();
+            $this->rewrite_file_alias(); 
             $args = array(
                 'data_admin' => $data_admin[0],
                 'addModel' => $addModel,
@@ -557,6 +562,8 @@ class AdminController extends Controller
                 'data_menu_item' => $data_menu_item,
                 'redirect' => $request->post('redirect'),
                 'redirect_status' => $redirect_status,
+                'without_menu' => $request->post('without_menu'),
+                'menu_disable' => Config::get('menu_disable'),
                 'id' => $data_page[0]['id']
             );
 

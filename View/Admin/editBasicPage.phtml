@@ -10,7 +10,7 @@
     <input type="text" required name="title" id="title_edit_form_bp" value="<?= $edit_model->getTitle() ? $edit_model->getTitle() : $data_page[0]['title']; ?>"/> <br/><br/>
     <label for="text_edit_form_bp">Текст страници: </label>
     <textarea name="text" id="text_edit_form_bp" cols="30" rows="10"><?= isset($edit_model->getAdditionalFieldsValueArr()['text']) ? $edit_model->getAdditionalFieldsValueArr()['text'] : $data_page[0]['text']; ?></textarea><br/><br/>
-    <p>Два способа вставки изображений в хедере (на верху страницы). Первый вариант - "Загрузить изображение" - загрузка изображение с локального
+    <p>Два способа вставки изображений. Первый вариант - "Загрузить изображение" - загрузка изображение с локального
         компьютера. Второй вариант - "Вставить изображение" - выбор изображения из списка уже загруженных ранее, и используются
         другими текстовыми документами. Хранятся на сервере. В доступном списке отображаются только те изображения размеры
         которых составляют 945х250 px
@@ -30,7 +30,7 @@
         <input type="text" name="file_server" id="img_server" size="20" value="" readonly/>
         <input type="button" id="browse" name="browse" value="Выбрать файл"/>
     </div>
-
+<?php if (!in_array($id, $menu_disable)): ?>
     <p>Если поставить галочку - без меню - документ не будет доступен в главном меню</p></br>
     <label for="without_menu_edit_form_bp">Без меню</label>
     <input type="checkbox" id="without_menu_edit_form_bp" name="without_menu"/> <br/><br/>
@@ -45,13 +45,20 @@
         <option value="">Главное меню</option>
         <?php Controller::recurs_render_menu_in_form($data_menu, $data_menu_item) ?>
     </select><br/><br/>
+
     <label for="publication_edit_form_bp">Опубликованно: </label>
-    <input type="checkbox" checked id="publication_edit_form_bp" name="publication"/> <br/><br/>
+        <input type="checkbox"   checked id="publication_edit_form_bp" name="publication"/> <br/><br/>
+
+        <?php else: ?>
+
+        <input type="hidden" name="publication" value="1"/>
+    <?php endif; ?>
+
     <input type="hidden" name="redirect" value="/admin/materials"/>
     <input type="submit" value="Сохранить"/>
 </form>
 
-<?php if($redirect_status){
+<?php if($redirect_status || $without_menu){
     isset($redirect)? Controller::redirect($redirect): null;
 }
 ?>

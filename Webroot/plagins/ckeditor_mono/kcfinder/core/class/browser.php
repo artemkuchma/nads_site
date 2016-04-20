@@ -176,7 +176,7 @@ class browser extends uploader {
                 ($image->width <= $this->config['thumbWidth']) &&
                 ($image->height <= $this->config['thumbHeight'])
             ) {
-                $mime = "images/$type";
+                $mime = "image/$type";
                 httpCache::file($file, $mime);
             } else
                 $this->sendDefaultThumb($file);
@@ -187,7 +187,7 @@ class browser extends uploader {
             $type = $img->getType();
             $img->close();
         }
-        httpCache::file($file, "images/$type");
+        httpCache::file($file, "image/$type");
     }
 
     protected function act_expand() {
@@ -726,7 +726,7 @@ class browser extends uploader {
         }
         if (!isset($thumb) || !file_exists($thumb))
             $thumb = "themes/{$this->config['theme']}/img/files/big/..png";
-        header("Content-Type: images/png");
+        header("Content-Type: image/png");
         readfile($thumb);
         die;
     }

@@ -146,12 +146,12 @@
 			},
 			twitpic : {
 				matcher : /twitpic\.com\/(?!(?:place|photos|events)\/)([a-zA-Z0-9\?\=\-]+)/i,
-				type : 'images',
+				type : 'image',
 				url  : '//twitpic.com/show/full/$1/'
 			},
 			instagram : {
 				matcher : /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
-				type : 'images',
+				type : 'image',
 				url  : '//$1/p/$2/media/?size=l'
 			},
 			google_maps : {

@@ -2,14 +2,14 @@
 
 <?php Session::getFlash() ;?>
 
-<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml', 'translation_per_page'); ?>
+<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml', 'translation_per_page' ,$items_per_page); ?>
 
     <table border="1">
         <tr>
 
             <td>Ключ</td>
-            <td>Английский</td>
             <td>Украинский</td>
+            <td>Английский</td>
             <td>Редактировать</td>
         </tr>
         <?php foreach ($data_materials as $k => $v): ?>

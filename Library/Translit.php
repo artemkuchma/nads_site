@@ -13,7 +13,7 @@ class Translit {
         $text = str_replace(array("\n", "\r"), " ", $text); // убираем перевод каретки
         $text = preg_replace("/\s+/", ' ', $text); // удаляем повторяющие пробелы
         $text = trim($text); // убираем пробелы в начале и конце строки
-        $text = function_exists('mb_strtolower') ? mb_strtolower($text) : strtolower($text); // переводим строку в нижний регистр (иногда надо задать локаль)
+        $text = mb_strtolower($text, 'utf-8'); // переводим строку в нижний регистр 
         $text = strtr($text, array('а'=>'a','б'=>'b','в'=>'v','г'=>'g',
             'д'=>'d','е'=>'e','ё'=>'e','ж'=>'j','з'=>'z','и'=>'y','і'=>'i','ї'=>'і','й'=>'y',
             'к'=>'k','л'=>'l','м'=>'m','н'=>'n','о'=>'o','п'=>'p','р'=>'r',
@@ -24,7 +24,6 @@ class Translit {
         $text = str_replace(" ", "_", $text); // заменяем пробелы нижним подчеркиванием
         $text = str_replace("-", "_", $text); //заменяет минус на нижнее подчеркивание
         $this->translit = $text;
-
     }
 
 }

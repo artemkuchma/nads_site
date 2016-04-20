@@ -19,7 +19,7 @@
               rows="10"><?=$addModel->getAdditionalFieldsValueArr()['text']; ?></textarea><br/><br/>
 
 
-    <p>Два способа вставки изображений в хедере (на верху страницы). Первый вариант - "Загрузить изображение" - загрузка изображение с локального
+    <p>Два способа вставки изображений. Первый вариант - "Загрузить изображение" - загрузка изображение с локального
      компьютера. Второй вариант - "Вставить изображение" - выбор изображения из списка уже загруженных ранее, и используются
     другими текстовыми документами. Хранятся на сервере. В доступном списке отображаются только те изображения размеры
     которых составляют 945х250 px
@@ -60,7 +60,7 @@
     <label for="menuselect_add_form_bp">Родительский пункт меню: </label>
     <select name="menu" id="menuselect_add_form_bp">
         <option value="">Главное меню</option>
-        <?php Controller::recurs_render_menu_in_form($data_menu) ?>
+        <?php Controller::recurs_render_menu_in_form($data_menu, 218) ?>
     </select><br/><br/>
     <label for="publication_add_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>

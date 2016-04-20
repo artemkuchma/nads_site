@@ -18,7 +18,6 @@ abstract class Controller
     {
         $indexModel = new IndexModel();
         $data = $indexModel->getPage(Router::getId(), Router::getLanguage(), $material_type);
-       // Debugger::PrintR($data);
         if (!$data) {
             throw new Exception(" Page is not exist", 404);
 
@@ -30,10 +29,7 @@ abstract class Controller
         if (!$indexModel->existTranslationPage(Router::getId(), Router::getLanguage(), $material_type)) {
             throw new Exception(" Page has no translation", 204);
         }
-
-
         $args = $data[0];
-
         return $args;
     }
 
@@ -275,7 +271,8 @@ abstract class Controller
                 $t .= '+';
             }
             $selected = '';
-            if ($k == $data_menu_item[0]['id_parent_page']) {
+            $selected_item = is_array($data_menu_item) ? $data_menu_item[0]['id_parent_page'] : $data_menu_item;
+            if ($k == $selected_item) {
                 $selected = 'selected';
             }
             echo '<option ' . $selected . ' value = "' . $v['alias_menu'] . '!' . $k . '" >' . $t . ' ' . $v['name'] . '</option>';
@@ -285,14 +282,14 @@ abstract class Controller
         }
     }
 
-    public static function recurs_render_menu_edit($array)
+    public static function recurs_render_menu_edit($array, $max_id)
     {
         echo '<ul>';
 
         foreach ($array as $v) {
-            echo '<li ><input type="number" required min = 1 max = 999  name = "' . $v['id_page'] . '-' . $v['id_parent_page'] . '" value = "' . $v['id'] . '" >' . $v['name'] . '</li>';
+            echo '<li ><input type="number" required min = 1 max = '.$max_id.'  name = "' . $v['id_page'] . '-' . $v['id_parent_page'] . '" value = "' . $v['id'] . '" >' . $v['name'] . '</li>';
             if (isset($v['child'])) {
-                self::recurs_render_menu_edit($v['child']);
+                self::recurs_render_menu_edit($v['child'], $max_id);
             }
         }
         echo '</ul>';

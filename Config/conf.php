@@ -37,12 +37,14 @@ Config::set('contacts', 216);
 Config::set('news', 218);
 Config::set('search', 224);
 Config::set('bread_crumbs_last_element_view', 'no');//текущий элемент в бредкрамбсов - показывать -'yes', не показывать - 'no'
-Config::set('materials_per_page',$request->get('materials_per_page') ? $request->get('materials_per_page'):10 );
-Config::set('translation_per_page',$request->get('translation_per_page') ? $request->get('translation_per_page'):10 );
-Config::set('message_per_page',$request->get('message_per_page') ? $request->get('message_per_page'):10 );
-Config::set('log_per_page',$request->get('log_per_page') ? $request->get('log_per_page'):10 );
-Config::set('news_per_page',$request->get('news_per_page') ? $request->get('news_per_page'):10 );
-Config::set('search_per_page',$request->get('search_per_page') ? $request->get('search_per_page'):10 );
+Config::set('materials_per_page',$request->get('materials_per_page') ? $request->get('materials_per_page'):10000 );
+Config::set('translation_per_page',$request->get('translation_per_page') ? $request->get('translation_per_page'):10000 );
+Config::set('message_per_page',$request->get('message_per_page') ? $request->get('message_per_page'):10000 );
+Config::set('log_per_page',$request->get('log_per_page') ? $request->get('log_per_page'):10000 );
+Config::set('news_per_page',$request->get('news_per_page') ? $request->get('news_per_page'):10000 );
+Config::set('search_per_page',$request->get('search_per_page') ? $request->get('search_per_page'):10000 );
+$elements_per_page = array(5,10,15,20,25,50,10000);
+Config::set('elements_per_page', $elements_per_page);
 Config::set('admin_email', 'test@test6.ua');
 Config::set('max_image_size', 500000);
 Config::set('max_image_width', 946);
@@ -54,10 +56,22 @@ Config::set('news_in_block', 3);
 Config::set('basic_page_in_block', 3);
 Config::set('default_img','SAM_0060.JPG');
 
+$system_doc_menu_disable = array(
+    Config::get('default_id') => Config::get('default_id'),
+    Config::get('default_id_error_404') => Config::get('default_id_error_404'),
+    Config::get('default_id_error_403') => Config::get('default_id_error_403'),
+    Config::get('default_id_error_204') => Config::get('default_id_error_204'),
+    Config::get('default_id_error_500') => Config::get('default_id_error_500'),
+    Config::get('not_publish') => Config::get('not_publish'),
+    Config::get('search') => Config::get('search'),
+);
+Config::set('menu_disable', $system_doc_menu_disable);
+
+
 // DB Connect
 
 $host = 'test6.ua';
-$dbname = 'db_nadc';
+$dbname = 'db_nadc_prod';
 $user ='root';
 $pass = '';
 // user = db_nadc  pass = 3KxJxYAX7QGEzA5E

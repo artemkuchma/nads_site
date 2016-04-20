@@ -1,6 +1,6 @@
 <h1><?= $data_admin['name'] ?></h1>
 
-<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','message_per_page'); ?>
+<?= Controller::render_simple(VIEW_DIR . 'Admin/elements_per_page.phtml','message_per_page', $items_per_page); ?>
 
 <table border="1">
     <tr>
@@ -22,7 +22,7 @@
             <td><?= $v['message']?></td>
             <td><?= $v['message_date']?></td>
             <td><?= $v['id_reg_user']?  'Да' : 'Нет' ?></td>
-            <td><a href="/admin/delete_message?id=<?= $v['id'] ?>">Удалить</a></td>
+            <td><a href="/admin/delete_message?id=<?= $v['id'] ?>" onclick="return confirm('Вы уверены что хотите удалить сообщение?')">Удалить</a></td>
         </tr>
     <?php endforeach ?>
 </table>

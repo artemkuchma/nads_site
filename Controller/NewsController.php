@@ -28,6 +28,7 @@ class NewsController extends Controller
             } else {
                 $data[$k]['short_text'] = '';
             }
+            $data[$k]['date'] = date('y.m.d', strtotime($v['date']));
         }
 
 

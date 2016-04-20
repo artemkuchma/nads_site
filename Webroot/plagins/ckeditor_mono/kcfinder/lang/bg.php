@@ -44,10 +44,10 @@ $lang = array(
     "Denied file extension." =>
     "Забранено файлово разширение.",
 
-    "Unknown images format/encoding." =>
+    "Unknown image format/encoding." =>
     "Файлът не може да бъде разпознат като изображение.",
 
-    "The images is too big and/or cannot be resized." =>
+    "The image is too big and/or cannot be resized." =>
     "Изображението е много голямо и/или не може да бъде преоразмерено.",
 
     "Cannot create {dir} folder." =>
@@ -219,7 +219,7 @@ $lang = array(
     "Date" => "Дата",
     "Descending" => "Обратен ред",
     "Uploading file..." => "Файлът се качва...",
-    "Loading images..." => "Изображението се зарежда...",
+    "Loading image..." => "Изображението се зарежда...",
     "Loading folders..." => "Зареждане на папките...",
     "Loading files..." => "Зареждане на папката...",
     "New Subfolder..." => "Нова подпапка...",

@@ -56,7 +56,7 @@ _.showFiles = function(callBack, selected) {
 
                 icon = $.$.getFileExtension(file.name);
                 if (file.thumb)
-                    icon = ".images";
+                    icon = ".image";
                 else if (!icon.length || !file.smallIcon)
                     icon = ".";
                 icon = "themes/" + _.theme + "/img/files/small/" + icon + ".png";

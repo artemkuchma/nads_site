@@ -1,12 +1,13 @@
 <h1><?= $data_admin['name'] ?></h1>
 <p><?= $data_admin['text'] ?></p>
+<p>Максимально допустимый id: <?= $max_id ?></p>
 
 <p><b><?= Session::getFlash() ?></b></p>
 
 
 <form method="post">
 
-<?php Controller::recurs_render_menu_edit($data_menu) ?>
+<?php Controller::recurs_render_menu_edit($data_menu, $max_id) ?>
 
     <input type="submit" value="Сохранить"/>
 

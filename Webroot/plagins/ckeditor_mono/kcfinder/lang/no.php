@@ -45,10 +45,10 @@ $lang = array(
     "Denied file extension." =>
     "Feil filformat",
 
-    "Unknown images format/encoding." =>
+    "Unknown image format/encoding." =>
     "Ukjent bildeformat.",
 
-    "The images is too big and/or cannot be resized." =>
+    "The image is too big and/or cannot be resized." =>
     "Bildet er for stort eller kan ikke skaleres ned.",
 
     "Cannot create {dir} folder." =>
@@ -175,7 +175,7 @@ $lang = array(
     "Date" => "Dato",
     "Descending" => "Synkende",
     "Uploading file..." => "Laster opp fil...",
-    "Loading images..." => "Laster bilde...",
+    "Loading image..." => "Laster bilde...",
     "Loading folders..." => "Laster mapper...",
     "Loading files..." => "Laster filer...",
     "New Subfolder..." => "Ny undermappe...",

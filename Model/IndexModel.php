@@ -22,7 +22,6 @@ class IndexModel
         $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);
 
-
         return $date;
 
     }
@@ -103,7 +102,7 @@ pages p JOIN `{$material_type}` JOIN `{$material_type}_en` JOIN `{$material_type
     {
         $dbc = Connect::getConnection();
         $lang = Router::getLanguage();
-        $sql = "SELECT * FROM `{$material_type}_{$lang}`";
+        $sql = "SELECT n_{$lang}.title, n_{$lang}.description, n_{$lang}.text, n_{$lang}.alias, n.date, n.img FROM {$material_type}_{$lang} n_{$lang} JOIN {$material_type} n ON n.id = n_{$lang}.id_{$material_type}"; //"SELECT * FROM `{$material_type}_{$lang}`";
         $placeholders = array();
         $date = $dbc->getDate($sql, $placeholders);
 

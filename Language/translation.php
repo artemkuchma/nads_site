@@ -2,7 +2,7 @@
 return array(
 
       'testovii_tekst' => array(
-'en' => 'Test text',
+'en' => 'Test textшшш',
 'uk' => 'Тестовый текст'
       ),
 
@@ -23,7 +23,7 @@ return array(
 
       'register' => array(
 'en' => 'Register',
-'uk' => 'Регiстрацiя'
+'uk' => 'Реєстрацiя'
       ),
 
       'logout' => array(
@@ -153,7 +153,7 @@ return array(
 
       'read_more' => array(
 'en' => 'Read more',
-'uk' => 'Читать далее'
+'uk' => 'Читати далі'
       ),
 
       'search' => array(

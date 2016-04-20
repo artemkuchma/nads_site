@@ -17,13 +17,17 @@ class FieldsModel {
         $sql = "SELECT COLUMN_NAME
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE table_name = '".$material_type."_".$lang."'";
+
         $placeholders = array();
         $d = $dbc->getDate($sql, $placeholders);
+
         $data =array();
 
         foreach($d as $v){
             $data[]=$v['COLUMN_NAME'];
         }
+
+        $data = array_unique($data);
         return $data;
     }
     public function getFields()

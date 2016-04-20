@@ -2,7 +2,7 @@
 
 /** This file is part of KCFinder project
   *
-  *      @desc ImageMagick images driver class
+  *      @desc ImageMagick image driver class
   *   @package KCFinder
   *   @version 3.12
   *    @author Pavel Tzonkov <sunhater@sunhater.com>
@@ -17,7 +17,7 @@ namespace kcfinder;
 class image_imagick extends image {
 
     static $MIMES = array(
-        //'tif' => "images/tiff"
+        //'tif' => "image/tiff"
     );
 
 
@@ -265,7 +265,7 @@ class image_imagick extends image {
 
         if (!isset($options['file'])) {
             if (!headers_sent()) {
-                $mime = isset(self::$MIMES[$type]) ? self::$MIMES[$type] : "images/$type";
+                $mime = isset(self::$MIMES[$type]) ? self::$MIMES[$type] : "image/$type";
                 header("Content-Type: $mime");
             }
             echo $this->image;

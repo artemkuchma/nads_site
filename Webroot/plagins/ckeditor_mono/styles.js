@@ -80,13 +80,13 @@ CKEDITOR.stylesSet.add( 'default', [
 	/* Object Styles */
 
 	{
-		name: 'Styled images (left)',
+		name: 'Styled image (left)',
 		element: 'img',
 		attributes: { 'class': 'left' }
 	},
 
 	{
-		name: 'Styled images (right)',
+		name: 'Styled image (right)',
 		element: 'img',
 		attributes: { 'class': 'right' }
 	},

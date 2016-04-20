@@ -36,7 +36,7 @@ $_CONFIG = array(
     // TinyMCE types
         'file'    =>  "",
         'media'   =>  "swf flv avi mpg mpeg qt mov wmv asf rm",
-        'images'   =>  "*img",
+        'image'   =>  "*img",
     ),
 
 

@@ -2,7 +2,7 @@
 
 /** This file is part of KCFinder project
   *
-  *      @desc GD images driver class
+  *      @desc GD image driver class
   *   @package KCFinder
   *   @version 3.12
   *    @author Pavel Tzonkov <sunhater@sunhater.com>
@@ -264,7 +264,7 @@ class image_gd extends image {
         $quality = isset($options['quality']) ? $options['quality'] : null;
         $filters = isset($options['filters']) ? $options['filters'] : null;
         if (($file === null) && !headers_sent())
-            header("Content-Type: images/png");
+            header("Content-Type: image/png");
         return imagepng($this->image, $file, $quality, $filters);
     }
 
@@ -274,14 +274,14 @@ class image_gd extends image {
             ? $options['quality']
             : self::DEFAULT_JPEG_QUALITY;
         if (($file === null) && !headers_sent())
-            header("Content-Type: images/jpeg");
+            header("Content-Type: image/jpeg");
         return imagejpeg($this->image, $file, $quality);
     }
 
     protected function output_gif(array $options=array()) {
         $file = isset($options['file']) ? $options['file'] : null;
         if (isset($options['file']) && !headers_sent())
-            header("Content-Type: images/gif");
+            header("Content-Type: image/gif");
         return imagegif($this->image, $file);
     }
 

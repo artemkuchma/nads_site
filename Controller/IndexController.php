@@ -7,7 +7,7 @@ class IndexController extends Controller
 
     public function indexAction()
     {
-        //$this->rewrite_file_alias();
+       // $this->rewrite_file_alias();
        // Controller::rewrite_file_translation();
         $args = $this->index('basic_page');
 
@@ -69,6 +69,7 @@ class IndexController extends Controller
             } else {
                 $data_news_arr[$k]['short_text'] = '';
             }
+            $data_news_arr[$k]['date'] = date('y.m.d', strtotime($v['date']));
         }
 
         $items_count = count($data_news_arr);

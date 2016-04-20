@@ -51,10 +51,10 @@ $lang = array(
     "Denied file extension." =>
     ".پسوند فایل غیر مجاز است",
 
-    "Unknown images format/encoding." =>
+    "Unknown image format/encoding." =>
     ".عکس معتبر نیست format/encoding",
 
-    "The images is too big and/or cannot be resized." =>
+    "The image is too big and/or cannot be resized." =>
     ".عکس انتخابی یا بزرگ است یا تغییر اندازه داده نمی شود",
 
     "Cannot create {dir} folder." =>
@@ -182,7 +182,7 @@ $lang = array(
     "Type" => "پسوند",
     "Descending" => "نزولي",
     "Uploading file..." => "... درحال ارسال فایل",
-    "Loading images..." => "... درحال بارگذاری عکس",
+    "Loading image..." => "... درحال بارگذاری عکس",
     "Loading folders..." => "... درحال بارگذاری پوشه ها",
     "Loading files..." => "... درحال بارگذاری فایل ها",
     "New Subfolder..." => "...ساخت زیرپوشه جدید",
