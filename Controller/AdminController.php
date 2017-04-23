@@ -433,7 +433,9 @@ class AdminController extends Controller
                if ($addModel->isValid()) {
                     if ($addModel->isAliasExist()) {
                         if ($addModel->inMenu()) {
+
                             $file_data = array(
+
                                 'max_image_size' => Config::get('max_image_size'),
                                 'max_image_width' => Config::get('max_image_width'),
                                 'max_image_height' => Config::get('max_image_height')
@@ -554,6 +556,10 @@ class AdminController extends Controller
                 }
             }
             $this->rewrite_file_alias();
+
+            $date_array = explode(' ', $data_page[0]['date']);
+            $data_page[0]['date_manual'] = $date_array[0];
+            $data_page[0]['time_manual'] = $date_array[1];
 
             $args = array(
                 'data_page' => $data_page,

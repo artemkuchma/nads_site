@@ -1,6 +1,8 @@
 <h1> Радактирование <?= $data_page[0]['title'] ?></h1>
 
 
+
+
 <p><b><?= Session::getFlash() ?></b></p>
 
 
@@ -72,6 +74,16 @@
         <input type="hidden" name="publication" value="1"/>
 
     <?php endif; ?>
+
+    <p>Если поле даты  и времени публикуции не будут заполнены,будет использованна текущая дата и время.Если будет
+        заполненно только поле даты, время будет использованно текущее. </p>
+    <label for="date_manual_add_form_bp">Дата публикации: </label>
+    <input type="date" name="date_manual" id="date_manual_add_form_bp" value="<?= $edit_model->getDateManual() ? $edit_model->getDateManual() : $data_page[0]['date_manual']; ?>"/>
+    <label for="time_manual_add_form_bp">Время публикации: </label>
+    <input type="time" name="time_manual" id="time_manual_add_form_bp" value="<?= $edit_model->getTimeManual() ? $edit_model->getTimeManual() : $data_page[0]['time_manual']; ?>"/></br>
+
+
+
     <input type="hidden" name="redirect" value="/admin/materials"/>
     <input type="submit" value="Сохранить"/>
 </form>

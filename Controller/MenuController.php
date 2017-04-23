@@ -41,7 +41,9 @@ class MenuController extends Controller
         if (Session::hasUser('admin')) {
             $menuModel = new MenuModel();
             $date = $menuModel->getAdminMenu();
+
             $args_admin = self::menuArray($date);
+
             foreach ($args_admin as $k => $v) {
                 if ($v['alias_menu'] == 'admin') {
                     unset($v['child']);
@@ -50,7 +52,6 @@ class MenuController extends Controller
             }
 
         }
-
         return $this->render_main_menu($args);
     }
 
@@ -125,7 +126,6 @@ class MenuController extends Controller
         }
         }
          **/
-
 
         return $args; //$this->render_main_menu($args);//render($args);
 

@@ -7,8 +7,8 @@ class IndexController extends Controller
 
     public function indexAction()
     {
-       // $this->rewrite_file_alias();
-       // Controller::rewrite_file_translation();
+        // $this->rewrite_file_alias();
+        // Controller::rewrite_file_translation();
         $args = $this->index('basic_page');
 
         return $this->render($args);
@@ -30,17 +30,27 @@ class IndexController extends Controller
 
     public function contactAction(Request $request)
     {
+
         $data_page = $this->index('basic_page');
         $form = new ContactModel($request);
 
+        $headers = 'From: admin@nadc.org.ua' . "\r\n" .
+            'Reply-To: admin@nadc.org.ua' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
         if ($request->isPost()) {
+
             if ($form->isValid()) {
-                $form->saveToDB();
-                mail(Config::get('admin_email'), "Сообщение от пользователя $form->name ", $form->name . PHP_EOL . $form->email . PHP_EOL . $form->message . PHP_EOL . $form->date);
-                $form->name = '';
-                $form->email = '';
-                $form->message = '';
-                Session::setFlash(__t('message_send'));
+                if ($form->captchaValid()) {
+                    $form->saveToDB();
+                    mail(Config::get('admin_email'), "Сообщение от пользователя $form->name ", $form->name . PHP_EOL . $form->email . PHP_EOL . $form->message . PHP_EOL . $form->date, $headers);
+                    $form->name = '';
+                    $form->email = '';
+                    $form->message = '';
+                    Session::setFlash(__t('message_send'));
+                }else{
+                    Session::setFlash(__t('message_not_send'));
+                }
             } else {
                 Session::setFlash(__t('message_not_send'));
             }
@@ -48,7 +58,7 @@ class IndexController extends Controller
         $args = array(
             'form' => $form,
             'data_page' => $data_page,
-            'img' =>$data_page['img']
+            'img' => $data_page['img']
         );
 
         return $this->render($args);
@@ -60,7 +70,7 @@ class IndexController extends Controller
         $indexModel = new IndexModel();
         $data_news_arr = $indexModel->getViews('news');
 
-        foreach($data_news_arr as $k => $v){
+        foreach ($data_news_arr as $k => $v) {
             if ($v['description']) {
 
                 $data_news_arr[$k]['short_text'] = $this->cropString($v['description'], 600, '...');
@@ -69,7 +79,7 @@ class IndexController extends Controller
             } else {
                 $data_news_arr[$k]['short_text'] = '';
             }
-            $data_news_arr[$k]['date'] = date('y.m.d', strtotime($v['date']));
+            $data_news_arr[$k]['date'] = date('d.m.y', strtotime($v['date']));
         }
 
         $items_count = count($data_news_arr);
@@ -116,7 +126,7 @@ class IndexController extends Controller
                 if (!$search->isLarge()) {
 
                     $search_data = $search->search();
-                }else{
+                } else {
                     Session::setFlash(__t('long_inquiry'));
                 }
             } else {
@@ -152,7 +162,7 @@ class IndexController extends Controller
 
         $lang = Router::getLanguage() == Config::get('default_language') ? '' : Router::getLanguage() . '/';
 
-    //    $search_request = $search->getSearchRequest();
+        //    $search_request = $search->getSearchRequest();
 
         $args = array(
             'page_data' => $page_data,
@@ -160,7 +170,7 @@ class IndexController extends Controller
             'data_pagination' => $data_pagination,
             'data_url' => $data_url[0],
             'lang' => $lang,
-         //   'search_request' => $search_request,
+            //   'search_request' => $search_request,
             'items_count' => $items_count,
             'img' => $page_data['img']
         );
@@ -173,8 +183,8 @@ class IndexController extends Controller
         $indexModel = new IndexModel();
         $d = $indexModel->getBasicPageBlock();
         $data = array();
-        foreach($d as $k => $v){
-            if($v['title']){
+        foreach ($d as $k => $v) {
+            if ($v['title']) {
                 $data[$k] = $v;
             }
         }

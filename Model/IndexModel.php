@@ -17,7 +17,7 @@ class IndexModel
         }
 
         $dbc = Connect::getConnection();
-        $sql = "SELECT p.id, p.status, bp.img {$fields_list} FROM pages p JOIN {$material_type} bp JOIN {$material_type}_{$lang} bp_{$lang}
+        $sql = "SELECT p.id, p.status, bp.date, bp.img {$fields_list} FROM pages p JOIN {$material_type} bp JOIN {$material_type}_{$lang} bp_{$lang}
         WHERE p.id = :id AND p.id = bp.id_page AND  bp.id = bp_{$lang}.id_{$material_type}";
         $placeholders = array('id' => $id);
         $date = $dbc->getDate($sql, $placeholders);
@@ -102,7 +102,7 @@ pages p JOIN `{$material_type}` JOIN `{$material_type}_en` JOIN `{$material_type
     {
         $dbc = Connect::getConnection();
         $lang = Router::getLanguage();
-        $sql = "SELECT n_{$lang}.title, n_{$lang}.description, n_{$lang}.text, n_{$lang}.alias, n.date, n.img FROM {$material_type}_{$lang} n_{$lang} JOIN {$material_type} n ON n.id = n_{$lang}.id_{$material_type}"; //"SELECT * FROM `{$material_type}_{$lang}`";
+        $sql = "SELECT n_{$lang}.title, n_{$lang}.description, n_{$lang}.text, n_{$lang}.alias, n.date, n.img FROM {$material_type}_{$lang} n_{$lang} JOIN {$material_type} n ON n.id = n_{$lang}.id_{$material_type} ORDER BY n.date DESC"; //"SELECT * FROM `{$material_type}_{$lang}`";
         $placeholders = array();
         $date = $dbc->getDate($sql, $placeholders);
 

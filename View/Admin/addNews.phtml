@@ -65,7 +65,13 @@
     <label for="publication_add_form_bp">Опубликованно: </label>
     <input type="checkbox" checked id="publication_add_form_bp" name="publication"/> <br/><br/>
     <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s') ?>">
-    <input type="hidden" name="redirect" value="/admin/materials">
+    <p>Если поле даты  и времени публикуции не будут заполнены,будет использованна текущая дата и время.Если будет
+        заполненно только поле даты, время будет использованно текущее. </p>
+    <label for="date_manual_add_form_bp">Дата публикации: </label>
+    <input type="date" name="date_manual" id="date_manual_add_form_bp" value="<?= $addModel->getDateManual(); ?>">
+    <label for="time_manual_add_form_bp">Время публикации: </label>
+    <input type="time" name="time_manual" id="time_manual_add_form_bp" value="<?= $addModel->getTimeManual(); ?>">
+    <input type="hidden" name="redirect" value="/admin/materials"></br>
     <input type="submit" value="Сохранить"/>
 </form>
 

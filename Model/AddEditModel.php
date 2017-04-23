@@ -13,6 +13,8 @@ class addEditModel
     private $img_name;
     private $img_thumb;
     private $date;
+    private $date_manual;
+    private $time_manual;
     private $id_parent;
     private $menu_name;
     private $menu_data;
@@ -36,7 +38,18 @@ class addEditModel
         $this->title_or_menu_name = $this->menu_name ? $this->menu_name : $this->title;
         $alias_data = $this->createAlias($this->title_or_menu_name, $this->menu_data);
         $this->new_alias = $alias_data['new_alias'];
-        $this->date = $request->post('date');
+        $this->date_manual = $request->post('date_manual');
+        $this->time_manual = $request->post('time_manual');
+
+        $date = $request->post('date_manual')? explode("-", $request->post('date_manual')) : explode(".", "01.01.1970");
+        $time = $request->post('time_manual')? explode(":", $request->post('time_manual').":00") : explode(":", "00:00:00");
+       // Debugger::PrintR($date);
+       // Debugger::PrintR($time);
+
+        $timestamp = mktime($time['0'], $time['1'], $time['2'], $date['1'], $date['2'], $date['0']);
+
+
+        $this->date = $request->post('date_manual')? date('Y-m-d H:i:s',$timestamp ):$request->post('date');
         $this->translit = $alias_data['translit'];
         $this->id_parent = $alias_data['id_parent'];
         $this->material_type = $material_type;
@@ -325,9 +338,10 @@ class addEditModel
         if ($this->img_name) {
             $placeholders = array(
                 'id' => $id,
-                'img' => $this->img
+                'img' => $this->img,
+                'date' => $this->date
             );
-            $sql = "UPDATE `{$this->material_type}` SET `img`= :img WHERE id_page = :id";
+            $sql = "UPDATE `{$this->material_type}` SET `img`= :img, `date`= :date WHERE id_page = :id";
             $sth = $dbc->getPDO()->prepare($sql);
             $sth->execute($placeholders);
         }
@@ -636,6 +650,15 @@ class addEditModel
     public function getImgThumb()
     {
         return $this->img_thumb;
+    }
+
+    public function getDateManual()
+    {
+        return $this->date_manual;
+    }
+    public function getTimeManual()
+    {
+        return $this->time_manual;
     }
 
 

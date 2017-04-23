@@ -19,13 +19,13 @@ class SecurityController extends Controller
                             $this->redirect("/");
                         } else {
 
-                            Session::setFlash( __t('user_already_exists'));
+                            Session::setFlash(__t('user_already_exists'));
                         }
                     } else {
-                        Session::setFlash( __t('password_not_strong'));
+                        Session::setFlash(__t('password_not_strong'));
                     }
                 } else {
-                    Session::setFlash( __t('invalid_login'));
+                    Session::setFlash(__t('invalid_login'));
                 }
             } else {
                 Session::setFlash($registerForm->passwordMath() ? __t('fill_fields') : __t('passwords_dont_match'));
@@ -50,19 +50,19 @@ class SecurityController extends Controller
                         'id' => $login->getUser()[0]['id']
                     );
                     Session::set('user', $user);
-                    Session::setFlash( __t('logged_in'));
+                    Session::setFlash(__t('logged_in'));
                     $this->redirect("/");
 
                 } else {
 
-                    Session::setFlash( __t('login_or_password_incorrect'));
+                    Session::setFlash(__t('login_or_password_incorrect'));
                 }
             } else {
-                Session::setFlash( __t('fill_fields'));
+                Session::setFlash(__t('fill_fields'));
             }
         }
 
-        $img_default_url = 'Webroot/uploads/images/'.Config::get('default_img');
+        $img_default_url = 'Webroot/uploads/images/' . Config::get('default_img');
 
         $args = array(
             'login' => $login,
@@ -71,12 +71,17 @@ class SecurityController extends Controller
         return $this->render($args);
     }
 
-    public function logoutAction($key = 'user')
+    public function logoutAction()
     {
-        Session::remove($key);
-        Session::destroy();
-        Session::setFlash( __t('you_logout'));
-        $this->redirect("/");
+        $key = 'user';
+     //   if (Session::has($key)) {
+            Session::remove($key);
+            Session::destroy();
+            Session::setFlash(__t('you_logout'));
+            $this->redirect("/");
+      //  }else{
+      //      throw new Exception('Page not found', 404);
+      //  }
     }
 
     // выводит весь блок регистрации(ссылки логин, логаут, регистрация)
@@ -84,9 +89,9 @@ class SecurityController extends Controller
     {
         $args = array();
         require LIB_DIR . 'patterns.php';
-        $args['url_register'] ='/'.Router::getLanguage().'/'. $url_patterns['register']['pattern_' . Router::getLanguage()];
-        $args['url_login'] = '/'.Router::getLanguage().'/'.$url_patterns['login']['pattern_' . Router::getLanguage()];
-        $args['url_logout'] = '/'.Router::getLanguage().'/'.$url_patterns['logout']['pattern_' . Router::getLanguage()];
+        $args['url_register'] = '/' . Router::getLanguage() . '/' . $url_patterns['register']['pattern_' . Router::getLanguage()];
+        $args['url_login'] = '/' . Router::getLanguage() . '/' . $url_patterns['login']['pattern_' . Router::getLanguage()];
+        $args['url_logout'] = '/' . Router::getLanguage() . '/' . $url_patterns['logout']['pattern_' . Router::getLanguage()];
 
         return $this->render_login_logout($args);
     }

@@ -239,6 +239,41 @@ $url_alias = array(
             'alias_uk' => 'novyny/testovaya_novost_7',
       ),
 
+      366 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_77',
+            'alias_uk' => 'novyny/testovaya_novost_77',
+      ),
+
+      367 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_88',
+            'alias_uk' => 'novyny/testovaya_novost_88',
+      ),
+
+      368 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/testovaya_novost_9',
+            'alias_uk' => 'novyny/testovaya_novost_9',
+      ),
+
+      369 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'novyny/test11',
+            'alias_uk' => 'novyny/test11',
+      ),
+
+      370 => array(
+            'controller' => 'News',
+            'action' => 'index',
+            'alias_en' => 'news/test_14',
+            'alias_uk' => 'novyny/test_14',
+      ),
+
       17 => array(
             'controller' => 'Admin',
             'action' => 'index',
